@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Тестирование tools агента</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КнЗаполнить" id="1">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.Command.ЗаполнитьTools</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Загрузить tools</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="КнЗаполнитьРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="КнАвтоАргументы" id="3">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.Command.ЗаполнитьАргументыАвто</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Заполнить аргументы</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="КнАвтоАргументыРасширеннаяПодсказка" id="4"/>
+			</Button>
+			<Button name="КнЗапуститьВыбранные" id="5">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗапуститьВыбранные</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Запустить выбранные</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="КнЗапуститьВыбранныеРасширеннаяПодсказка" id="6"/>
+			</Button>
+			<Button name="КнЗапуститьВсе" id="7">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.Command.ЗапуститьВсе</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Запустить все</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="КнЗапуститьВсеРасширеннаяПодсказка" id="8"/>
+			</Button>
+			<Button name="КнСкопироватьОтчёт" id="9">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.Command.СкопироватьОтчёт</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сформировать отчёт по ошибкам</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="КнСкопироватьОтчётРасширеннаяПодсказка" id="10"/>
+			</Button>
+			<Button name="КнДиагностика" id="11">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.Command.ДиагностикаНавСсылки</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Диагностика нав.ссылки</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="КнДиагностикаРасширеннаяПодсказка" id="12"/>
+			</Button>
+			<Button name="КнМаппинг" id="13">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.Command.НастроитьМаппинг</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Настроить маппинг демо-объектов</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="КнМаппингРасширеннаяПодсказка" id="14"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОписание" id="15">
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОписаниеРасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьОписание" id="17">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перебирает все включённые tools, вызывает каждый через ar_ToolDispatcher (боевой режим) и показывает ошибки. Аргументы можно поправить прямо в таблице.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьОписаниеКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="НадписьОписаниеРасширеннаяПодсказка" id="19"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="20">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<Page name="СтраницаTools" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Tools</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаToolsРасширеннаяПодсказка" id="23"/>
+					<ChildItems>
+						<Table name="ТаблицаTools" id="24">
+							<HeightInTableRows>12</HeightInTableRows>
+							<DataPath>ТаблицаTools</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаToolsКонтекстноеМеню" id="25"/>
+							<AutoCommandBar name="ТаблицаToolsКоманднаяПанель" id="26"/>
+							<ExtendedTooltip name="ТаблицаToolsРасширеннаяПодсказка" id="82"/>
+							<SearchStringAddition name="ТаблицаToolsСтрокаПоиска" id="27">
+								<AdditionSource>
+									<Item>ТаблицаTools</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаToolsСтрокаПоискаКонтекстноеМеню" id="83"/>
+								<ExtendedTooltip name="ТаблицаToolsСтрокаПоискаРасширеннаяПодсказка" id="84"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаToolsСостояниеПросмотра" id="28">
+								<AdditionSource>
+									<Item>ТаблицаTools</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаToolsСостояниеПросмотраКонтекстноеМеню" id="85"/>
+								<ExtendedTooltip name="ТаблицаToolsСостояниеПросмотраРасширеннаяПодсказка" id="86"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаToolsУправлениеПоиском" id="29">
+								<AdditionSource>
+									<Item>ТаблицаTools</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаToolsУправлениеПоискомКонтекстноеМеню" id="87"/>
+								<ExtendedTooltip name="ТаблицаToolsУправлениеПоискомРасширеннаяПодсказка" id="88"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="КолВыполнять" id="30">
+									<DataPath>ТаблицаTools.Выполнять</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вкл</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КолВыполнятьКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="КолВыполнятьРасширеннаяПодсказка" id="32"/>
+								</CheckBoxField>
+								<CheckBoxField name="КолДоступен" id="76">
+									<DataPath>ТаблицаTools.Доступен</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дост.</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КолДоступенКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="КолДоступенРасширеннаяПодсказка" id="78"/>
+								</CheckBoxField>
+								<InputField name="КолПричина" id="79">
+									<DataPath>ТаблицаTools.ПричинаНедоступности</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Причина недоступности</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="КолПричинаКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="КолПричинаРасширеннаяПодсказка" id="81"/>
+								</InputField>
+								<InputField name="КолИмя" id="33">
+									<DataPath>ТаблицаTools.Имя</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Tool</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="КолИмяКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="КолИмяРасширеннаяПодсказка" id="35"/>
+								</InputField>
+								<InputField name="КолМодуль" id="36">
+									<DataPath>ТаблицаTools.Модуль</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Модуль</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="КолМодульКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="КолМодульРасширеннаяПодсказка" id="38"/>
+								</InputField>
+								<InputField name="КолRiskLevel" id="39">
+									<DataPath>ТаблицаTools.RiskLevel</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Риск</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="КолRiskLevelКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="КолRiskLevelРасширеннаяПодсказка" id="41"/>
+								</InputField>
+								<CheckBoxField name="КолApproval" id="42">
+									<DataPath>ТаблицаTools.ТребуетApproval</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Approval</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КолApprovalКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="КолApprovalРасширеннаяПодсказка" id="44"/>
+								</CheckBoxField>
+								<InputField name="КолАргументы" id="45">
+									<DataPath>ТаблицаTools.JSONАргументы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аргументы (JSON)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="КолАргументыКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="КолАргументыРасширеннаяПодсказка" id="47"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаРезультаты" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результаты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаРезультатыРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<Table name="ТаблицаРезультатов" id="50">
+							<HeightInTableRows>10</HeightInTableRows>
+							<DataPath>ТаблицаРезультатов</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаРезультатовКонтекстноеМеню" id="51"/>
+							<AutoCommandBar name="ТаблицаРезультатовКоманднаяПанель" id="52"/>
+							<ExtendedTooltip name="ТаблицаРезультатовРасширеннаяПодсказка" id="89"/>
+							<SearchStringAddition name="ТаблицаРезультатовСтрокаПоиска" id="53">
+								<AdditionSource>
+									<Item>ТаблицаРезультатов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаРезультатовСтрокаПоискаКонтекстноеМеню" id="90"/>
+								<ExtendedTooltip name="ТаблицаРезультатовСтрокаПоискаРасширеннаяПодсказка" id="91"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаРезультатовСостояниеПросмотра" id="54">
+								<AdditionSource>
+									<Item>ТаблицаРезультатов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаРезультатовСостояниеПросмотраКонтекстноеМеню" id="92"/>
+								<ExtendedTooltip name="ТаблицаРезультатовСостояниеПросмотраРасширеннаяПодсказка" id="93"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаРезультатовУправлениеПоиском" id="55">
+								<AdditionSource>
+									<Item>ТаблицаРезультатов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаРезультатовУправлениеПоискомКонтекстноеМеню" id="94"/>
+								<ExtendedTooltip name="ТаблицаРезультатовУправлениеПоискомРасширеннаяПодсказка" id="95"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ТаблицаРезультатовПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="РезИмя" id="56">
+									<DataPath>ТаблицаРезультатов.Имя</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Tool</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РезИмяКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="РезИмяРасширеннаяПодсказка" id="58"/>
+								</InputField>
+								<InputField name="РезСтатус" id="59">
+									<DataPath>ТаблицаРезультатов.Статус</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РезСтатусКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="РезСтатусРасширеннаяПодсказка" id="61"/>
+								</InputField>
+								<InputField name="РезRiskLevel" id="62">
+									<DataPath>ТаблицаРезультатов.RiskLevel</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Риск</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РезRiskLevelКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="РезRiskLevelРасширеннаяПодсказка" id="64"/>
+								</InputField>
+								<InputField name="РезОшибка" id="65">
+									<DataPath>ТаблицаРезультатов.ТекстОшибки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ошибка</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РезОшибкаКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="РезОшибкаРасширеннаяПодсказка" id="67"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<InputField name="ПолеObservation" id="68">
+							<DataPath>ТекущийObservation</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Observation выбранной строки</v8:content>
+								</v8:item>
+							</Title>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>6</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ПолеObservationКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="ПолеObservationРасширеннаяПодсказка" id="70"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОтчёт" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчёт по ошибкам</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаОтчётРасширеннаяПодсказка" id="72"/>
+					<ChildItems>
+						<InputField name="ПолеОтчёт" id="73">
+							<DataPath>ОтчётПоОшибкам</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>20</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ПолеОтчётКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="ПолеОтчётРасширеннаяПодсказка" id="75"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="76">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ar_ТестТулов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаTools" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица tools</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Выполнять" id="78">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Имя" id="79">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Модуль" id="80">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Процедура" id="81">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="RiskLevel" id="82">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТребуетApproval" id="83">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="JSONАргументы" id="84">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="JSONManifest" id="85">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Доступен" id="96">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПричинаНедоступности" id="97">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаРезультатов" id="86">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица результатов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="87">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Статус" id="88">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Успех" id="89">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="RiskLevel" id="90">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекстОшибки" id="91">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Observation" id="92">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="JSONАргументы" id="93">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТекущийObservation" id="94">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий observation</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтчётПоОшибкам" id="95">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчёт по ошибкам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьTools" id="96">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить tools</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗаполнитьTools</Action>
+		</Command>
+		<Command name="ЗаполнитьАргументыАвто" id="97">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить аргументы авто</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗаполнитьАргументыАвто</Action>
+		</Command>
+		<Command name="ЗапуститьВыбранные" id="98">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить выбранные</v8:content>
+				</v8:item>
+			</Title>
+			<Shortcut>Enter</Shortcut>
+			<Action>ЗапуститьВыбранные</Action>
+		</Command>
+		<Command name="ЗапуститьВсе" id="99">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить все</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗапуститьВсе</Action>
+		</Command>
+		<Command name="СкопироватьОтчёт" id="100">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать отчёт</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СкопироватьОтчёт</Action>
+		</Command>
+		<Command name="ДиагностикаНавСсылки" id="101">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диагностика нав ссылки</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ДиагностикаНавСсылки</Action>
+		</Command>
+		<Command name="НастроитьМаппинг" id="102">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить маппинг</v8:content>
+				</v8:item>
+			</Title>
+			<Action>НастроитьМаппинг</Action>
+		</Command>
+	</Commands>
+</Form>

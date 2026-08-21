@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- AgentRunner logo v5: light outline robot head, matches weight of standard flat 1C icons -->
+  <!-- v4 was a heavy solid silhouette with almost no margin - looked oversized/bold next to
+       thin outline icons like "Администрирование"/"Расширение". Switched to stroke-only,
+       thin line weight, generous padding (~28% per side) to match. -->
+
+  <g fill="none" stroke="#4A4A4A" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <!-- antenna -->
+    <line x1="256" y1="150" x2="256" y2="182"/>
+    <circle cx="256" cy="132" r="18" fill="#4A4A4A" stroke="none"/>
+
+    <!-- head outline: rounded square -->
+    <rect x="166" y="182" width="180" height="164" rx="40"/>
+
+    <!-- two eyes -->
+    <circle cx="222" cy="264" r="14" fill="#4A4A4A" stroke="none"/>
+    <circle cx="290" cy="264" r="14" fill="#4A4A4A" stroke="none"/>
+  </g>
+</svg>

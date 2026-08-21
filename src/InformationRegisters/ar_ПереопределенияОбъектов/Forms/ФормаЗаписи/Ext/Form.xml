@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Переопределение объекта метаданных</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ПолеЛогическоеИмя" id="1">
+			<DataPath>Запись.ar_ЛогическоеИмя</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стабильный псевдоним объекта метаданных, используемый в коде tool-модулей (например «Контрагенты», «Номенклатура»). Список построен по уже известным логическим именам.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Stable metadata object alias used in tool-module code (e.g. "Контрагенты", "Номенклатура"). The list is built from already known logical names.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<DropListButton>true</DropListButton>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ContextMenu name="ПолеЛогическоеИмяКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПолеЛогическоеИмяРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ПолеИмяВМетаданных" id="4">
+			<DataPath>Запись.ar_ИмяВМетаданных</DataPath>
+			<ContextMenu name="ПолеИмяВМетаданныхКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПолеИмяВМетаданныхРасширеннаяПодсказка" id="6"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ar_ПереопределенияОбъектов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

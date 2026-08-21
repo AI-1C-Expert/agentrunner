@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Библиотека пресетов</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Agent Library</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаФильтров" id="1">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаФильтровРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="ФильтрПоискЭлемент" id="3">
+					<DataPath>ФильтрПоиск</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Search</v8:content>
+						</v8:item>
+					</Title>
+					<Width>30</Width>
+					<ContextMenu name="ФильтрПоискЭлементКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ФильтрПоискЭлементРасширеннаяПодсказка" id="5"/>
+					<Events>
+						<Event name="OnChange">ФильтрПоискПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ФильтрКатегорияЭлемент" id="6">
+					<DataPath>ФильтрКатегория</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Категория</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Category</v8:content>
+						</v8:item>
+					</Title>
+					<DropListButton>true</DropListButton>
+					<ContextMenu name="ФильтрКатегорияЭлементКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ФильтрКатегорияЭлементРасширеннаяПодсказка" id="8"/>
+					<Events>
+						<Event name="OnChange">ФильтрКатегорияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ФильтрТолькоЯдроЭлемент" id="9">
+					<DataPath>ФильтрТолькоЯдро</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Только ядро AgentRunner</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>AgentRunner core only</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ФильтрТолькоЯдроЭлементКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ФильтрТолькоЯдроЭлементРасширеннаяПодсказка" id="11"/>
+					<Events>
+						<Event name="OnChange">ФильтрТолькоЯдроПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="КоманднаяПанельПресетов" id="12">
+			<ExtendedTooltip name="КоманднаяПанельПресетовРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<Button name="КнопкаИмпорт" id="13">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.ИмпортироватьПресет</CommandName>
+					<ExtendedTooltip name="КнопкаИмпортРасширеннаяПодсказка" id="14"/>
+				</Button>
+				<Button name="КнопкаОткрыть" id="15">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ОткрытьКарточкуПресета</CommandName>
+					<ExtendedTooltip name="КнопкаОткрытьРасширеннаяПодсказка" id="16"/>
+				</Button>
+				<Button name="КнопкаОбновить" id="17">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ОбновитьСписок</CommandName>
+					<ExtendedTooltip name="КнопкаОбновитьРасширеннаяПодсказка" id="18"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<Table name="ТаблицаПресетовЭлемент" id="19">
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<DataPath>ТаблицаПресетов</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаПресетовЭлементКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="ТаблицаПресетовЭлементКоманднаяПанель" id="21"/>
+			<ExtendedTooltip name="ТаблицаПресетовЭлементРасширеннаяПодсказка" id="44"/>
+			<SearchStringAddition name="ТаблицаПресетовЭлементСтрокаПоиска" id="22">
+				<AdditionSource>
+					<Item>ТаблицаПресетовЭлемент</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПресетовЭлементСтрокаПоискаКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="ТаблицаПресетовЭлементСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаПресетовЭлементСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>ТаблицаПресетовЭлемент</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПресетовЭлементСостояниеПросмотраКонтекстноеМеню" id="47"/>
+				<ExtendedTooltip name="ТаблицаПресетовЭлементСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаПресетовЭлементУправлениеПоиском" id="24">
+				<AdditionSource>
+					<Item>ТаблицаПресетовЭлемент</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПресетовЭлементУправлениеПоискомКонтекстноеМеню" id="49"/>
+				<ExtendedTooltip name="ТаблицаПресетовЭлементУправлениеПоискомРасширеннаяПодсказка" id="50"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">ТаблицаПресетовЭлементПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ТаблицаПресетовЭлементИмя" id="25">
+					<DataPath>ТаблицаПресетов.Имя</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Name</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТаблицаПресетовЭлементИмяКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ТаблицаПресетовЭлементИмяРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="ТаблицаПресетовЭлементКатегория" id="28">
+					<DataPath>ТаблицаПресетов.Категория</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Категория</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Category</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТаблицаПресетовЭлементКатегорияКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ТаблицаПресетовЭлементКатегорияРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="ТаблицаПресетовЭлементАвтор" id="31">
+					<DataPath>ТаблицаПресетов.Автор</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Author</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТаблицаПресетовЭлементАвторКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ТаблицаПресетовЭлементАвторРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="ТаблицаПресетовЭлементВерсия" id="34">
+					<DataPath>ТаблицаПресетов.Версия</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Version</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТаблицаПресетовЭлементВерсияКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТаблицаПресетовЭлементВерсияРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="ТаблицаПресетовЭлементИсточникРасширение" id="37">
+					<DataPath>ТаблицаПресетов.ИсточникРасширение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Source</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТаблицаПресетовЭлементИсточникРасширениеКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ТаблицаПресетовЭлементИсточникРасширениеРасширеннаяПодсказка" id="39"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<LabelDecoration name="ДекорацияПусто" id="40">
+			<Visible>false</Visible>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пресеты не найдены. Добавьте пресеты в справочник или измените условия фильтра.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>No presets found. Add presets to the catalog or change the filter.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияПустоКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ДекорацияПустоРасширеннаяПодсказка" id="42"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаПресетов" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица пресетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="44">
+					<Type>
+						<v8:Type>cfg:CatalogRef.ar_Пресеты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Имя" id="45">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Категория" id="46">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Автор" id="47">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Версия" id="48">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИконкаИмя" id="49">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникРасширение" id="50">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОписаниеJSON" id="51">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаПресетовПолная" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица пресетов полная</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="53">
+					<Type>
+						<v8:Type>cfg:CatalogRef.ar_Пресеты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Имя" id="54">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Категория" id="55">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Автор" id="56">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Версия" id="57">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИконкаИмя" id="58">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникРасширение" id="59">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОписаниеJSON" id="60">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ФильтрПоиск" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр поиск</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФильтрКатегория" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр категория</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФильтрТолькоЯдро" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр только ядро</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИмпортироватьПресет" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импортировать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Import</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ИмпортироватьПресет</Action>
+		</Command>
+		<Command name="ОткрытьКарточкуПресета" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть карточку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Open card</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьКарточкуПресета</Action>
+		</Command>
+		<Command name="ОбновитьСписок" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Refresh</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОбновитьСписок</Action>
+		</Command>
+	</Commands>
+</Form>

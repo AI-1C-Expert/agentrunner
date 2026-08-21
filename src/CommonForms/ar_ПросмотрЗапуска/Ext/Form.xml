@@ -1,0 +1,1032 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Просмотр запуска</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Run Viewer</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияНеНайдено" id="1">
+			<Visible>false</Visible>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запуск не найден</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Run not found</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияНеНайденоКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДекорацияНеНайденоРасширеннаяПодсказка" id="3"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаМастерДеталь" id="4">
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаМастерДетальРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапка" id="6">
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="7"/>
+					<ChildItems>
+						<InputField name="ШапкаСтатус" id="8">
+							<DataPath>ШапкаСтатус</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Статус</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Status</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ШапкаСтатусКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ШапкаСтатусРасширеннаяПодсказка" id="10"/>
+						</InputField>
+						<InputField name="ШапкаАгент" id="11">
+							<DataPath>ШапкаАгент</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Агент</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Agent</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ШапкаАгентКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ШапкаАгентРасширеннаяПодсказка" id="13"/>
+						</InputField>
+						<InputField name="ШапкаТриггер" id="14">
+							<DataPath>ШапкаТриггер</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Триггер</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Trigger</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ШапкаТриггерКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ШапкаТриггерРасширеннаяПодсказка" id="16"/>
+						</InputField>
+						<InputField name="ШапкаПользователь" id="17">
+							<DataPath>ШапкаПользователь</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>User</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ШапкаПользовательКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="ШапкаПользовательРасширеннаяПодсказка" id="19"/>
+						</InputField>
+						<InputField name="ШапкаТокены" id="20">
+							<DataPath>ШапкаТокены</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Токены вх/вых</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Tokens in/out</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ШапкаТокеныКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ШапкаТокеныРасширеннаяПодсказка" id="22"/>
+						</InputField>
+						<InputField name="ШапкаСтоимость" id="23">
+							<DataPath>ШапкаСтоимость</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Стоимость, руб.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Cost, rub.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ШапкаСтоимостьКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ШапкаСтоимостьРасширеннаяПодсказка" id="25"/>
+						</InputField>
+						<InputField name="ШапкаШагов" id="26">
+							<DataPath>ШапкаШагов</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шагов всего</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Steps total</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ШапкаШаговКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ШапкаШаговРасширеннаяПодсказка" id="28"/>
+						</InputField>
+						<InputField name="ШапкаДлительность" id="29">
+							<DataPath>ШапкаДлительность</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Длительность</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Duration</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ШапкаДлительностьКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ШапкаДлительностьРасширеннаяПодсказка" id="31"/>
+						</InputField>
+						<LabelDecoration name="ДекорацияHeartbeat" id="32">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация heartbeat</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияHeartbeatКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ДекорацияHeartbeatРасширеннаяПодсказка" id="34"/>
+						</LabelDecoration>
+						<LabelDecoration name="ДекорацияЕстьСнимок" id="35">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация есть снимок</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияЕстьСнимокКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ДекорацияЕстьСнимокРасширеннаяПодсказка" id="37"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКнопкиШапки" id="38">
+					<Group>Horizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКнопкиШапкиРасширеннаяПодсказка" id="39"/>
+					<ChildItems>
+						<Button name="КнопкаПоказатьPrompt" id="40">
+							<Type>UsualButton</Type>
+							<Visible>false</Visible>
+							<CommandName>Form.Command.ar_ПоказатьPrompt</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показать Prompt</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Show Prompt</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаПоказатьPromptРасширеннаяПодсказка" id="41"/>
+						</Button>
+						<Button name="КнопкаВозобновить" id="42">
+							<Type>UsualButton</Type>
+							<Visible>false</Visible>
+							<CommandName>Form.Command.ar_Возобновить</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Возобновить</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Resume</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаВозобновитьРасширеннаяПодсказка" id="43"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаТелоФормы" id="44">
+					<Group>Horizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаТелоФормыРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<Table name="ДеревоШагов" id="46">
+							<CommandBarLocation>None</CommandBarLocation>
+							<DataPath>ДеревоШагов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шаги</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Steps</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДеревоШаговКонтекстноеМеню" id="47"/>
+							<AutoCommandBar name="ДеревоШаговКоманднаяПанель" id="48"/>
+							<ExtendedTooltip name="ДеревоШаговРасширеннаяПодсказка" id="104"/>
+							<SearchStringAddition name="ДеревоШаговСтрокаПоиска" id="49">
+								<AdditionSource>
+									<Item>ДеревоШагов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоШаговСтрокаПоискаКонтекстноеМеню" id="105"/>
+								<ExtendedTooltip name="ДеревоШаговСтрокаПоискаРасширеннаяПодсказка" id="106"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоШаговСостояниеПросмотра" id="50">
+								<AdditionSource>
+									<Item>ДеревоШагов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоШаговСостояниеПросмотраКонтекстноеМеню" id="107"/>
+								<ExtendedTooltip name="ДеревоШаговСостояниеПросмотраРасширеннаяПодсказка" id="108"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоШаговУправлениеПоиском" id="51">
+								<AdditionSource>
+									<Item>ДеревоШагов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоШаговУправлениеПоискомКонтекстноеМеню" id="109"/>
+								<ExtendedTooltip name="ДеревоШаговУправлениеПоискомРасширеннаяПодсказка" id="110"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ДеревоШаговПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ДеревоШаговПредставление" id="52">
+									<DataPath>ДеревоШагов.Представление</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шаг</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Step</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДеревоШаговПредставлениеКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ДеревоШаговПредставлениеРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="ДеревоШаговВремя" id="55">
+									<DataPath>ДеревоШагов.Время</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Время</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Time</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДеревоШаговВремяКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ДеревоШаговВремяРасширеннаяПодсказка" id="57"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Pages name="ГруппаДетали" id="58">
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ГруппаДеталиРасширеннаяПодсказка" id="59"/>
+							<ChildItems>
+								<Page name="СтраницаДеталиПусто" id="60">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пусто</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Empty</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СтраницаДеталиПустоРасширеннаяПодсказка" id="61"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияВыберитеШаг" id="62">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выберите шаг в дереве слева</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Select a step in the tree on the left</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияВыберитеШагКонтекстноеМеню" id="63"/>
+											<ExtendedTooltip name="ДекорацияВыберитеШагРасширеннаяПодсказка" id="64"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаДеталиЗапуск" id="65">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Запуск</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Run</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СтраницаДеталиЗапускРасширеннаяПодсказка" id="66"/>
+									<ChildItems>
+										<InputField name="ДетальЗапускRunId" id="67">
+											<DataPath>ДетальЗапускRunId</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Run ID</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДетальЗапускRunIdКонтекстноеМеню" id="68"/>
+											<ExtendedTooltip name="ДетальЗапускRunIdРасширеннаяПодсказка" id="69"/>
+										</InputField>
+										<InputField name="ДетальЗапускРодитель" id="70">
+											<DataPath>ДетальЗапускРодитель</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Родительский Run ID</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Parent Run ID</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДетальЗапускРодительКонтекстноеМеню" id="71"/>
+											<ExtendedTooltip name="ДетальЗапускРодительРасширеннаяПодсказка" id="72"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаДеталиСобытие" id="73">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Событие</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Event</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СтраницаДеталиСобытиеРасширеннаяПодсказка" id="74"/>
+									<ChildItems>
+										<InputField name="ДетальСобытиеТип" id="75">
+											<DataPath>ДетальСобытиеТип</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип события</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Event type</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДетальСобытиеТипКонтекстноеМеню" id="76"/>
+											<ExtendedTooltip name="ДетальСобытиеТипРасширеннаяПодсказка" id="77"/>
+										</InputField>
+										<InputField name="ДетальСобытиеВремя" id="78">
+											<DataPath>ДетальСобытиеВремя</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Время</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Time</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДетальСобытиеВремяКонтекстноеМеню" id="79"/>
+											<ExtendedTooltip name="ДетальСобытиеВремяРасширеннаяПодсказка" id="80"/>
+										</InputField>
+										<InputField name="ДетальСобытиеPayload" id="81">
+											<DataPath>ДетальСобытиеPayload</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Payload</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>10</Height>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="ДетальСобытиеPayloadКонтекстноеМеню" id="82"/>
+											<ExtendedTooltip name="ДетальСобытиеPayloadРасширеннаяПодсказка" id="83"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаДеталиToolCall" id="84">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Tool Call</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Tool Call</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СтраницаДеталиToolCallРасширеннаяПодсказка" id="85"/>
+									<ChildItems>
+										<InputField name="ДетальToolИмя" id="86">
+											<DataPath>ДетальToolИмя</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Tool</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Tool</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДетальToolИмяКонтекстноеМеню" id="87"/>
+											<ExtendedTooltip name="ДетальToolИмяРасширеннаяПодсказка" id="88"/>
+										</InputField>
+										<InputField name="ДетальToolRiskLevel" id="89">
+											<DataPath>ДетальToolRiskLevel</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Уровень риска</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Risk level</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДетальToolRiskLevelКонтекстноеМеню" id="90"/>
+											<ExtendedTooltip name="ДетальToolRiskLevelРасширеннаяПодсказка" id="91"/>
+										</InputField>
+										<InputField name="ДетальToolАргументы" id="92">
+											<DataPath>ДетальToolАргументы</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Аргументы</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Arguments</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>6</Height>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="ДетальToolАргументыКонтекстноеМеню" id="93"/>
+											<ExtendedTooltip name="ДетальToolАргументыРасширеннаяПодсказка" id="94"/>
+										</InputField>
+										<InputField name="ДетальToolResultRef" id="95">
+											<DataPath>ДетальToolResultRef</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Результат</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Result</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДетальToolResultRefКонтекстноеМеню" id="96"/>
+											<ExtendedTooltip name="ДетальToolResultRefРасширеннаяПодсказка" id="97"/>
+										</InputField>
+										<InputField name="ДетальToolApprovedBy" id="98">
+											<DataPath>ДетальToolApprovedBy</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подтвердил</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Approved by</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДетальToolApprovedByКонтекстноеМеню" id="99"/>
+											<ExtendedTooltip name="ДетальToolApprovedByРасширеннаяПодсказка" id="100"/>
+										</InputField>
+										<InputField name="ДетальToolApprovedAt" id="101">
+											<DataPath>ДетальToolApprovedAt</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подтверждено</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Approved at</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДетальToolApprovedAtКонтекстноеМеню" id="102"/>
+											<ExtendedTooltip name="ДетальToolApprovedAtРасширеннаяПодсказка" id="103"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="RunId" id="104">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Run id</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШапкаСтатус" id="105">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШапкаАгент" id="106">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка агент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШапкаТриггер" id="107">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка триггер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШапкаПользователь" id="108">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШапкаТокены" id="109">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка токены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШапкаСтоимость" id="110">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка стоимость</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШапкаШагов" id="111">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка шагов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШапкаДлительность" id="112">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка длительность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШапкаLastHeartbeat" id="113">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка last heartbeat</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШапкаHeartbeatАктивен" id="114">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка heartbeat активен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗначениеПрочерк" id="115">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение прочерк</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоШагов" id="116">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево шагов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Представление" id="117">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Тип" id="118">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Время" id="119">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Sequence" id="120">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="RiskLevel" id="121">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипСобытияИмя" id="122">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДетальЗапускRunId" id="123">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деталь запуск run id</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДетальЗапускРодитель" id="124">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деталь запуск родитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДетальСобытиеТип" id="125">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деталь событие тип</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДетальСобытиеВремя" id="126">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деталь событие время</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДетальСобытиеPayload" id="127">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деталь событие payload</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДетальToolИмя" id="128">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деталь tool имя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДетальToolRiskLevel" id="129">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деталь tool risk level</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДетальToolАргументы" id="130">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деталь tool аргументы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДетальToolResultRef" id="131">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деталь tool result ref</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДетальToolApprovedBy" id="132">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деталь tool approved by</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДетальToolApprovedAt" id="133">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деталь tool approved at</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ar_ПоказатьPrompt" id="134">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать Prompt</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show Prompt</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_ПоказатьPrompt</Action>
+		</Command>
+		<Command name="ar_Возобновить" id="135">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возобновить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Resume</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_Возобновить</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="RunId">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Ключ">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

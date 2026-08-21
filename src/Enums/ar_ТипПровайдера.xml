@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="fa669b49-1da6-400d-96cc-485145337fb4">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ar_ТипПровайдера" category="Ref">
+				<xr:TypeId>62d2c1e3-82b9-4e68-b59c-c7e582aa8684</xr:TypeId>
+				<xr:ValueId>e0801894-4eb3-492b-8796-6b9592f87dcb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ar_ТипПровайдера" category="Manager">
+				<xr:TypeId>10fed612-63ef-4ad5-a61d-c71804030c79</xr:TypeId>
+				<xr:ValueId>a1cde2e6-2d7a-4daf-bbcd-ff4d87d13894</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ar_ТипПровайдера" category="List">
+				<xr:TypeId>1434336a-f630-46d0-984a-ac7048526da3</xr:TypeId>
+				<xr:ValueId>089fefd9-fc5a-41d9-a0b6-2b5d445cb749</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ar_ТипПровайдера</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип провайдера LLM</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>LLM Provider Type</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Тип LLM-провайдера. Используется справочником ar_LLMПровайдеры и диспетчером aosLLMДиспетчер для выбора модуля провайдера.</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="4ede6116-d1d7-430d-bc12-3a556e799e6c">
+				<Properties>
+					<Name>OpenAI</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>OpenAI</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>OpenAI</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>OpenAI API (chat/completions). Нативный формат tool_calls. Поддерживается с этапа 0 (LLM-01).</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4273570e-ca4d-4e8f-9c96-bee9e8f884a7">
+				<Properties>
+					<Name>Anthropic</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Anthropic</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Anthropic</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Anthropic API (claude-*). system — отдельное поле, tool use/result — content blocks. Реализуется в этапе 2 (LLM-10).</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4bde0e67-6f02-4983-8ad3-b35ed6c47e3b">
+				<Properties>
+					<Name>YandexGPT</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>YandexGPT</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>YandexGPT</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Яндекс API (yandexgpt-*). messages:[{role,text}], functions отдельным массивом. Реализуется в этапе 1 (LLM-04).</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d0cf09f7-f60b-46d7-ae02-c1d07f3d262f">
+				<Properties>
+					<Name>GigaChat</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>GigaChat</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>GigaChat</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Сбер GigaChat. OpenAI-подобный формат + OAuth2 client_credentials с обновлением токена по expires_at. Реализуется в этапе 1 (LLM-05).</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dbc4f923-eb60-4d6a-99a1-e5127eb50e0a">
+				<Properties>
+					<Name>LocalCompatible</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>LocalCompatible (OpenAI API)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>LocalCompatible</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>OpenAI-совместимый локальный LLM. При ПоддерживаетToolCalls=Ложь — fallback на парсинг тегов &lt;tool_call&gt;. Реализуется в этапе 2 (LLM-11).</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a1b2c3d4-0000-0000-0000-000000000003">
+				<Properties>
+					<Name>Mock</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тест (Mock)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Test Mock</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="03b991bc-4432-4766-aa90-6d9fe5c805c6">
+				<Properties>
+					<Name>AgentRunnerCloud</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>AgentRunner Cloud</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>AgentRunner Cloud</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Собственный облачный LLM-шлюз agentrunner.ru (прокси, скрывает CLOUDRU и др.). POST &lt;BaseURL&gt;/api/proxy, кастомный JSON-протокол (НЕ OpenAI Chat Completions). Плоская схема ответа: content/usage.input_tokens/usage.output_tokens, без choices[]. tool_calls протоколом не поддерживаются. См. LLM-12.</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

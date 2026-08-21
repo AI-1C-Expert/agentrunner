@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Обработчики Hooks</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Hook Handlers</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="КнопкаПереключитьВключен" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ar_ПереключитьВключен</CommandName>
+				<ExtendedTooltip name="КнопкаПереключитьВключенРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОтбор" id="3">
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<InputField name="СписокСобытиеФильтр" id="5">
+					<DataPath>СписокСобытиеФильтр</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Событие</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Event</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокСобытиеФильтрКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="СписокСобытиеФильтрРасширеннаяПодсказка" id="7"/>
+					<Events>
+						<Event name="OnChange">СписокСобытиеФильтрПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Список" id="8">
+			<CommandBarLocation>None</CommandBarLocation>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="9"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="10">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="35"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="12">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="38"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="40"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="41"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="СписокDescription" id="14">
+					<DataPath>Список.Description</DataPath>
+					<ContextMenu name="СписокDescriptionКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокDescriptionРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="СписокСобытие" id="17">
+					<DataPath>Список.ar_Событие</DataPath>
+					<ContextMenu name="СписокСобытиеКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокСобытиеРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="СписокОбщийМодуль" id="20">
+					<DataPath>Список.ar_ОбщийМодуль</DataPath>
+					<ContextMenu name="СписокОбщийМодульКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокОбщийМодульРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="СписокИмяПроцедуры" id="23">
+					<DataPath>Список.ar_ИмяПроцедуры</DataPath>
+					<ContextMenu name="СписокИмяПроцедурыКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокИмяПроцедурыРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="СписокПриоритет" id="26">
+					<DataPath>Список.ar_Приоритет</DataPath>
+					<ContextMenu name="СписокПриоритетКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СписокПриоритетРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<CheckBoxField name="СписокВключен" id="29">
+					<DataPath>Список.ar_Включён</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокВключенКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СписокВключенРасширеннаяПодсказка" id="31"/>
+				</CheckBoxField>
+				<InputField name="СписокИсточникРасширение" id="32">
+					<DataPath>Список.ar_ИсточникРасширение</DataPath>
+					<ContextMenu name="СписокИсточникРасширениеКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СписокИсточникРасширениеРасширеннаяПодсказка" id="34"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="35">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.ar_Hooks</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокСобытиеФильтр" id="36">
+			<Type>
+				<v8:Type>cfg:EnumRef.ar_СобытиеHook</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ar_ПереключитьВключен" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/Выключить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enable/Disable</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инвертировать флаг Включён у выбранного обработчика</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Toggle the Enabled flag of the selected handler</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ar_ПереключитьВключен</Action>
+		</Command>
+	</Commands>
+</Form>

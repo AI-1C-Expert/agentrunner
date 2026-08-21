@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Инструменты агента</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Agent Tools</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="КнопкаПросмотрМанифеста" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ar_ПросмотрМанифеста</CommandName>
+				<ExtendedTooltip name="КнопкаПросмотрМанифестаРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="КнопкаОбновитьМанифесты" id="37">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ar_ОбновитьМанифесты</CommandName>
+				<ExtendedTooltip name="КнопкаОбновитьМанифестыРасширеннаяПодсказка" id="38"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="3">
+			<CommandBarLocation>None</CommandBarLocation>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="30"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="6">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="31"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="32"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="8">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="35"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="36"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="Description" id="9">
+					<DataPath>Список.Description</DataPath>
+					<ContextMenu name="DescriptionКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="DescriptionРасширеннаяПодсказка" id="11"/>
+				</InputField>
+				<InputField name="ar_Описание" id="12">
+					<DataPath>Список.ar_Описание</DataPath>
+					<ContextMenu name="ar_ОписаниеКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ar_ОписаниеРасширеннаяПодсказка" id="14"/>
+				</InputField>
+				<InputField name="ar_RiskLevel" id="15">
+					<DataPath>Список.ar_RiskLevel</DataPath>
+					<ContextMenu name="ar_RiskLevelКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ar_RiskLevelРасширеннаяПодсказка" id="17"/>
+				</InputField>
+				<CheckBoxField name="ar_Включён" id="18">
+					<DataPath>Список.ar_Включён</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ar_ВключёнКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ar_ВключёнРасширеннаяПодсказка" id="20"/>
+				</CheckBoxField>
+				<CheckBoxField name="ar_ТребуетApproval" id="21">
+					<DataPath>Список.ar_ТребуетApproval</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ar_ТребуетApprovalКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ar_ТребуетApprovalРасширеннаяПодсказка" id="23"/>
+				</CheckBoxField>
+				<InputField name="ar_Версия" id="24">
+					<DataPath>Список.ar_Версия</DataPath>
+					<ContextMenu name="ar_ВерсияКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ar_ВерсияРасширеннаяПодсказка" id="26"/>
+				</InputField>
+				<InputField name="ar_ИсточникРасширение" id="27">
+					<DataPath>Список.ar_ИсточникРасширение</DataPath>
+					<ContextMenu name="ar_ИсточникРасширениеКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ar_ИсточникРасширениеРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<CheckBoxField name="ar_Доступен" id="43">
+					<DataPath>Список.ar_Доступен</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ar_ДоступенКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ar_ДоступенРасширеннаяПодсказка" id="45"/>
+				</CheckBoxField>
+				<InputField name="ar_ПричинаНедоступности" id="46">
+					<DataPath>Список.ar_ПричинаНедоступности</DataPath>
+					<ContextMenu name="ar_ПричинаНедоступностиКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ar_ПричинаНедоступностиРасширеннаяПодсказка" id="48"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="30">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.ar_Tools</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ar_ПросмотрМанифеста" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр манифеста</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>View manifest</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать JSON-манифест выбранного tool в читаемом виде</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show the selected tool's JSON manifest in a readable form</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ar_ПросмотрМанифеста</Action>
+		</Command>
+		<Command name="ar_ОбновитьМанифесты" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить манифесты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Refresh manifests</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перерегистрировать все ядровые tools: создать недостающие записи, обновить манифесты существующих до актуального контракта и пересчитать доступность (ar_Доступен) по факту наличия требуемых объектов метаданных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Re-register all core tools: create missing records, refresh manifests of existing ones to the current contract, and recalculate availability (ar_Доступен) based on required metadata objects presence</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ar_ОбновитьМанифесты</Action>
+		</Command>
+	</Commands>
+</Form>

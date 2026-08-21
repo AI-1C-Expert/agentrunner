@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="3c7bf47b-fb43-4b0a-9c08-f3bada17da6c">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ar_СтатусЗапуска" category="Ref">
+				<xr:TypeId>affaec61-61be-440d-86d9-1c2540bd1f4c</xr:TypeId>
+				<xr:ValueId>9d12cb89-cf0f-4ad9-8cbf-d31bc7b1b81c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ar_СтатусЗапуска" category="Manager">
+				<xr:TypeId>800088d2-ffa9-4609-8d79-617235a109ae</xr:TypeId>
+				<xr:ValueId>8565df19-0c73-4790-98b0-8c9d2c14c17e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ar_СтатусЗапуска" category="List">
+				<xr:TypeId>891f4a49-bc3f-4d42-9405-67df78152b71</xr:TypeId>
+				<xr:ValueId>f17ebb50-16ea-421c-b056-9b63023433d2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ar_СтатусЗапуска</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус запуска</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Run Status</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Жизненный цикл запуска агента: created -&gt; running -&gt; paused/completed/failed/...</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="08ae2afd-1ca5-4b5f-9546-c565514d371d">
+				<Properties>
+					<Name>Created</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создан</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Created</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Запись создана, фоновое задание ещё не стартовало</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cc658f82-1663-4197-a94b-c3fc97015c00">
+				<Properties>
+					<Name>Running</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполняется</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Running</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Фоновое задание активно, loop работает</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dbf24def-05da-4ee4-91cf-94f7762a069d">
+				<Properties>
+					<Name>PausedForApproval</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидает подтверждения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Paused for approval</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Loop приостановлен, ждёт решения оператора в очереди подтверждений</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4d0640cd-3a17-4ceb-a03a-60fa112f5780">
+				<Properties>
+					<Name>PausedForInput</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидание ввода</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Paused for input</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Loop приостановлен, агент ожидает ответа оператора на вопрос ask_user</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9b66c6d2-6895-4141-8ad9-73e7eec26afc">
+				<Properties>
+					<Name>Completed</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Завершён</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Completed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Финальный статус: агент выполнил задачу без ошибок</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="af6bfcf2-ad79-46fb-a2f0-6bfb75bc63f1">
+				<Properties>
+					<Name>Failed</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Завершён с ошибкой</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Failed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Финальный статус: необработанное исключение или сбой LLM</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="966aa876-e378-4c47-b1f1-54602bc2fc4b">
+				<Properties>
+					<Name>Cancelled</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отменён</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Cancelled</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Финальный статус: отменён пользователем вручную</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fe6c7f07-5130-4180-a836-ef1d6c4168f1">
+				<Properties>
+					<Name>MaxStepsReached</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Достигнут лимит шагов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Max steps reached</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Финальный статус: превышен МаксШагов агента</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7adc1828-60b7-435b-83f4-cd0527257efa">
+				<Properties>
+					<Name>DeniedGlobally</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отклонён (нет прав)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Denied globally</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Финальный статус: пользователь не входит в роль агента</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="70d27783-3a88-472b-a62d-b40f6ca8ea38">
+				<Properties>
+					<Name>Interrupted</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прерван</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Interrupted</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Финальный статус: heartbeat пропал дольше порога, сервер упал</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1453b0c1-e705-4bc0-b447-9711c9617af8">
+				<Properties>
+					<Name>FailedIncompatibleState</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка совместимости состояния</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Failed: incompatible state</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Финальный статус: StateSnapshot несовместим с текущей версией ядра</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

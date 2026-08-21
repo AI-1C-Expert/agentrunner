@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="06d0bc2a-85f6-4b14-9d74-8eb91f20407c">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ar_ТипСобытия" category="Ref">
+				<xr:TypeId>f3208210-1ed5-4649-9a3f-93a71a42f8dd</xr:TypeId>
+				<xr:ValueId>c87fb97f-f745-4c76-a58e-93291e92eb35</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ar_ТипСобытия" category="Manager">
+				<xr:TypeId>bcaed909-14cf-4f0b-83ba-fb7fcd6650ae</xr:TypeId>
+				<xr:ValueId>0ac68203-b510-4710-8506-fc07378d1166</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ar_ТипСобытия" category="List">
+				<xr:TypeId>879f5e72-57a1-494d-90c8-116ea270dc87</xr:TypeId>
+				<xr:ValueId>9d124753-af96-4fdc-b6ff-2ea33bbd8d47</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ar_ТипСобытия</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип события запуска</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Run Event Type</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Тип записи в ar_СобытияЗапуска. Используется aosAuditСобытия.Зафиксировать и Run Viewer для классификации шагов цикла агента.</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="8528f221-f5de-4ed8-9397-071f8721e4d5">
+				<Properties>
+					<Name>Started</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запуск начат</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Run started</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Фиксируется при старте loop. Payload: {agent_id, trigger, user_id}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="01a7ebca-0258-471c-809f-2d767cb81fc2">
+				<Properties>
+					<Name>ContextBuilt</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контекст собран</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Context built</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>После aosRuntimeКонтекст.ПостроитьКонтекст. Payload: {tokens_estimate, layers}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2951080b-fae5-4ef8-be92-1ff5739fb3d9">
+				<Properties>
+					<Name>LLMCalled</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вызов LLM</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>LLM called</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>После получения ответа от провайдера. Payload: {model, prompt_tokens, completion_tokens, latency_ms}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="21cf3e81-8b51-4834-a4fe-aa6a83cc6237">
+				<Properties>
+					<Name>ToolCalled</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вызов инструмента</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Tool called</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>После выполнения tool. Payload: {tool_name, arguments_json, observation, risk_level}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="478ca30d-1753-48dc-b5e7-05903321e4f8">
+				<Properties>
+					<Name>PermissionCheck</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверка разрешений</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Permission check</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Результат aosPermissionEngine.РазрешитьДействие. Payload: {action, result, reason}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="238a230b-f299-412c-92c7-4c77d1fb5e0b">
+				<Properties>
+					<Name>ApprovalRequested</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрошено подтверждение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Approval requested</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Action попал в очередь ar_ОчередьApproval. Payload: {approval_id, tool_name, risk_level, justification}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d6a302e4-9a47-4a63-86d5-95e95e2b7ffa">
+				<Properties>
+					<Name>Approved</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подтверждено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Approved</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Оператор принял действие в очереди подтверждений. Payload: {approval_id, user_id}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b3f4c9d2-7a18-4e6c-9b25-1c8e3f0a5d47">
+				<Properties>
+					<Name>Rejected</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отклонено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Rejected</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Оператор отклонил действие в очереди подтверждений. Payload: {approval_id, user_id, reason}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2ba7d0bf-8124-486a-8edd-9fb90cf83be1">
+				<Properties>
+					<Name>Denied</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказано</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Denied</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Permission engine вернул deny. Payload: {action, reason}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="15e67dc3-517a-4898-8cf4-9c4266f393e5">
+				<Properties>
+					<Name>Paused</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приостановлен</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Paused</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Loop приостановлен перед approval; StateSnapshot сохранён. Payload: {approval_id}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5163c7f4-231c-4628-bbef-5a0450b5e3df">
+				<Properties>
+					<Name>Resumed</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возобновлён</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Resumed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Loop возобновлён после approve через регламентное ar_ВозобновлениеПослеApproval. Payload: {approval_id}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e4df034f-2443-4c1a-b25c-15fbf152b966">
+				<Properties>
+					<Name>Completed</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Завершён успешно</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Completed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Финальный: LLM вернул stop без pending tool calls. Payload: {steps_total, tokens_total}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="af690baf-9fc0-4399-86a2-f172fe77a820">
+				<Properties>
+					<Name>Failed</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Завершён с ошибкой</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Failed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Финальный: необработанное исключение в loop или сбой LLM. Payload: {error_text} (очищен через aosУтилиты.ОчиститьОшибкуДляLLM).</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cd958f14-aa8a-461f-93e9-fe91321b3ec0">
+				<Properties>
+					<Name>MaxStepsReached</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Достигнут лимит шагов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Max steps reached</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Финальный: счётчик шагов превысил МаксШагов агента. Payload: {steps_done, max_steps}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d262a1b0-c095-4536-ae68-c5bc8cf21797">
+				<Properties>
+					<Name>HookFailed</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка хука</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Hook failed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Hook-обработчик выбросил исключение. Ошибка изолирована — run продолжается. Payload: {hook_name, error_text}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4a5b87ec-7ed4-427d-adc8-ab237f15eba3">
+				<Properties>
+					<Name>SecretRotated</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Секрет ротирован</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Secret rotated</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Ротация API-ключа или токена агента. Payload: {secret_kind} без значения ключа.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c4f1db75-5bca-4fc0-94bb-d8717a5f5396">
+				<Properties>
+					<Name>AuditPurged</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Audit очищен</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Audit purged</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Регламентная очистка ar_СобытияЗапуска завершена. Payload: {deleted_count, older_than_days}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="239afd97-63d0-4616-b5d7-2cec7ec1613d">
+				<Properties>
+					<Name>Expired</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подтверждение истекло</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Approval expired</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Pending-запись очереди approval истекла по TTL. Payload: {approval_id, ttl_hours}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="61e79d64-bfbc-4e8a-b2ab-edce4632e0c8">
+				<Properties>
+					<Name>RunInterruptedBySweeper</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запуск прерван sweeper-ом</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Run interrupted by sweeper</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Зависший запуск помечен Interrupted регламентным заданием ar_ОчисткаЗависших (SCHED-04). Payload: {reason, threshold_sec}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9627fa8b-48d3-4e87-9469-88f5317c4abe">
+				<Properties>
+					<Name>MemoryProposed</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предложено обновление памяти</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Memory update proposed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Фиксируется при постановке proposal-записи в ar_ОчередьApproval регламентным заданием SCHED-09. Payload: {agents_processed, proposals_count, period_start}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3f2e1a0b-c4d5-4e6f-a7b8-c9d0e1f2a3b4">
+				<Properties>
+					<Name>WebhookTriggerAccepted</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Webhook-триггер принят</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Webhook trigger accepted</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Агент запущен через HTTP POST /v1/agents/{id}/trigger (HTTPS-01). Payload: {agent_id, run_id, trigger, dry_run}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b7c1d2e3-4f5a-4b6c-8d9e-0a1b2c3d4e5f">
+				<Properties>
+					<Name>ActionExecuted</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действие исполнено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Action executed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Approved-действие фактически исполнено (объект записан). Payload: {approval_id, tool_name, document_ref}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c8d2e3f4-5a6b-4c7d-9e0f-1a2b3c4d5e6f">
+				<Properties>
+					<Name>ActionExecutionFailed</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действие не исполнено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Action execution failed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Approved-действие не исполнено: объект не записан. Payload: {approval_id, tool_name, reason}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="41f61f7e-6068-4238-b540-b98148fb2fdc">
+				<Properties>
+					<Name>PiiRuleChanged</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПДн: правило маскирования изменено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>PII: masking rule changed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Изменение/выключение/удаление правила в ar_ПравилаМаскированияПДн (PII-06). Payload: {action, object, field_name, masking_method, enabled, changed_by} без значения защищаемого поля.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fff1ed84-4806-4739-ac39-cecac257ef3d">
+				<Properties>
+					<Name>ToolCodeChanged</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код тула изменён</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Tool code changed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Изменение ar_КодРеализации у tool в режиме «Код» (создание/редактирование), зафиксированное в Catalogs.ar_Tools.ObjectModule.ПередЗаписью (SEC-TOOL-01). Payload: {tool, actor, code_hash, has_code} — код НЕ пишется в payload, только SHA-256 хеш.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="17bef70e-eac4-4a5a-bcc2-77db0b99c080">
+				<Properties>
+					<Name>ToolCodePolicyChanged</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Политика Код-режима tools изменена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Tool Code-mode policy changed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Включение/выключение константы ar_РазрешитьТулыВРежимеКод через форму ar_Настройки (SEC-TOOL-01). Отдельно от ToolCodeChanged — это изменение политики диспетчеризации code-тулов, а не конкретного tool. Payload: {old_value, new_value, actor}.</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

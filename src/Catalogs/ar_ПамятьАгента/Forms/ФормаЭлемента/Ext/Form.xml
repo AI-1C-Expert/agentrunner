@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Запись памяти</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Memory record</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ПолеАгент" id="1">
+			<DataPath>Объект.ar_Агент</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агент</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Agent</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПолеАгентКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПолеАгентРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ПолеТип" id="4">
+			<DataPath>Объект.ar_Тип</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Type</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>fact / preference / rule / note</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>fact / preference / rule / note</v8:content>
+				</v8:item>
+			</ToolTip>
+			<DropListButton>true</DropListButton>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ContextMenu name="ПолеТипКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПолеТипРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ПолеТекст" id="7">
+			<DataPath>Объект.ar_Текст</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Text</v8:content>
+				</v8:item>
+			</Title>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>8</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<MultiLine>true</MultiLine>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="ПолеТекстКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПолеТекстРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ПолеКлючевыеСлова" id="10">
+			<DataPath>Объект.ar_КлючевыеСлова</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключевые слова</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Keywords</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПолеКлючевыеСловаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПолеКлючевыеСловаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ПолеИсточник" id="13">
+			<DataPath>Объект.ar_Источник</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Source</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПолеИсточникКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПолеИсточникРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<UsualGroup name="ГруппаДаты" id="16">
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДатыРасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<InputField name="ПолеСоздано" id="18">
+					<DataPath>Объект.ar_Создано</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создано</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Created</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПолеСозданоКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ПолеСозданоРасширеннаяПодсказка" id="20"/>
+				</InputField>
+				<InputField name="ПолеОбновлено" id="21">
+					<DataPath>Объект.ar_Обновлено</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновлено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Updated</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПолеОбновленоКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ПолеОбновленоРасширеннаяПодсказка" id="23"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="24">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ar_ПамятьАгента</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

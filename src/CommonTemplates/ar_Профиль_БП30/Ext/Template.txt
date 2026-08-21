@@ -1,0 +1,18 @@
+﻿{
+  "kind": "mapping_profile",
+  "profile_version": 1,
+  "profile": "БП 3.0",
+  "verified": true,
+  "configuration": {"name": "БухгалтерияПредприятия", "version_min": "3.0.100"},
+  "objects": {
+    "СчетНаОплатуПокупателю": "СчетНаОплатуПокупателю",
+    "Контрагенты": "Контрагенты"
+  },
+  "attributes": {
+    "invoice.client_attribute": "Контрагент",
+    "invoice.contract_attribute": "ДоговорКонтрагента",
+    "invoice.items_table": "Товары",
+    "invoice.total_attribute": "СуммаДокумента",
+    "client.contact_person_attribute": "ОсновноеКонтактноеЛицо"
+  }
+}

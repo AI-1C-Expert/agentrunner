@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="ff6f2c16-b5f4-47a7-ba39-d309580c4dcf">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ar_СобытиеHook" category="Ref">
+				<xr:TypeId>939377b8-80ac-4442-a0f9-1d357c994587</xr:TypeId>
+				<xr:ValueId>2fcb4c4d-3d9a-4559-a5c4-5c2943318d20</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ar_СобытиеHook" category="Manager">
+				<xr:TypeId>9f5e75f3-9caa-4dd4-9f20-a356eb9b1238</xr:TypeId>
+				<xr:ValueId>3a35eeab-0ead-4fbc-9afa-e8447bc91895</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ar_СобытиеHook" category="List">
+				<xr:TypeId>2812ba4a-054a-49c7-be8d-cb6b254f1c0e</xr:TypeId>
+				<xr:ValueId>190d8788-281b-4037-b144-ec29d642a9f9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ar_СобытиеHook</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Событие хука</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Hook Event</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Точки расширения (hooks) в agent loop. 10 событий жизненного цикла run, на которые могут подписываться обработчики из ar_Hooks (см. архитектура §11, Plan §3.4).</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="f3fa254c-53ba-4790-90f0-5479d6e8d226">
+				<Properties>
+					<Name>BeforeStep</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перед шагом</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Before step</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>before_step. Перед началом очередной итерации (шага) agent loop — до сборки контекста и вызова LLM на данном шаге.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d35c0959-8c65-411e-b40d-e80bd1a274e9">
+				<Properties>
+					<Name>AfterStep</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>После шага</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>After step</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>after_step. После завершения итерации agent loop (после обработки ответа LLM и всех tool calls этого шага), перед переходом к следующему шагу или завершением run.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="764d7353-ff3e-4368-b763-f028084f95a2">
+				<Properties>
+					<Name>BeforeToolCall</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перед вызовом инструмента</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Before tool call</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>before_tool_call. Перед вызовом aosToolDispatcher.Вызвать для конкретного tool — до проверки Permission Engine.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5bcd3ce1-92dc-44f0-a3ca-96e3792ee68c">
+				<Properties>
+					<Name>AfterToolCall</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>После вызова инструмента</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>After tool call</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>after_tool_call. После выполнения tool (успешного или с ошибкой) — для логирования в SIEM/мониторинг.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a472a2b2-aaa2-4ff3-bd6b-59e1102cc613">
+				<Properties>
+					<Name>BeforeLLMCall</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перед вызовом LLM</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Before LLM call</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>before_llm_call. Перед отправкой запроса провайдеру — для подмены параметров, A/B-тестов.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="56348981-0916-4b1b-91b0-487368c31f66">
+				<Properties>
+					<Name>AfterLLMCall</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>После вызова LLM</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>After LLM call</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>after_llm_call. После получения ответа от провайдера — для анализа ответа, метрик.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="55e39bb5-3490-40b7-816b-92c0300d6043">
+				<Properties>
+					<Name>BeforeApproval</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перед запросом подтверждения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Before approval</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>before_approval. Действие поставлено в очередь ar_ОчередьApproval, перед фиксацией записи — для уведомлений (Telegram, email).</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dc95d185-941c-4cc2-9df4-15f9eec5ba4e">
+				<Properties>
+					<Name>AfterApproval</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>После подтверждения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>After approval</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>after_approval. После того, как оператор одобрил действие в очереди подтверждений — для custom audit.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="df6724ee-0615-4775-a083-5eceb64c4d86">
+				<Properties>
+					<Name>OnRunStart</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запуск начат</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Run started</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>on_run_start. Начало запуска (run) агента — для логирования, проверки лимитов.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="45df8eb5-4858-4f36-9f36-7c76ee09aa1b">
+				<Properties>
+					<Name>OnRunComplete</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запуск завершён</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Run completed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>on_run_complete. Завершение запуска агента (любым финальным статусом — Completed/Failed/MaxStepsReached) — для уведомлений, метрик.</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

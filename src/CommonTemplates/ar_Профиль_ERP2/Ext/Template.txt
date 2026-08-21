@@ -1,0 +1,16 @@
+﻿{
+  "kind": "mapping_profile",
+  "profile_version": 1,
+  "profile": "ERP 2",
+  "verified": false,
+  "configuration": {"name": "ERPУправлениеПредприятием", "version_min": "2.5"},
+  "source_note": "Имена реквизитов - непроверенная гипотеза, см. .docs/specs/UNIV-02.md и .docs/Ревью-универсальность-тулов.md (таблица 'invoice.client'/'invoice.contract', строки 272-279). Не проверено на реальной базе ERP 2.",
+  "objects": {
+    "СчетНаОплатуПокупателю": "СчетНаОплатуПокупателю",
+    "Контрагенты": "Контрагенты"
+  },
+  "attributes": {
+    "invoice.client_attribute": "Партнёр",
+    "invoice.contract_attribute": "Договор"
+  }
+}

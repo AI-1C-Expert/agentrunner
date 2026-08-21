@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Подписка агента</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Agent subscription</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ПолеНаименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Description</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПолеНаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПолеНаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ПолеАгент" id="4">
+			<DataPath>Объект.ar_Агент</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агент</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Agent</v8:content>
+				</v8:item>
+			</Title>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="ПолеАгентКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПолеАгентРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ПолеСобытие1С" id="7">
+			<DataPath>Объект.ar_Событие1С</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Событие 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>1C event</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выберите готовое событие из списка (горячие типы EXT-07) или введите своё в формате «ПолноеИмяОбъекта.ПриЗаписи» — оно будет опрошено регламентным заданием EXT-08.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pick a ready-made event from the list (EXT-07 hot types) or type your own as "ObjectFullName.OnWrite" — it will be polled by the EXT-08 scheduled job.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<DropListButton>true</DropListButton>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ChoiceListButton>true</ChoiceListButton>
+			<ContextMenu name="ПолеСобытие1СКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПолеСобытие1СРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<CheckBoxField name="ПолеВключён" id="10">
+			<DataPath>Объект.ar_Включён</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включён</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enabled</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПолеВключёнКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПолеВключёнРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<InputField name="ПолеФильтрJSON" id="13">
+			<DataPath>Объект.ar_ФильтрJSON</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр (JSON)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Filter (JSON)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Необязательно. JSON-объект «имя реквизита» → «значение»: все ключи должны совпасть, чтобы подписка сработала. Пусто или невалидный JSON — фильтр не применяется (срабатывает всегда).</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Optional. JSON object "attribute name" -&gt; "value": all keys must match for the subscription to fire. Empty or invalid JSON means the filter is not applied (always fires).</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Height>5</Height>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ПолеФильтрJSONКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПолеФильтрJSONРасширеннаяПодсказка" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="16">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ar_ПодпискиАгентов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

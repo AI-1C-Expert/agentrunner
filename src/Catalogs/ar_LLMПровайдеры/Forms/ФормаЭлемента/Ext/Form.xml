@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Провайдер LLM</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>LLM provider</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Name</v8:content>
+				</v8:item>
+			</Title>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Тип" id="4">
+			<DataPath>Объект.ar_Тип</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип провайдера</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Provider type</v8:content>
+				</v8:item>
+			</Title>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="ТипКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ТипРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="BaseURL" id="7">
+			<DataPath>Объект.ar_BaseURL</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Base URL</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Base URL</v8:content>
+				</v8:item>
+			</Title>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="BaseURLКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="BaseURLРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="DefaultModel" id="10">
+			<DataPath>Объект.ar_DefaultModel</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модель по умолчанию</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Default model</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="DefaultModelКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="DefaultModelРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<CheckBoxField name="ПоддерживаетToolCalls" id="13">
+			<DataPath>Объект.ar_ПоддерживаетToolCalls</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поддерживает tool calls</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Supports tool calls</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПоддерживаетToolCallsКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПоддерживаетToolCallsРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<InputField name="Таймаут" id="16">
+			<DataPath>Объект.ar_Таймаут</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймаут (сек)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Timeout (sec)</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ТаймаутКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ТаймаутРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="MaxContext" id="19">
+			<DataPath>Объект.ar_MaxContext</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макс. контекст (токены)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Max context (tokens)</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="MaxContextКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="MaxContextРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<CheckBoxField name="ИспользоватьПрокси" id="22">
+			<DataPath>Объект.ar_ИспользоватьПрокси</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать прокси</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Use proxy</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьПроксиКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ИспользоватьПроксиРасширеннаяПодсказка" id="24"/>
+		</CheckBoxField>
+		<CheckBoxField name="Включён" id="25">
+			<DataPath>Объект.ar_Включён</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включён</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enabled</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВключёнКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ВключёнРасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаКлюч" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление API-ключом</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>API key management</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаКлючРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<LabelDecoration name="ИндикаторКлюча" id="30">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ не задан</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Key not set</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ИндикаторКлючаКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ИндикаторКлючаРасширеннаяПодсказка" id="32"/>
+				</LabelDecoration>
+				<Button name="КнопкаУстановитьКлюч" id="33">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ar_УстановитьКлюч</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Установить ключ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Set key</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаУстановитьКлючРасширеннаяПодсказка" id="34"/>
+				</Button>
+				<Button name="КнопкаЗаменитьКлюч" id="35">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ar_ЗаменитьКлюч</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заменить ключ</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаЗаменитьКлючРасширеннаяПодсказка" id="36"/>
+				</Button>
+				<Button name="КнопкаТестСоединения" id="37">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ar_ТестСоединения</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тест соединения</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаТестСоединенияРасширеннаяПодсказка" id="38"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="APIKeyИдентификатор" id="39">
+			<DataPath>Объект.ar_APIKeyИдентификатор</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор ключа</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="APIKeyИдентификаторКонтекстноеМеню" id="40"/>
+			<ExtendedTooltip name="APIKeyИдентификаторРасширеннаяПодсказка" id="41"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="42">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ar_LLMПровайдеры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КлючЗадан" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ задан</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ar_УстановитьКлюч" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_УстановитьКлюч</Action>
+		</Command>
+		<Command name="ar_ЗаменитьКлюч" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_ЗаменитьКлюч</Action>
+		</Command>
+		<Command name="ar_ТестСоединения" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест соединения</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_ТестСоединения</Action>
+		</Command>
+	</Commands>
+</Form>
