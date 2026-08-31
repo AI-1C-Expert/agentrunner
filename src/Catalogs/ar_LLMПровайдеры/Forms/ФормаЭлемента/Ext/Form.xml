@@ -49,6 +49,9 @@
 			<AutoMarkIncomplete>true</AutoMarkIncomplete>
 			<ContextMenu name="ТипКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ТипРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">ТипПриИзменении</Event>
+			</Events>
 		</InputField>
 		<InputField name="BaseURL" id="7">
 			<DataPath>Объект.ar_BaseURL</DataPath>
@@ -66,6 +69,20 @@
 			<ContextMenu name="BaseURLКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="BaseURLРасширеннаяПодсказка" id="9"/>
 		</InputField>
+		<LabelDecoration name="ПодсказкаBaseURL" id="900">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Достаточно домена с портом, если сервер отвечает по стандартному пути.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Host and port are enough if the server uses the standard path.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПодсказкаBaseURLКонтекстноеМеню" id="901"/>
+			<ExtendedTooltip name="ПодсказкаBaseURLРасширеннаяПодсказка" id="902"/>
+		</LabelDecoration>
 		<InputField name="DefaultModel" id="10">
 			<DataPath>Объект.ar_DefaultModel</DataPath>
 			<Title>
