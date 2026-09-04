@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Пакеты инструментов</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Tool packages</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КнопкаНайтиПакеты" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ar_НайтиПакеты</CommandName>
+				<ExtendedTooltip name="КнопкаНайтиПакетыРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="КнопкаУстановитьПакет" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ar_УстановитьПакет</CommandName>
+				<ExtendedTooltip name="КнопкаУстановитьПакетРасширеннаяПодсказка" id="4"/>
+			</Button>
+			<Button name="КнопкаОтключитьПакет" id="5">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ar_ОтключитьПакет</CommandName>
+				<ExtendedTooltip name="КнопкаОтключитьПакетРасширеннаяПодсказка" id="6"/>
+			</Button>
+			<Button name="КнопкаПереподтвердитьПакет" id="7">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ar_ПереподтвердитьПакет</CommandName>
+				<ExtendedTooltip name="КнопкаПереподтвердитьПакетРасширеннаяПодсказка" id="8"/>
+			</Button>
+			<Button name="КнопкаПроверитьИзменения" id="9">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ar_ПроверитьИзменения</CommandName>
+				<ExtendedTooltip name="КнопкаПроверитьИзмененияРасширеннаяПодсказка" id="10"/>
+			</Button>
+			<Button name="КнопкаПоказатьTools" id="11">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ar_ПоказатьTools</CommandName>
+				<ExtendedTooltip name="КнопкаПоказатьToolsРасширеннаяПодсказка" id="12"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияНедоступности" id="13">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content/>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияНедоступностиКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДекорацияНедоступностиРасширеннаяПодсказка" id="15"/>
+		</LabelDecoration>
+		<Table name="Список" id="16">
+			<DataPath>Список</DataPath>
+			<CommandBarLocation>None</CommandBarLocation>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<ContextMenu name="СписокКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="18">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="19"/>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="20"/>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="21"/>
+			<ChildItems>
+				<InputField name="ar_Namespace" id="22">
+					<DataPath>Список.ar_Namespace</DataPath>
+					<ContextMenu name="ar_NamespaceКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ar_NamespaceРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="ar_ИмяОбъектаОбработки" id="25">
+					<DataPath>Список.ar_ИмяОбъектаОбработки</DataPath>
+					<ContextMenu name="ar_ИмяОбъектаОбработкиКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ar_ИмяОбъектаОбработкиРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="ar_ВерсияПакета" id="28">
+					<DataPath>Список.ar_ВерсияПакета</DataPath>
+					<ContextMenu name="ar_ВерсияПакетаКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ar_ВерсияПакетаРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="ar_Статус" id="31">
+					<DataPath>Список.ar_Статус</DataPath>
+					<ContextMenu name="ar_СтатусКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ar_СтатусРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<CheckBoxField name="ar_БезопасныйРежим" id="34">
+					<DataPath>Список.ar_БезопасныйРежим</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="ar_БезопасныйРежимКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ar_БезопасныйРежимРасширеннаяПодсказка" id="36"/>
+				</CheckBoxField>
+				<InputField name="ar_КоличествоTools" id="37">
+					<DataPath>Список.ar_КоличествоTools</DataPath>
+					<ContextMenu name="ar_КоличествоToolsКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ar_КоличествоToolsРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="ar_ПричинаОтказа" id="40">
+					<DataPath>Список.ar_ПричинаОтказа</DataPath>
+					<ContextMenu name="ar_ПричинаОтказаКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ar_ПричинаОтказаРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="ar_ДатаРегистрации" id="43">
+					<DataPath>Список.ar_ДатаРегистрации</DataPath>
+					<ContextMenu name="ar_ДатаРегистрацииКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ar_ДатаРегистрацииРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="ar_Пользователь" id="46">
+					<DataPath>Список.ar_Пользователь</DataPath>
+					<ContextMenu name="ar_ПользовательКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ar_ПользовательРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ar_ИдентификаторОбработки" id="49">
+					<DataPath>Список.ar_ИдентификаторОбработки</DataPath>
+					<ContextMenu name="ar_ИдентификаторОбработкиКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ar_ИдентификаторОбработкиРасширеннаяПодсказка" id="51"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="49">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<MainTable>InformationRegister.ar_ПакетыTools</MainTable>
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+			</Settings>
+		</Attribute>
+		<Attribute name="СообщениеНедоступности" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщение недоступности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МеханизмДоступен" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Механизм доступен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ar_НайтиПакеты" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти пакеты инструментов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Find tool packages</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_НайтиПакеты</Action>
+		</Command>
+		<Command name="ar_УстановитьПакет" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Install</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_УстановитьПакет</Action>
+		</Command>
+		<Command name="ar_ОтключитьПакет" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Disable</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_ОтключитьПакет</Action>
+		</Command>
+		<Command name="ar_ПереподтвердитьПакет" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переподтвердить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Reconfirm</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_ПереподтвердитьПакет</Action>
+		</Command>
+		<Command name="ar_ПроверитьИзменения" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить изменения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Check for changes</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_ПроверитьИзменения</Action>
+		</Command>
+		<Command name="ar_ПоказатьTools" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать инструменты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show tools</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_ПоказатьTools</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -212,6 +212,10 @@
 	// «Подтверждено», и понять, записан ли объект, по логу запуска было нельзя.
 	Алиасы.Вставить("action_executed", "ActionExecuted");
 	Алиасы.Вставить("action_execution_failed", "ActionExecutionFailed");
+	// PKG-05: аудит небезопасного режима пакета и подозрения на нарушение
+	// approval-контракта пакетным tool.
+	Алиасы.Вставить("package_registered_unsafe", "PackageRegisteredUnsafe");
+	Алиасы.Вставить("package_approval_contract_suspect", "PackageApprovalContractSuspect");
 
 	Каноническое = Алиасы.Получить(НРег(ИмяСобытия));
 	Если Каноническое <> Неопределено Тогда

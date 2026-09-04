@@ -514,6 +514,38 @@
 					<Comment>Включение/выключение константы ar_РазрешитьТулыВРежимеКод через форму ar_Настройки (SEC-TOOL-01). Отдельно от ToolCodeChanged — это изменение политики диспетчеризации code-тулов, а не конкретного tool. Payload: {old_value, new_value, actor}.</Comment>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="5f5be95e-319b-41e9-848c-5f0400dee617">
+				<Properties>
+					<Name>PackageRegisteredUnsafe</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пакет зарегистрирован в небезопасном режиме</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Package registered in unsafe mode</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Регистрация пакета tools (Справочник.ДополнительныеОтчетыИОбработки) с БезопасныйРежим=Ложь (PKG-05). Payload: {package, namespace, version, tools_count, actor}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a9eba554-7696-4afa-8867-c29ce6be3bdd">
+				<Properties>
+					<Name>PackageApprovalContractSuspect</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подозрение на нарушение approval-контракта пакетом</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Package approval contract suspect</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Мутирующий пакетный tool (ТребуетApproval=Истина) вернул ответ без status=queued_for_approval/dry_run и без ключа error (PKG-05). Не блокирует вызов - только фиксация. Payload: {package, tool, run_id}.</Comment>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

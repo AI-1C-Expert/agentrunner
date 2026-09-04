@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
@@ -118,6 +118,16 @@
 					<DataPath>Список.ar_ИсточникРасширение</DataPath>
 					<ContextMenu name="ar_ИсточникРасширениеКонтекстноеМеню" id="28"/>
 					<ExtendedTooltip name="ar_ИсточникРасширениеРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="ar_ИсточникТип" id="49">
+					<DataPath>Список.ar_ИсточникТип</DataPath>
+					<ContextMenu name="ar_ИсточникТипКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ar_ИсточникТипРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ar_ИдентификаторПакета" id="52">
+					<DataPath>Список.ar_ИдентификаторПакета</DataPath>
+					<ContextMenu name="ar_ИдентификаторПакетаКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ar_ИдентификаторПакетаРасширеннаяПодсказка" id="54"/>
 				</InputField>
 				<CheckBoxField name="ar_Доступен" id="43">
 					<DataPath>Список.ar_Доступен</DataPath>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Configuration uuid="b62ce0cc-0849-459d-968e-45c007ab60bd">
 		<InternalInfo>
 			<xr:ContainedObject>
@@ -44,7 +44,7 @@
 					<v8:content>AgentRunner для 1С</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment/>
+			<Comment />
 			<ConfigurationExtensionPurpose>AddOn</ConfigurationExtensionPurpose>
 			<KeepMappingToExtendedConfigurationObjectsByIDs>true</KeepMappingToExtendedConfigurationObjectsByIDs>
 			<NamePrefix>ar_</NamePrefix>
@@ -55,7 +55,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ar_РольЧитатель</xr:Item>
 			</DefaultRoles>
 			<Vendor>Александр Барабанов</Vendor>
-			<Version>0.1.0.218</Version>
+			<Version>0.1.0.229</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -63,7 +63,7 @@
 					<v8:content>AgentRunner - 1С на ИИ-автопилоте</v8:content>
 				</v8:item>
 			</BriefInformation>
-			<DetailedInformation/>
+			<DetailedInformation />
 			<Copyright>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -169,6 +169,8 @@
 			<CommonModule>ar_ToolПереопределяемый</CommonModule>
 			<CommonModule>ar_Настройки</CommonModule>
 			<CommonModule>ar_ApprovalПредставление</CommonModule>
+			<CommonModule>ar_ToolПакеты</CommonModule>
+			<CommonModule>ar_ToolПлагинВызов</CommonModule>
 			<HTTPService>ar_AgentsAPI</HTTPService>
 			<HTTPService>ar_RunsAPI</HTTPService>
 			<HTTPService>ar_HealthAPI</HTTPService>
@@ -211,6 +213,7 @@
 			<CommonForm>ar_МастерНастройки</CommonForm>
 			<CommonForm>ar_Настройки</CommonForm>
 			<CommonForm>ar_ОчередьПодтверждений</CommonForm>
+			<CommonForm>ar_ПакетыTools</CommonForm>
 			<CommonForm>ar_ПросмотрДействия</CommonForm>
 			<CommonForm>ar_ПросмотрЗапуска</CommonForm>
 			<CommonForm>ar_ФормаВводаКлюча</CommonForm>
@@ -253,6 +256,7 @@
 			<InformationRegister>ar_СообщенияДиалога</InformationRegister>
 			<InformationRegister>ar_ПрофильКонфигурации</InformationRegister>
 			<InformationRegister>ar_Адаптеры</InformationRegister>
+			<InformationRegister>ar_ПакетыTools</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
