@@ -14,12 +14,12 @@
     "max_action_sum": 100000,
     "autonomy_mode": "Спрашивать",
     "tools": [
-      {"name": "list_unpaid_invoices", "enabled": true, "required": true},
+      {"name": "buh_list_unpaid_invoices", "enabled": true, "required": true},
       {"name": "get_invoice_reminder_history", "enabled": true, "required": true},
       {"name": "prepare_payment_reminder_email", "enabled": true, "required": true},
       {"name": "get_settings", "enabled": true, "required": false},
-      {"name": "search_clients", "enabled": true, "required": false},
-      {"name": "get_invoice", "enabled": true, "required": false}
+      {"name": "buh_search_clients", "enabled": true, "required": false},
+      {"name": "buh_get_invoice", "enabled": true, "required": false}
     ],
     "skills": []
   }

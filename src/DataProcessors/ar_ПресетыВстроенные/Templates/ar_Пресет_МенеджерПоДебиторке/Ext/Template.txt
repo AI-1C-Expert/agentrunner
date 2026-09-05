@@ -14,10 +14,10 @@
     "max_action_sum": 100000,
     "autonomy_mode": "Спрашивать",
     "tools": [
-      {"name": "search_clients", "enabled": true, "required": true},
-      {"name": "find_overdue_receivables", "enabled": true, "required": true},
-      {"name": "get_account_balance", "enabled": true, "required": true},
-      {"name": "create_reconciliation_act", "enabled": true, "required": true},
+      {"name": "buh_search_clients", "enabled": true, "required": true},
+      {"name": "buh_find_overdue_receivables", "enabled": true, "required": true},
+      {"name": "buh_get_account_balance", "enabled": true, "required": true},
+      {"name": "buh_create_reconciliation_act", "enabled": true, "required": true},
       {"name": "prepare_reconciliation_email", "enabled": true, "required": true}
     ],
     "skills": []

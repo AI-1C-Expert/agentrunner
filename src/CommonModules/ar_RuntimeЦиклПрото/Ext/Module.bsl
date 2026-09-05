@@ -18,7 +18,9 @@
 // ПРОТО: удалить при реализации RT-06 (ar_RuntimeЦикл).
 //
 // Этап 0 / RT-01: упрощённая реализация ReAct-цикла, связывающая
-// ar_LLMOpenAI.Чат и ar_ToolCRM.ПоискКлиентов. Без permission-engine,
+// ar_LLMOpenAI.Чат и tool search_clients (PKG-09: buh_search_clients через
+// ar_ToolDispatcher.Вызвать - ar_ToolCRM удалён из ядра, tool теперь в пакете
+// "AgentRunner Бухгалтерия"). Без permission-engine,
 // approval-flow и фоновых заданий — всё выполняется синхронно в серверном
 // контексте формы обработки ar_ТестЦикла.
 //
@@ -146,8 +148,15 @@
 
 			Наблюдение = "";
 			Попытка
-				Если ИмяTool = "search_clients" Тогда
-					Наблюдение = ar_ToolCRM.ПоискКлиентов(АргументыJSON, КонтекстЗапуска);
+				// PKG-09: search_clients переехал в пакет "AgentRunner Бухгалтерия"
+				// под именем buh_search_clients (ar_ToolCRM удалён из ядра). Вызов
+				// идёт через штатный диспетчер по имени - он сам находит tool
+				// независимо от того, ядровой это модуль или зарегистрированный
+				// пакет (см. .docs/specs/PKG-09.md).
+				Если ИмяTool = "search_clients" Или ИмяTool = "buh_search_clients" Тогда
+					РезультатДиспетчера = ar_ToolDispatcher.Вызвать(
+						"buh_search_clients", АргументыJSON, КонтекстЗапуска);
+					Наблюдение = РезультатДиспетчера.Результат;
 				Иначе
 					Наблюдение = СформироватьОшибкуJSON(
 						НСтр("ru = 'неизвестный tool: '; en = 'unknown tool: '") + ИмяTool);
