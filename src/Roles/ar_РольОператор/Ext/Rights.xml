@@ -87,6 +87,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ar_ПорогМедленногоTool</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ar_ПравилаМаскированияПДн</name>
 		<right>
 			<name>Read</name>

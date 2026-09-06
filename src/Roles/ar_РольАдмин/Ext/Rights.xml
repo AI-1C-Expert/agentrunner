@@ -245,6 +245,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ar_ПорогМедленногоTool</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ar_МастерНастройкиШаг</name>
 		<right>
 			<name>Read</name>
