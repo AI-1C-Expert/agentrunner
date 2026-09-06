@@ -755,6 +755,50 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="bbf48765-877d-4168-a043-9725ea023972">
+				<Properties>
+					<Name>ar_ЗамерПроизводительности</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Замер производительности</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Performance measurement</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Включить замер БСП («Оценка производительности») для этого инструмента. Ключевая операция передаётся строкой &quot;ar_Tool_&lt;ar_Имя&gt;&quot; — БСП создаёт элемент справочника КлючевыеОперации лениво при первом замере, отдельного действия не требуется. Реальная запись происходит только если ОБА условия истинны: этот флаг (или константа ar_ЗамерятьВсеTools) И глобальный переключатель БСП «Выполнять замеры производительности» (Администрирование). Недоступен, если в конфигурации нет подсистемы «Оценка производительности».</Comment>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:boolean">false</FillValue>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
 			<Attribute uuid="8d061236-5968-4501-b0c5-94b7c8166923">
 				<Properties>
 					<Name>ar_Версия</Name>

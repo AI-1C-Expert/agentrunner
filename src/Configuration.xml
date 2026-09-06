@@ -55,7 +55,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ar_РольЧитатель</xr:Item>
 			</DefaultRoles>
 			<Vendor>Александр Барабанов</Vendor>
-			<Version>0.1.0.242</Version>
+			<Version>0.1.0.243</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -168,6 +168,7 @@
 			<CommonModule>ar_ApprovalПредставление</CommonModule>
 			<CommonModule>ar_ToolПакеты</CommonModule>
 			<CommonModule>ar_ToolПлагинВызов</CommonModule>
+			<CommonModule>ar_ToolDispatcherПовтИсп</CommonModule>
 			<HTTPService>ar_AgentsAPI</HTTPService>
 			<HTTPService>ar_RunsAPI</HTTPService>
 			<HTTPService>ar_HealthAPI</HTTPService>
@@ -206,6 +207,7 @@
 			<Constant>ar_ВерсияРасширенияБД</Constant>
 			<Constant>ar_МастерНастройкиШаг</Constant>
 			<Constant>ar_РазрешитьТулыВРежимеКод</Constant>
+			<Constant>ar_ЗамерятьВсеTools</Constant>
 			<CommonForm>ar_БиблиотекаПресетов</CommonForm>
 			<CommonForm>ar_МастерНастройки</CommonForm>
 			<CommonForm>ar_Настройки</CommonForm>
