@@ -29,6 +29,26 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+			<CheckBoxField name="ПоказыватьТолькоНедоступные" id="67">
+				<DataPath>ПоказыватьТолькоНедоступные</DataPath>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Только недоступные</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Only unavailable</v8:content>
+					</v8:item>
+				</Title>
+				<TitleLocation>Right</TitleLocation>
+				<CheckBoxType>Auto</CheckBoxType>
+				<ContextMenu name="ПоказыватьТолькоНедоступныеКонтекстноеМеню" id="70"/>
+				<Events>
+				<Event name="OnChange">ПоказыватьТолькоНедоступныеПриИзменении</Event>
+			</Events>
+			<ExtendedTooltip name="ПоказыватьТолькоНедоступныеРасширеннаяПодсказка" id="68"/>
+			</CheckBoxField>
 		<Table name="Список" id="3">
 			<CommandBarLocation>None</CommandBarLocation>
 			<DataPath>Список</DataPath>
@@ -78,6 +98,7 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+				<Event name="OnGetDataAtServer">СписокПриПолученииДанныхНаСервере</Event>
 			</Events>
 			<ChildItems>
 				<InputField name="Description" id="9">
@@ -136,8 +157,63 @@
 					<ContextMenu name="ar_ДоступенКонтекстноеМеню" id="44"/>
 					<ExtendedTooltip name="ar_ДоступенРасширеннаяПодсказка" id="45"/>
 				</CheckBoxField>
+				<InputField name="ar_ПоддерживаемыеКонфигурации" id="55">
+					<DataPath>Список.ar_ПоддерживаемыеКонфигурации</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конфигурация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Configuration</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ar_ПоддерживаемыеКонфигурацииКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ar_ПоддерживаемыеКонфигурацииРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ar_МинВерсияКонфигурации" id="58">
+					<DataPath>Список.ar_МинВерсияКонфигурации</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия с</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Version from</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ar_МинВерсияКонфигурацииКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ar_МинВерсияКонфигурацииРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="ar_МаксВерсияКонфигурации" id="61">
+					<DataPath>Список.ar_МаксВерсияКонфигурации</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия по</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Version up to</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ar_МаксВерсияКонфигурацииКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ar_МаксВерсияКонфигурацииРасширеннаяПодсказка" id="63"/>
+				</InputField>
 				<InputField name="ar_ПричинаНедоступности" id="46">
 					<DataPath>Список.ar_ПричинаНедоступности</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Причина недоступности</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Unavailability reason</v8:content>
+						</v8:item>
+					</Title>
 					<ContextMenu name="ar_ПричинаНедоступностиКонтекстноеМеню" id="47"/>
 					<ExtendedTooltip name="ar_ПричинаНедоступностиРасширеннаяПодсказка" id="48"/>
 				</InputField>
@@ -156,6 +232,21 @@
 				<MainTable>Catalog.ar_Tools</MainTable>
 				<ListSettings/>
 			</Settings>
+		</Attribute>
+		<Attribute name="ПоказыватьТолькоНедоступные" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только недоступные</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Only unavailable</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
