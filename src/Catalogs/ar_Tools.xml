@@ -1236,7 +1236,7 @@
 							<v8:content>Category</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Группа для попапа композера (UI). Заполняется ar_ToolDispatcher.ЗаполнитьПредставленияВсехTools.</Comment>
+					<Comment>Технический код группы (finance, documents, ... - см. Справочник.ar_КатегорииTools.Код), не готовый для показа текст. Заполняется ar_ToolDispatcher.ЗаполнитьПредставленияВсехTools. Человекочитаемое название - в ar_КатегорииTools.Наименование (SCALE-01).</Comment>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>

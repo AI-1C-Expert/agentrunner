@@ -163,6 +163,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ar_КатегорииTools</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ar_ОчередьApproval</name>
 		<right>
 			<name>Read</name>

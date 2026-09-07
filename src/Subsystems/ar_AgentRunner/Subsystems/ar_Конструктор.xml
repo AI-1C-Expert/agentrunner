@@ -21,6 +21,7 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_Tools</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_КатегорииTools</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ar_БиблиотекаПресетов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_Пресеты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_Рутины</xr:Item>
