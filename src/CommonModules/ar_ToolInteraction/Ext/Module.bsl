@@ -107,6 +107,8 @@
 		Объект.ar_ТребуетApproval = Ложь;
 		Объект.ar_JSONManifest    = Манифест;
 		Объект.ar_RiskLevel       = Перечисления.ar_RiskLevel.Read;
+		Объект.ar_КраткоеОписание = НСтр("ru = 'Задать уточняющий вопрос, дождаться ответа человека';
+			|en = 'Ask a clarifying question and wait for the human answer'");
 
 		Объект.Записать();
 
