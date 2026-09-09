@@ -495,7 +495,7 @@
 							<v8:content>Tool code changed</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Изменение ar_КодРеализации у tool в режиме «Код» (создание/редактирование), зафиксированное в Catalogs.ar_Tools.ObjectModule.ПередЗаписью (SEC-TOOL-01). Payload: {tool, actor, code_hash, has_code} — код НЕ пишется в payload, только SHA-256 хеш.</Comment>
+					<Comment>Историческое: изменение ar_КодРеализации у tool в режиме «Код» (создание/редактирование), зафиксированное в Catalogs.ar_Tools.ObjectModule.ПередЗаписью (SEC-TOOL-01). Payload: {tool, actor, code_hash, has_code} — код НЕ пишется в payload, только SHA-256 хеш. Механизм режима «Код» удалён в SEC-TOOL-02 — новые события этого типа не создаются, значение сохранено для читаемости старых записей аудита.</Comment>
 				</Properties>
 			</EnumValue>
 			<EnumValue uuid="17bef70e-eac4-4a5a-bcc2-77db0b99c080">
@@ -511,7 +511,7 @@
 							<v8:content>Tool Code-mode policy changed</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Включение/выключение константы ar_РазрешитьТулыВРежимеКод через форму ar_Настройки (SEC-TOOL-01). Отдельно от ToolCodeChanged — это изменение политики диспетчеризации code-тулов, а не конкретного tool. Payload: {old_value, new_value, actor}.</Comment>
+					<Comment>Историческое: включение/выключение константы ar_РазрешитьТулыВРежимеКод через форму ar_Настройки (SEC-TOOL-01). Отдельно от ToolCodeChanged — это изменение политики диспетчеризации code-тулов, а не конкретного tool. Payload: {old_value, new_value, actor}. Константа физически удалена в SEC-TOOL-02 — новые события этого типа не создаются, значение сохранено для читаемости старых записей аудита.</Comment>
 				</Properties>
 			</EnumValue>
 			<EnumValue uuid="5f5be95e-319b-41e9-848c-5f0400dee617">
@@ -544,6 +544,22 @@
 						</v8:item>
 					</Synonym>
 					<Comment>Мутирующий пакетный tool (ТребуетApproval=Истина) вернул ответ без status=queued_for_approval/dry_run и без ключа error (PKG-05). Не блокирует вызов - только фиксация. Payload: {package, tool, run_id}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f011c3b8-cf31-4d64-8b08-bf1fd59a97fe">
+				<Properties>
+					<Name>CodeToolsDisabled</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Code-тулы отключены</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Code tools disabled</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Отключение tools в режиме «Код» при удалении механизма (SEC-TOOL-02). Payload: {disabled_tools: [{name, was_enabled}], actor: &quot;system_update&quot;}.</Comment>
 				</Properties>
 			</EnumValue>
 		</ChildObjects>
