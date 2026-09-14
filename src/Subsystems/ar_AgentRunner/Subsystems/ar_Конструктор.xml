@@ -26,6 +26,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_Пресеты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_Рутины</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_Агенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_ПрофилиЗапуска</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_Skills</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_ПамятьАгента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_ПодпискиАгентов</xr:Item>
