@@ -14,7 +14,64 @@
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаБыстрыеРежимы" id="1">
+		<UsualGroup name="ГруппаОбщийПериод" id="204">
+			<Group>Horizontal</Group>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общий период для обеих вкладок консоли (CONS-07)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаОбщийПериодРасширеннаяПодсказка" id="205"/>
+			<ChildItems>
+				<InputField name="ОбщийПериодС" id="206">
+					<DataPath>ОтборПериодС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период с</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОбщийПериодСКонтекстноеМеню" id="207"/>
+					<ExtendedTooltip name="ОбщийПериодСРасширеннаяПодсказка" id="208"/>
+					<Events>
+						<Event name="OnChange">ОтборПериодСПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОбщийПериодПо" id="209">
+					<DataPath>ОтборПериодПо</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОбщийПериодПоКонтекстноеМеню" id="210"/>
+					<ExtendedTooltip name="ОбщийПериодПоРасширеннаяПодсказка" id="211"/>
+					<Events>
+						<Event name="OnChange">ОтборПериодПоПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="200">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="201"/>
+			<ChildItems>
+				<Page name="СтраницаЗапуски" id="202">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запуски</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Runs</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаЗапускиРасширеннаяПодсказка" id="203"/>
+					<ChildItems>
+					<UsualGroup name="ГруппаБыстрыеРежимы" id="1">
 			<Group>Horizontal</Group>
 			<ExtendedTooltip name="ГруппаБыстрыеРежимыРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
@@ -401,6 +458,161 @@
 			<ContextMenu name="СтрокаЗдоровьяПолеКонтекстноеМеню" id="98"/>
 			<ExtendedTooltip name="СтрокаЗдоровьяПолеРасширеннаяПодсказка" id="99"/>
 		</LabelField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаАгенты" id="212">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Агенты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Agents</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаАгентыРасширеннаяПодсказка" id="213"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКомандыСтрокиАгенты" id="214">
+							<ExtendedTooltip name="ГруппаКомандыСтрокиАгентыРасширеннаяПодсказка" id="215"/>
+							<ChildItems>
+								<Button name="КнопкаОткрытьАгентаАгенты" id="216">
+									<CommandName>Form.Command.ОткрытьАгентаАгенты</CommandName>
+									<ExtendedTooltip name="КнопкаОткрытьАгентаАгентыРасширеннаяПодсказка" id="217"/>
+								</Button>
+								<Button name="КнопкаОткрытьПрофилиАгента" id="218">
+									<CommandName>Form.Command.ОткрытьПрофилиАгента</CommandName>
+									<ExtendedTooltip name="КнопкаОткрытьПрофилиАгентаРасширеннаяПодсказка" id="219"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СписокАгентов" id="220">
+							<DataPath>СписокАгентов</DataPath>
+							<HeightInTableRows>15</HeightInTableRows>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ContextMenu name="СписокАгентовКонтекстноеМеню" id="221"/>
+							<AutoCommandBar name="СписокАгентовКоманднаяПанель" id="222"/>
+							<SearchStringAddition name="СписокАгентовСтрокаПоиска" id="223"/>
+							<ViewStatusAddition name="СписокАгентовСостояниеПросмотра" id="224"/>
+							<SearchControlAddition name="СписокАгентовУправлениеПоиском" id="225"/>
+							<Events>
+								<Event name="Selection">СписокАгентовВыборСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="СписокАгентовПредставлениеАгента" id="226">
+									<DataPath>СписокАгентов.ПредставлениеАгента</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Агент</v8:content>
+										</v8:item>
+									</Title>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="СписокАгентовПредставлениеАгентаКонтекстноеМеню" id="227"/>
+									<ExtendedTooltip name="СписокАгентовПредставлениеАгентаРасширеннаяПодсказка" id="228"/>
+								</InputField>
+								<InputField name="СписокАгентовРежимАвтономииТекст" id="229">
+									<DataPath>СписокАгентов.РежимАвтономииТекст</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Режим автономии</v8:content>
+										</v8:item>
+									</Title>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="СписокАгентовРежимАвтономииТекстКонтекстноеМеню" id="230"/>
+									<ExtendedTooltip name="СписокАгентовРежимАвтономииТекстРасширеннаяПодсказка" id="231"/>
+								</InputField>
+								<CheckBoxField name="СписокАгентовАктивен" id="232">
+									<DataPath>СписокАгентов.Активен</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Активен</v8:content>
+										</v8:item>
+									</Title>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="СписокАгентовАктивенКонтекстноеМеню" id="233"/>
+									<ExtendedTooltip name="СписокАгентовАктивенРасширеннаяПодсказка" id="234"/>
+								</CheckBoxField>
+								<CheckBoxField name="СписокАгентовЕстьРасписание" id="235">
+									<DataPath>СписокАгентов.ЕстьРасписание</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расписание</v8:content>
+										</v8:item>
+									</Title>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="СписокАгентовЕстьРасписаниеКонтекстноеМеню" id="236"/>
+									<ExtendedTooltip name="СписокАгентовЕстьРасписаниеРасширеннаяПодсказка" id="237"/>
+								</CheckBoxField>
+								<InputField name="СписокАгентовПоследнийЗапускТекст" id="238">
+									<DataPath>СписокАгентов.ПоследнийЗапускТекст</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Последний запуск</v8:content>
+										</v8:item>
+									</Title>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="СписокАгентовПоследнийЗапускТекстКонтекстноеМеню" id="239"/>
+									<ExtendedTooltip name="СписокАгентовПоследнийЗапускТекстРасширеннаяПодсказка" id="240"/>
+								</InputField>
+								<InputField name="СписокАгентовДоляУспешныхТекст" id="241">
+									<DataPath>СписокАгентов.ДоляУспешныхТекст</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доля успешных</v8:content>
+										</v8:item>
+									</Title>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="СписокАгентовДоляУспешныхТекстКонтекстноеМеню" id="242"/>
+									<ExtendedTooltip name="СписокАгентовДоляУспешныхТекстРасширеннаяПодсказка" id="243"/>
+								</InputField>
+								<InputField name="СписокАгентовСуммарнаяСтоимость" id="244">
+									<DataPath>СписокАгентов.СуммарнаяСтоимость</DataPath>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧЦ=15; ЧДЦ=2; ЧН=0</v8:content>
+										</v8:item>
+									</Format>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стоимость</v8:content>
+										</v8:item>
+									</Title>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="СписокАгентовСуммарнаяСтоимостьКонтекстноеМеню" id="245"/>
+									<ExtendedTooltip name="СписокАгентовСуммарнаяСтоимостьРасширеннаяПодсказка" id="246"/>
+								</InputField>
+								<InputField name="СписокАгентовОжидаютApproval" id="247">
+									<DataPath>СписокАгентов.ОжидаютApproval</DataPath>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧЦ=10; ЧДЦ=0; ЧН=0</v8:content>
+										</v8:item>
+									</Format>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ожидают подтверждения</v8:content>
+										</v8:item>
+									</Title>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="СписокАгентовОжидаютApprovalКонтекстноеМеню" id="248"/>
+									<ExtendedTooltip name="СписокАгентовОжидаютApprovalРасширеннаяПодсказка" id="249"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="СписокЗапусков" id="100">
@@ -1049,6 +1261,90 @@
 				<v8:Type>cfg:EnumRef.ar_СтатусЗапуска</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="СписокАгентов" id="250">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список агентов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="АгентРеф" id="251">
+					<Type>
+						<v8:Type>cfg:CatalogRef.ar_Агенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеАгента" id="252">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РежимАвтономииТекст" id="253">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>60</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Активен" id="254">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьРасписание" id="255">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПоследнийЗапускТекст" id="256">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДоляУспешныхТекст" id="257">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммарнаяСтоимость" id="258">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОжидаютApproval" id="259">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Обновить" id="143">
@@ -1149,6 +1445,24 @@
 				</v8:item>
 			</Title>
 			<Action>ПоказатьСозданныеОбъектыВыполнить</Action>
+		</Command>
+		<Command name="ОткрытьАгентаАгенты" id="260">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть агента</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьАгентаАгентыВыполнить</Action>
+		</Command>
+		<Command name="ОткрытьПрофилиАгента" id="261">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть профили</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьПрофилиАгентаВыполнить</Action>
 		</Command>
 	</Commands>
 </Form>
