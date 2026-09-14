@@ -55,7 +55,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ar_РольЧитатель</xr:Item>
 			</DefaultRoles>
 			<Vendor>Александр Барабанов</Vendor>
-			<Version>0.1.0.315</Version>
+			<Version>0.1.0.316</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -250,6 +250,8 @@
 			<Enum>ar_СпособМаскированияПДн</Enum>
 			<Enum>ar_ТипПравилаДоступа</Enum>
 			<Enum>ar_РольОтветственного</Enum>
+			<Enum>ar_ВердиктНадзора</Enum>
+			<Enum>ar_КаналУведомления</Enum>
 			<DataProcessor>ar_ТестЦикла</DataProcessor>
 			<DataProcessor>ar_ПресетыВстроенные</DataProcessor>
 			<DataProcessor>ar_ТестТулов</DataProcessor>

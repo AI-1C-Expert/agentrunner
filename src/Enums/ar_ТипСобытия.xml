@@ -562,6 +562,70 @@
 					<Comment>Отключение tools в режиме «Код» при удалении механизма (SEC-TOOL-02). Payload: {disabled_tools: [{name, was_enabled}], actor: &quot;system_update&quot;}.</Comment>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="ff58dea3-780d-48ee-933e-b5a6cfd8c72b">
+				<Properties>
+					<Name>SupervisorInvoked</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Надзор вызван</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Supervisor invoked</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Вызов ar_Надзор при завершении цикла (§3.1), до получения вердикта. Payload: {run_id, steps_done}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="278095f8-fbf8-406b-91b3-7aae18aa4daa">
+				<Properties>
+					<Name>SupervisorDecision</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Решение надзора</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Supervisor decision</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Вердикт надзора получен и записан в ar_ПоследнееРешениеНадзора. Payload: {verdict, reason} (значение ar_ВердиктНадзора строкой + обоснование).</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="43a70be0-c7e7-4338-8158-26989bc3c236">
+				<Properties>
+					<Name>AutoResumed</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автовозобновлён</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Auto-resumed</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Прерванный (Interrupted) запуск с валидным ar_StateSnapshot продолжен регламентным заданием ar_АвтовозобновлениеЗапусков (§3.5, CONS-09), а не человеком. Payload: {run_id, resumed_from_step}.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="58fe08e8-99ad-4e82-ba44-acfb6e71b0a7">
+				<Properties>
+					<Name>RetryScheduled</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Повтор запланирован</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Retry scheduled</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Временный техсбой — назначен ar_ПовторитьПосле, увеличен ar_ПопытокВозобновления (§3.5). Payload: {attempt_number, retry_after, error_class}.</Comment>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>
