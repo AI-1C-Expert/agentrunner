@@ -450,6 +450,18 @@
 					<ContextMenu name="СписокЗапусковЖивостьТекстКонтекстноеМеню" id="95"/>
 					<ExtendedTooltip name="СписокЗапусковЖивостьТекстРасширеннаяПодсказка" id="96"/>
 				</InputField>
+				<InputField name="СписокЗапусковТекстОжиданияПовтора" id="263">
+					<DataPath>СписокЗапусков.ТекстОжиданияПовтора</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Повтор</v8:content>
+						</v8:item>
+					</Title>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СписокЗапусковТекстОжиданияПовтораКонтекстноеМеню" id="264"/>
+					<ExtendedTooltip name="СписокЗапусковТекстОжиданияПовтораРасширеннаяПодсказка" id="265"/>
+				</InputField>
 			</ChildItems>
 		</Table>
 		<LabelField name="СтрокаЗдоровьяПоле" id="97">
@@ -765,6 +777,15 @@
 				<Column name="ЖивостьПодозрениеНаЗависание" id="118">
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТекстОжиданияПовтора" id="262">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>60</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
