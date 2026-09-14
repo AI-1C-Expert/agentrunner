@@ -584,6 +584,328 @@
 						</Pages>
 					</ChildItems>
 				</UsualGroup>
+				<UsualGroup name="ГруппаСозданныеОбъекты" id="114">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Созданные объекты 1С</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Created 1C objects</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаСозданныеОбъектыРасширеннаяПодсказка" id="115"/>
+					<ChildItems>
+						<Table name="СозданныеОбъекты" id="116">
+							<DataPath>СозданныеОбъекты</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Созданные объекты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Created objects</v8:content>
+								</v8:item>
+							</Title>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ContextMenu name="СозданныеОбъектыКонтекстноеМеню" id="117"/>
+							<AutoCommandBar name="СозданныеОбъектыКоманднаяПанель" id="118"/>
+							<SearchStringAddition name="СозданныеОбъектыСтрокаПоиска" id="119"/>
+							<ViewStatusAddition name="СозданныеОбъектыСостояниеПросмотра" id="120"/>
+							<SearchControlAddition name="СозданныеОбъектыУправлениеПоиском" id="121"/>
+							<ChildItems>
+								<InputField name="СозданныеОбъектыПредставление" id="122">
+									<DataPath>СозданныеОбъекты.Представление</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Action</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СозданныеОбъектыПредставлениеКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="СозданныеОбъектыПредставлениеРасширеннаяПодсказка" id="124"/>
+								</InputField>
+								<InputField name="СозданныеОбъектыОбъект" id="125">
+									<DataPath>СозданныеОбъекты.ОбъектТекст</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Объект</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Object</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СозданныеОбъектыОбъектКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="СозданныеОбъектыОбъектРасширеннаяПодсказка" id="127"/>
+								</InputField>
+								<InputField name="СозданныеОбъектыВремя" id="128">
+									<DataPath>СозданныеОбъекты.Время</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Время</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Time</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СозданныеОбъектыВремяКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="СозданныеОбъектыВремяРасширеннаяПодсказка" id="130"/>
+								</InputField>
+							</ChildItems>
+							<Events>
+								<Event name="Selection">СозданныеОбъектыВыборСтроки</Event>
+							</Events>
+						</Table>
+						<LabelDecoration name="ДекорацияНетСозданныхОбъектов" id="131">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объекты не создавались</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>No objects were created</v8:content>
+								</v8:item>
+							</Title>
+							<Visible>false</Visible>
+							<ContextMenu name="ДекорацияНетСозданныхОбъектовКонтекстноеМеню" id="132"/>
+							<ExtendedTooltip name="ДекорацияНетСозданныхОбъектовРасширеннаяПодсказка" id="133"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОжидаетПодтверждения" id="134">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидает подтверждения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Awaiting approval</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаОжидаетПодтвержденияРасширеннаяПодсказка" id="135"/>
+					<ChildItems>
+						<Table name="ОжидаетПодтверждения" id="136">
+							<DataPath>ОжидаетПодтверждения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Очередь подтверждений запуска</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Run's approval queue</v8:content>
+								</v8:item>
+							</Title>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ContextMenu name="ОжидаетПодтвержденияКонтекстноеМеню" id="137"/>
+							<AutoCommandBar name="ОжидаетПодтвержденияКоманднаяПанель" id="138"/>
+							<SearchStringAddition name="ОжидаетПодтвержденияСтрокаПоиска" id="139"/>
+							<ViewStatusAddition name="ОжидаетПодтвержденияСостояниеПросмотра" id="140"/>
+							<SearchControlAddition name="ОжидаетПодтвержденияУправлениеПоиском" id="141"/>
+							<ChildItems>
+								<InputField name="ОжидаетПодтвержденияПредставление" id="142">
+									<DataPath>ОжидаетПодтверждения.Представление</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Action</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОжидаетПодтвержденияПредставлениеКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="ОжидаетПодтвержденияПредставлениеРасширеннаяПодсказка" id="144"/>
+								</InputField>
+								<InputField name="ОжидаетПодтвержденияЭффект" id="145">
+									<DataPath>ОжидаетПодтверждения.ЭффектТекст</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Суть операции</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>What will happen</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОжидаетПодтвержденияЭффектКонтекстноеМеню" id="146"/>
+									<ExtendedTooltip name="ОжидаетПодтвержденияЭффектРасширеннаяПодсказка" id="147"/>
+								</InputField>
+								<InputField name="ОжидаетПодтвержденияРиск" id="148">
+									<DataPath>ОжидаетПодтверждения.Риск</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Риск</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Risk</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОжидаетПодтвержденияРискКонтекстноеМеню" id="149"/>
+									<ExtendedTooltip name="ОжидаетПодтвержденияРискРасширеннаяПодсказка" id="150"/>
+								</InputField>
+								<InputField name="ОжидаетПодтвержденияОбоснование" id="151">
+									<DataPath>ОжидаетПодтверждения.Обоснование</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обоснование</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Rationale</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОжидаетПодтвержденияОбоснованиеКонтекстноеМеню" id="152"/>
+									<ExtendedTooltip name="ОжидаетПодтвержденияОбоснованиеРасширеннаяПодсказка" id="153"/>
+								</InputField>
+								<InputField name="ОжидаетПодтвержденияСозданоВ" id="154">
+									<DataPath>ОжидаетПодтверждения.СозданоВТекст</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поставлено</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Queued at</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОжидаетПодтвержденияСозданоВКонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="ОжидаетПодтвержденияСозданоВРасширеннаяПодсказка" id="156"/>
+								</InputField>
+								<InputField name="ОжидаетПодтвержденияСтатус" id="157">
+									<DataPath>ОжидаетПодтверждения.СтатусТекст</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Status</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОжидаетПодтвержденияСтатусКонтекстноеМеню" id="158"/>
+									<ExtendedTooltip name="ОжидаетПодтвержденияСтатусРасширеннаяПодсказка" id="159"/>
+								</InputField>
+								<InputField name="ОжидаетПодтвержденияРешил" id="160">
+									<DataPath>ОжидаетПодтверждения.РешилТекст</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Решил</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Decided by</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОжидаетПодтвержденияРешилКонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="ОжидаетПодтвержденияРешилРасширеннаяПодсказка" id="162"/>
+								</InputField>
+								<InputField name="ОжидаетПодтвержденияРешеноВ" id="163">
+									<DataPath>ОжидаетПодтверждения.РешеноВТекст</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Решено</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Decided at</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОжидаетПодтвержденияРешеноВКонтекстноеМеню" id="164"/>
+									<ExtendedTooltip name="ОжидаетПодтвержденияРешеноВРасширеннаяПодсказка" id="165"/>
+								</InputField>
+							</ChildItems>
+							<Events>
+								<Event name="OnActivateRow">ОжидаетПодтвержденияПриАктивизацииСтроки</Event>
+							</Events>
+						</Table>
+						<UsualGroup name="ГруппаДействийApproval" id="166">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДействийApprovalРасширеннаяПодсказка" id="167"/>
+							<ChildItems>
+								<Button name="КнопкаПодтвердитьApproval" id="168">
+									<CommandName>Form.Command.ar_ПодтвердитьApproval</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подтвердить</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Approve</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КнопкаПодтвердитьApprovalРасширеннаяПодсказка" id="169"/>
+								</Button>
+								<Button name="КнопкаОтклонитьApproval" id="170">
+									<CommandName>Form.Command.ar_ОтклонитьApproval</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отклонить</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Reject</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КнопкаОтклонитьApprovalРасширеннаяПодсказка" id="171"/>
+								</Button>
+								<InputField name="ПричинаОтказаApproval" id="172">
+									<DataPath>ПричинаОтказаApproval</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Причина отказа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Rejection reason</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПричинаОтказаApprovalКонтекстноеМеню" id="173"/>
+									<ExtendedTooltip name="ПричинаОтказаApprovalРасширеннаяПодсказка" id="174"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ДекорацияНетApproval" id="175">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Нет записей очереди подтверждений по этому запуску</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>No approval queue records for this run</v8:content>
+								</v8:item>
+							</Title>
+							<Visible>false</Visible>
+							<ContextMenu name="ДекорацияНетApprovalКонтекстноеМеню" id="176"/>
+							<ExtendedTooltip name="ДекорацияНетApprovalРасширеннаяПодсказка" id="177"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -1011,6 +1333,258 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="СозданныеОбъекты" id="135">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Представление" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбъектТекст" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НавигационнаяСсылка" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Время" id="4">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОжидаетПодтверждения" id="136">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ApprovalId" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭффектТекст" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Риск" id="4">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Обоснование" id="5">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СозданоВТекст" id="6">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоИстория" id="7">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СтатусТекст" id="8">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РешилТекст" id="9">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РешеноВТекст" id="10">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПричинаОтказаApproval" id="137">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияПредставление</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияЭффект</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияРиск</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияОбоснование</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияСозданоВ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ОжидаетПодтверждения.Риск</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Commit</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:MistyRose</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияПредставление</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияЭффект</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияРиск</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияОбоснование</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияСозданоВ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ОжидаетПодтверждения.Риск</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Write</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Yellow</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияПредставление</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияЭффект</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияРиск</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияОбоснование</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияСозданоВ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияРешил</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОжидаетПодтвержденияРешеноВ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ОжидаетПодтверждения.ЭтоИстория</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="ar_ПоказатьPrompt" id="134">
@@ -1038,6 +1612,32 @@
 				</v8:item>
 			</Title>
 			<Action>ar_Возобновить</Action>
+		</Command>
+		<Command name="ar_ПодтвердитьApproval" id="136">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подтвердить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Approve</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_ПодтвердитьApproval</Action>
+		</Command>
+		<Command name="ar_ОтклонитьApproval" id="137">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отклонить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Reject</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ar_ОтклонитьApproval</Action>
 		</Command>
 	</Commands>
 	<Parameters>

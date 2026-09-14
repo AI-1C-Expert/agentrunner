@@ -55,7 +55,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ar_РольЧитатель</xr:Item>
 			</DefaultRoles>
 			<Vendor>Александр Барабанов</Vendor>
-			<Version>0.1.0.291</Version>
+			<Version>0.1.0.309</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -171,6 +171,9 @@
 			<CommonModule>ar_ToolDispatcherПовтИсп</CommonModule>
 			<CommonModule>ar_ToolРеестрПоиск</CommonModule>
 			<CommonModule>ar_ToolAccessRules</CommonModule>
+			<CommonModule>ar_ПравилаAllowDeny</CommonModule>
+			<CommonModule>ar_ПрофилиЗапуска</CommonModule>
+			<CommonModule>ar_КонсольДанные</CommonModule>
 			<HTTPService>ar_AgentsAPI</HTTPService>
 			<HTTPService>ar_RunsAPI</HTTPService>
 			<HTTPService>ar_HealthAPI</HTTPService>
@@ -212,6 +215,7 @@
 			<Constant>ar_ЗамерятьВсеTools</Constant>
 			<Constant>ar_ПорогМедленногоTool</Constant>
 			<Constant>ar_ПорогПрогрессивнойВыдачи</Constant><CommonForm>ar_БиблиотекаПресетов</CommonForm>
+			<CommonForm>ar_КонсольАгентов</CommonForm>
 			<CommonForm>ar_МастерНастройки</CommonForm>
 			<CommonForm>ar_Настройки</CommonForm>
 			<CommonForm>ar_ОчередьПодтверждений</CommonForm>
@@ -234,7 +238,9 @@
 			<Catalog>ar_ПодпискиАгентов</Catalog>
 			<Catalog>ar_Диалоги</Catalog>
 			<Catalog>ar_ДополнительныеНастройки</Catalog>
-			<Catalog>ar_КатегорииTools</Catalog><Enum>ar_RiskLevel</Enum>
+			<Catalog>ar_КатегорииTools</Catalog>
+			<Catalog>ar_ПрофилиЗапуска</Catalog>
+			<Enum>ar_RiskLevel</Enum>
 			<Enum>ar_РежимАвтономии</Enum>
 			<Enum>ar_СтатусЗапуска</Enum>
 			<Enum>ar_ТипПровайдера</Enum>
@@ -243,6 +249,7 @@
 			<Enum>ar_РежимЗапретаЗаписи</Enum>
 			<Enum>ar_СпособМаскированияПДн</Enum>
 			<Enum>ar_ТипПравилаДоступа</Enum>
+			<Enum>ar_РольОтветственного</Enum>
 			<DataProcessor>ar_ТестЦикла</DataProcessor>
 			<DataProcessor>ar_ПресетыВстроенные</DataProcessor>
 			<DataProcessor>ar_ТестТулов</DataProcessor>
