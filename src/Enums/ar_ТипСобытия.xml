@@ -594,6 +594,22 @@
 					<Comment>Вердикт надзора получен и записан в ar_ПоследнееРешениеНадзора. Payload: {verdict, reason} (значение ar_ВердиктНадзора строкой + обоснование).</Comment>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="e855fdb5-371d-473b-9a22-94dc7e45b659">
+				<Properties>
+					<Name>ContinuationStarted</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжение запущено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Continuation started</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>CONS-11: новый проход ReAct-цикла тем же RunId после вердикта надзора "Продолжить", прошедшего все три слоя детекции отсутствия прогресса (ar_Надзор.РешитьПродолжатьЛи). Payload: {code, reason} (reason - "run_completed"/"max_steps_reached").</Comment>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="43a70be0-c7e7-4338-8158-26989bc3c236">
 				<Properties>
 					<Name>AutoResumed</Name>
