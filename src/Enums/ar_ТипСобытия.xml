@@ -642,6 +642,22 @@
 					<Comment>Временный техсбой — назначен ar_ПовторитьПосле, увеличен ar_ПопытокВозобновления (§3.5). Payload: {attempt_number, retry_after, error_class}.</Comment>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="63dabef6-3194-45ea-bdfb-adc4ed6d3fcf">
+				<Properties>
+					<Name>NotificationSent</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уведомление отправлено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Notification sent</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>CONS-12: зафиксировано ar_Уведомления.Уведомить при реальной попытке отправки email об эскалации/approval/retry_exhausted - маркер дедупликации по RunId+повод (не сам факт успешной доставки). Payload: {reason} ("escalation"/"approval_pending"/"retry_exhausted").</Comment>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>
