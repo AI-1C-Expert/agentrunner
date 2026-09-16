@@ -1585,6 +1585,11 @@
 				</dcsset:appearance>
 			</dcsset:item>
 		</ConditionalAppearance>
+		<Attribute name="ТекущийПользовательМожетУправлятьApproval" id="138">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ar_ПоказатьPrompt" id="134">

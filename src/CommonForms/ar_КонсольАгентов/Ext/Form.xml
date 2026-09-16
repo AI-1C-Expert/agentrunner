@@ -1366,6 +1366,11 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="ТекущийПользовательМожетУправлять" id="263">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Обновить" id="143">
