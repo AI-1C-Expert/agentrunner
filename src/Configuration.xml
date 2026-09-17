@@ -55,7 +55,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ar_РольЧитатель</xr:Item>
 			</DefaultRoles>
 			<Vendor>Александр Барабанов</Vendor>
-			<Version>0.1.0.334</Version>
+			<Version>0.1.0.335</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -176,6 +176,7 @@
 			<CommonModule>ar_КонсольДанные</CommonModule>
 			<CommonModule>ar_Надзор</CommonModule>
 			<CommonModule>ar_Уведомления</CommonModule>
+			<CommonModule>ar_ПланЗапуска</CommonModule>
 			<HTTPService>ar_AgentsAPI</HTTPService>
 			<HTTPService>ar_RunsAPI</HTTPService>
 			<HTTPService>ar_HealthAPI</HTTPService>
