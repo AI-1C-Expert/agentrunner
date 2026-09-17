@@ -55,7 +55,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ar_РольЧитатель</xr:Item>
 			</DefaultRoles>
 			<Vendor>Александр Барабанов</Vendor>
-			<Version>0.1.0.324</Version>
+			<Version>0.1.0.333</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -217,7 +217,7 @@
 			<Constant>ar_РазрешитьТулыВРежимеКод</Constant>
 			<Constant>ar_ЗамерятьВсеTools</Constant>
 			<Constant>ar_ПорогМедленногоTool</Constant>
-			<Constant>ar_ПорогПрогрессивнойВыдачи</Constant><CommonForm>ar_БиблиотекаПресетов</CommonForm>
+			<Constant>ar_ПорогПрогрессивнойВыдачи</Constant><Constant>ar_КомпакцияСжатиеДней</Constant><Constant>ar_КомпакцияУдалениеДней</Constant><CommonForm>ar_БиблиотекаПресетов</CommonForm>
 			<CommonForm>ar_КонсольАгентов</CommonForm>
 			<CommonForm>ar_МастерНастройки</CommonForm>
 			<CommonForm>ar_Настройки</CommonForm>
