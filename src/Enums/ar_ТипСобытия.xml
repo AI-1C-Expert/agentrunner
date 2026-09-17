@@ -658,6 +658,22 @@
 					<Comment>CONS-12: зафиксировано ar_Уведомления.Уведомить при реальной попытке отправки email об эскалации/approval/retry_exhausted - маркер дедупликации по RunId+повод (не сам факт успешной доставки). Payload: {reason} ("escalation"/"approval_pending"/"retry_exhausted").</Comment>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="2874b73f-5aae-49e8-9664-22c71cf45e57">
+				<Properties>
+					<Name>PlanUpdated</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>План обновлён</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Plan updated</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>PLAN-01: фиксируется после успешного вызова tool update_plan (PLAN-03/04) - LLM объявила или изменила план работы. Payload: {steps_total, steps_done, steps: [{title, status}]}. Финальный состав Payload уточняется в PLAN-04.</Comment>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

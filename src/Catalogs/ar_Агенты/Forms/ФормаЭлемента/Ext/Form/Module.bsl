@@ -1194,6 +1194,8 @@
 		Объект.ar_Активен = НЕ Объект.ar_Активен;
 	ИначеЕсли Ключ = "use_sessions" Тогда
 		Объект.ar_ИспользоватьСессии = НЕ Объект.ar_ИспользоватьСессии;
+	ИначеЕсли Ключ = "plan_work" Тогда
+		Объект.ar_ПланироватьРаботу = НЕ Объект.ar_ПланироватьРаботу;
 	КонецЕсли;
 
 	ПерерисоватьКарточку();
@@ -1962,6 +1964,10 @@
 			Переключатель("use_sessions", Объект.ar_ИспользоватьСессии),
 			НСтр("ru='Сохранять контекст диалога между запусками (сессии с TTL из настроек). Без флажка каждый запуск начинается «с чистого листа».';
 				|en='Keep dialog context between runs (sessions with TTL from settings). Without the flag every run starts from scratch.'"))
+		+ СтрокаПоля(НСтр("ru='Планировать работу'; en='Plan work'"),
+			Переключатель("plan_work", Объект.ar_ПланироватьРаботу),
+			НСтр("ru='Агент объявляет и сопровождает план работы (список этапов) через tool update_plan на многоэтапных задачах. По умолчанию выключено.';
+				|en='The agent declares and maintains a work plan (list of stages) via the update_plan tool on multi-step tasks. Disabled by default.'"))
 		+ "</div>"
 		+ "<div class=""ar-card""><h2>" + ar_ЭкранироватьHTML(НСтр("ru='Токен агента'; en='Agent token'")) + "</h2>"
 		+ "<div class=""ar-token-row"">" + СтатусТокена + КнопкаТокена + "</div>"
