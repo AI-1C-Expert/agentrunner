@@ -80,13 +80,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ar_ПорогМедленногоTool</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ar_ПравилаМаскированияПДн</name>
 		<right>
 			<name>Read</name>
@@ -105,9 +98,31 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ar_ПорогМедленногоTool</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Subsystem.ar_AgentRunner</name>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ar_КатегорииTools</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -145,6 +160,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ar_ПакетыTools</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ar_КомпакцияAuditДней</name>
 		<right>
 			<name>Read</name>
@@ -159,21 +185,6 @@
 		</right>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ar_КатегорииTools</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -207,6 +218,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ar_ПрофилиЗапуска</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ar_СессияTTLДней</name>
 		<right>
 			<name>Read</name>
@@ -233,28 +255,6 @@
 	</object>
 	<object>
 		<name>InformationRegister.ar_СообщенияДиалога</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ar_ПакетыTools</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ar_ПрофилиЗапуска</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

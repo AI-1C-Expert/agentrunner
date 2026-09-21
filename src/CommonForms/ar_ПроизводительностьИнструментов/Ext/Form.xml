@@ -15,8 +15,8 @@
 		<ChildItems>
 			<Button name="Обновить" id="1">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Обновить</CommandName>
 				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Обновить</CommandName>
 				<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="2"/>
 			</Button>
 			<Button name="Закрыть" id="3">
@@ -79,16 +79,40 @@
 			</ChildItems>
 		</UsualGroup>
 		<Table name="Статистика" id="16">
-			<DataPath>Статистика</DataPath>
 			<CommandBarLocation>None</CommandBarLocation>
+			<DataPath>Статистика</DataPath>
+			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="СтатистикаКонтекстноеМеню" id="17"/>
 			<AutoCommandBar name="СтатистикаКоманднаяПанель" id="18"/>
-			<SearchStringAddition name="СтатистикаСтрокаПоиска" id="19"/>
-			<ViewStatusAddition name="СтатистикаСостояниеПросмотра" id="20"/>
-			<SearchControlAddition name="СтатистикаУправлениеПоиском" id="21"/>
+			<ExtendedTooltip name="СтатистикаРасширеннаяПодсказка" id="52"/>
+			<SearchStringAddition name="СтатистикаСтрокаПоиска" id="19">
+				<AdditionSource>
+					<Item>Статистика</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтатистикаСтрокаПоискаКонтекстноеМеню" id="53"/>
+				<ExtendedTooltip name="СтатистикаСтрокаПоискаРасширеннаяПодсказка" id="54"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СтатистикаСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>Статистика</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтатистикаСостояниеПросмотраКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="СтатистикаСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СтатистикаУправлениеПоиском" id="21">
+				<AdditionSource>
+					<Item>Статистика</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СтатистикаУправлениеПоискомКонтекстноеМеню" id="57"/>
+				<ExtendedTooltip name="СтатистикаУправлениеПоискомРасширеннаяПодсказка" id="58"/>
+			</SearchControlAddition>
 			<ChildItems>
 				<InputField name="СтатистикаИнструмент" id="22">
 					<DataPath>Статистика.Инструмент</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -99,12 +123,12 @@
 							<v8:content>Tool</v8:content>
 						</v8:item>
 					</Title>
-					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="СтатистикаИнструментКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="СтатистикаИнструментРасширеннаяПодсказка" id="24"/>
 				</InputField>
 				<InputField name="СтатистикаИсточник" id="25">
 					<DataPath>Статистика.Источник</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -115,12 +139,12 @@
 							<v8:content>Source</v8:content>
 						</v8:item>
 					</Title>
-					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="СтатистикаИсточникКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="СтатистикаИсточникРасширеннаяПодсказка" id="27"/>
 				</InputField>
 				<InputField name="СтатистикаВызовов" id="28">
 					<DataPath>Статистика.Вызовов</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -131,12 +155,12 @@
 							<v8:content>Calls</v8:content>
 						</v8:item>
 					</Title>
-					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="СтатистикаВызововКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="СтатистикаВызововРасширеннаяПодсказка" id="30"/>
 				</InputField>
 				<InputField name="СтатистикаМаксМС" id="31">
 					<DataPath>Статистика.МаксМС</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -147,12 +171,12 @@
 							<v8:content>Max, ms</v8:content>
 						</v8:item>
 					</Title>
-					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="СтатистикаМаксМСКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="СтатистикаМаксМСРасширеннаяПодсказка" id="33"/>
 				</InputField>
 				<InputField name="СтатистикаПерцентиль95МС" id="34">
 					<DataPath>Статистика.Перцентиль95МС</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -163,12 +187,12 @@
 							<v8:content>95th pct, ms</v8:content>
 						</v8:item>
 					</Title>
-					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="СтатистикаПерцентиль95МСКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="СтатистикаПерцентиль95МСРасширеннаяПодсказка" id="36"/>
 				</InputField>
 				<InputField name="СтатистикаМедианаМС" id="37">
 					<DataPath>Статистика.МедианаМС</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -179,12 +203,12 @@
 							<v8:content>Median, ms</v8:content>
 						</v8:item>
 					</Title>
-					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="СтатистикаМедианаМСКонтекстноеМеню" id="38"/>
 					<ExtendedTooltip name="СтатистикаМедианаМСРасширеннаяПодсказка" id="39"/>
 				</InputField>
 				<InputField name="СтатистикаДоляОшибочныхПроцент" id="40">
 					<DataPath>Статистика.ДоляОшибочныхПроцент</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -195,12 +219,12 @@
 							<v8:content>Error rate, %</v8:content>
 						</v8:item>
 					</Title>
-					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="СтатистикаДоляОшибочныхПроцентКонтекстноеМеню" id="41"/>
 					<ExtendedTooltip name="СтатистикаДоляОшибочныхПроцентРасширеннаяПодсказка" id="42"/>
 				</InputField>
 				<InputField name="СтатистикаСреднееНаСтрокуМС" id="43">
 					<DataPath>Статистика.СреднееНаСтрокуМС</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -211,12 +235,12 @@
 							<v8:content>Avg time per row, ms</v8:content>
 						</v8:item>
 					</Title>
-					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="СтатистикаСреднееНаСтрокуМСКонтекстноеМеню" id="44"/>
 					<ExtendedTooltip name="СтатистикаСреднееНаСтрокуМСРасширеннаяПодсказка" id="45"/>
 				</InputField>
 				<CheckBoxField name="СтатистикаМедленный" id="46">
 					<DataPath>Статистика.Медленный</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -227,13 +251,14 @@
 							<v8:content>Slow</v8:content>
 						</v8:item>
 					</Title>
-					<ReadOnly>true</ReadOnly>
 					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="СтатистикаМедленныйКонтекстноеМеню" id="47"/>
 					<ExtendedTooltip name="СтатистикаМедленныйРасширеннаяПодсказка" id="48"/>
 				</CheckBoxField>
 				<InputField name="СтатистикаСреднееМС" id="49">
 					<DataPath>Статистика.СреднееМС</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -244,7 +269,6 @@
 							<v8:content>Average, ms (reference)</v8:content>
 						</v8:item>
 					</Title>
-					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="СтатистикаСреднееМСКонтекстноеМеню" id="50"/>
 					<ExtendedTooltip name="СтатистикаСреднееМСРасширеннаяПодсказка" id="51"/>
 				</InputField>

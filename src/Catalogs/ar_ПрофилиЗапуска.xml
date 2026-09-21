@@ -55,6 +55,7 @@
 					<xr:MultiLine>false</xr:MultiLine>
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
 					<xr:MaxValue xsi:nil="true"/>
 					<xr:ToolTip/>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -81,6 +82,7 @@
 					<xr:MultiLine>false</xr:MultiLine>
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
 					<xr:MaxValue xsi:nil="true"/>
 					<xr:ToolTip/>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -107,6 +109,7 @@
 					<xr:MultiLine>false</xr:MultiLine>
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
 					<xr:MaxValue xsi:nil="true"/>
 					<xr:ToolTip/>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -133,6 +136,7 @@
 					<xr:MultiLine>false</xr:MultiLine>
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
 					<xr:MaxValue xsi:nil="true"/>
 					<xr:ToolTip/>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -159,6 +163,7 @@
 					<xr:MultiLine>false</xr:MultiLine>
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
 					<xr:MaxValue xsi:nil="true"/>
 					<xr:ToolTip/>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -185,6 +190,7 @@
 					<xr:MultiLine>false</xr:MultiLine>
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>Deny</xr:TypeReductionMode>
 					<xr:MaxValue xsi:nil="true"/>
 					<xr:ToolTip/>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -211,6 +217,7 @@
 					<xr:MultiLine>false</xr:MultiLine>
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
 					<xr:MaxValue xsi:nil="true"/>
 					<xr:ToolTip/>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -237,6 +244,7 @@
 					<xr:MultiLine>false</xr:MultiLine>
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
 					<xr:MaxValue xsi:nil="true"/>
 					<xr:ToolTip/>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -263,6 +271,7 @@
 					<xr:MultiLine>false</xr:MultiLine>
 					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
 					<xr:MaxValue xsi:nil="true"/>
 					<xr:ToolTip/>
 					<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -432,6 +441,7 @@
 							<xr:MultiLine>false</xr:MultiLine>
 							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 							<xr:CreateOnInput>Auto</xr:CreateOnInput>
+							<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
 							<xr:MaxValue xsi:nil="true"/>
 							<xr:ToolTip/>
 							<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -454,6 +464,7 @@
 						</xr:StandardAttribute>
 					</StandardAttributes>
 					<Use>ForItem</Use>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="b9940c7b-db2a-479a-8fd9-ab60ef351688">
@@ -467,7 +478,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+								<v8:TypeId>bb356e79-e8e6-4912-8561-ad29cca2604f</v8:TypeId>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -602,6 +613,7 @@
 							<xr:MultiLine>false</xr:MultiLine>
 							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 							<xr:CreateOnInput>Auto</xr:CreateOnInput>
+							<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
 							<xr:MaxValue xsi:nil="true"/>
 							<xr:ToolTip/>
 							<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -624,6 +636,7 @@
 						</xr:StandardAttribute>
 					</StandardAttributes>
 					<Use>ForItem</Use>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="0265d18f-6608-429c-a957-8c22d3fca14e">

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
@@ -51,26 +51,56 @@
 	</Events>
 	<ChildItems>
 		<LabelDecoration name="ДекорацияНедоступности" id="13">
-			<Title formatted="false">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content/>
-				</v8:item>
-			</Title>
 			<ContextMenu name="ДекорацияНедоступностиКонтекстноеМеню" id="14"/>
 			<ExtendedTooltip name="ДекорацияНедоступностиРасширеннаяПодсказка" id="15"/>
 		</LabelDecoration>
 		<Table name="Список" id="16">
-			<DataPath>Список</DataPath>
 			<CommandBarLocation>None</CommandBarLocation>
+			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 			<ContextMenu name="СписокКонтекстноеМеню" id="17"/>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="18">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<SearchStringAddition name="СписокСтрокаПоиска" id="19"/>
-			<ViewStatusAddition name="СписокСостояниеПросмотра" id="20"/>
-			<SearchControlAddition name="СписокУправлениеПоиском" id="21"/>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="52"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="19">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="53"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="54"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="21">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="57"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="58"/>
+			</SearchControlAddition>
 			<ChildItems>
 				<InputField name="ar_Namespace" id="22">
 					<DataPath>Список.ar_Namespace</DataPath>
@@ -95,6 +125,7 @@
 				<CheckBoxField name="ar_БезопасныйРежим" id="34">
 					<DataPath>Список.ar_БезопасныйРежим</DataPath>
 					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ar_БезопасныйРежимКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="ar_БезопасныйРежимРасширеннаяПодсказка" id="36"/>
 				</CheckBoxField>
@@ -133,9 +164,10 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
-				<MainTable>InformationRegister.ar_ПакетыTools</MainTable>
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ar_ПакетыTools</MainTable>
+				<ListSettings/>
 			</Settings>
 		</Attribute>
 		<Attribute name="СообщениеНедоступности" id="50">

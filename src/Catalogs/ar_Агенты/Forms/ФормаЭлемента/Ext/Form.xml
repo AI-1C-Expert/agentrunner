@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
@@ -30,8 +30,8 @@
 			</Events>
 		</HTMLDocumentField>
 		<Table name="ТаблицаПравилДоступа" id="4">
-			<DataPath>Объект.ar_ПравилаДоступаTools</DataPath>
 			<Visible>false</Visible>
+			<DataPath>Объект.ar_ПравилаДоступаTools</DataPath>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -42,11 +42,34 @@
 					<v8:content>Tool access rules</v8:content>
 				</v8:item>
 			</Title>
+			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="ТаблицаПравилДоступаКонтекстноеМеню" id="5"/>
 			<AutoCommandBar name="ТаблицаПравилДоступаКоманднаяПанель" id="6"/>
-			<SearchStringAddition name="ТаблицаПравилДоступаСтрокаПоиска" id="7"/>
-			<ViewStatusAddition name="ТаблицаПравилДоступаСостояниеПросмотра" id="8"/>
-			<SearchControlAddition name="ТаблицаПравилДоступаУправлениеПоиском" id="9"/>
+			<ExtendedTooltip name="ТаблицаПравилДоступаРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="ТаблицаПравилДоступаСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>ТаблицаПравилДоступа</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПравилДоступаСтрокаПоискаКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="ТаблицаПравилДоступаСтрокаПоискаРасширеннаяПодсказка" id="24"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаПравилДоступаСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаблицаПравилДоступа</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПравилДоступаСостояниеПросмотраКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="ТаблицаПравилДоступаСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаПравилДоступаУправлениеПоиском" id="9">
+				<AdditionSource>
+					<Item>ТаблицаПравилДоступа</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПравилДоступаУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ТаблицаПравилДоступаУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
 			<ChildItems>
 				<InputField name="ar_ТипПравила" id="10">
 					<DataPath>Объект.ar_ПравилаДоступаTools.ar_ТипПравила</DataPath>

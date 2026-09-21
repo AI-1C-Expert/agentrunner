@@ -7,10 +7,11 @@
 		</v8:item>
 	</Title>
 	<AutoTitle>false</AutoTitle>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
-		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаШапка" id="1">
@@ -18,7 +19,7 @@
 			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
 				<InputField name="Наименование" id="3">
-					<DataPath>Объект.Наименование</DataPath>
+					<DataPath>Объект.Description</DataPath>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="5"/>
 				</InputField>
@@ -30,6 +31,7 @@
 				<CheckBoxField name="Активен" id="9">
 					<DataPath>Объект.ar_Активен</DataPath>
 					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="АктивенКонтекстноеМеню" id="10"/>
 					<ExtendedTooltip name="АктивенРасширеннаяПодсказка" id="11"/>
 				</CheckBoxField>
@@ -49,13 +51,34 @@
 					<ChildItems>
 						<Table name="Ответственные" id="16">
 							<DataPath>Объект.ar_Ответственные</DataPath>
-							<ChangeRowSet>true</ChangeRowSet>
-							<ChangeRowOrder>true</ChangeRowOrder>
+							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ОтветственныеКонтекстноеМеню" id="17"/>
 							<AutoCommandBar name="ОтветственныеКоманднаяПанель" id="18"/>
-							<SearchStringAddition name="ОтветственныеСтрокаПоиска" id="19"/>
-							<ViewStatusAddition name="ОтветственныеСостояниеПросмотра" id="20"/>
-							<SearchControlAddition name="ОтветственныеУправлениеПоиском" id="21"/>
+							<ExtendedTooltip name="ОтветственныеРасширеннаяПодсказка" id="54"/>
+							<SearchStringAddition name="ОтветственныеСтрокаПоиска" id="19">
+								<AdditionSource>
+									<Item>Ответственные</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтветственныеСтрокаПоискаКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="ОтветственныеСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОтветственныеСостояниеПросмотра" id="20">
+								<AdditionSource>
+									<Item>Ответственные</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтветственныеСостояниеПросмотраКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="ОтветственныеСостояниеПросмотраРасширеннаяПодсказка" id="58"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОтветственныеУправлениеПоиском" id="21">
+								<AdditionSource>
+									<Item>Ответственные</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтветственныеУправлениеПоискомКонтекстноеМеню" id="59"/>
+								<ExtendedTooltip name="ОтветственныеУправлениеПоискомРасширеннаяПодсказка" id="60"/>
+							</SearchControlAddition>
 							<ChildItems>
 								<InputField name="ОтветственныеПользователь" id="22">
 									<DataPath>Объект.ar_Ответственные.ar_Пользователь</DataPath>
@@ -87,13 +110,37 @@
 					<ChildItems>
 						<Table name="ОбластьДанных" id="33">
 							<DataPath>Объект.ar_ОбластьДанных</DataPath>
-							<ChangeRowSet>true</ChangeRowSet>
-							<ChangeRowOrder>true</ChangeRowOrder>
+							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ОбластьДанныхКонтекстноеМеню" id="34"/>
 							<AutoCommandBar name="ОбластьДанныхКоманднаяПанель" id="35"/>
-							<SearchStringAddition name="ОбластьДанныхСтрокаПоиска" id="36"/>
-							<ViewStatusAddition name="ОбластьДанныхСостояниеПросмотра" id="37"/>
-							<SearchControlAddition name="ОбластьДанныхУправлениеПоиском" id="38"/>
+							<ExtendedTooltip name="ОбластьДанныхРасширеннаяПодсказка" id="61"/>
+							<SearchStringAddition name="ОбластьДанныхСтрокаПоиска" id="36">
+								<AdditionSource>
+									<Item>ОбластьДанных</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбластьДанныхСтрокаПоискаКонтекстноеМеню" id="62"/>
+								<ExtendedTooltip name="ОбластьДанныхСтрокаПоискаРасширеннаяПодсказка" id="63"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОбластьДанныхСостояниеПросмотра" id="37">
+								<AdditionSource>
+									<Item>ОбластьДанных</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбластьДанныхСостояниеПросмотраКонтекстноеМеню" id="64"/>
+								<ExtendedTooltip name="ОбластьДанныхСостояниеПросмотраРасширеннаяПодсказка" id="65"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОбластьДанныхУправлениеПоиском" id="38">
+								<AdditionSource>
+									<Item>ОбластьДанных</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбластьДанныхУправлениеПоискомКонтекстноеМеню" id="66"/>
+								<ExtendedTooltip name="ОбластьДанныхУправлениеПоискомРасширеннаяПодсказка" id="67"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="AfterDeleteRow">ОбластьДанныхПослеУдаления</Event>
+							</Events>
 							<ChildItems>
 								<InputField name="ОбластьПараметр" id="39">
 									<DataPath>Объект.ar_ОбластьДанных.ar_Параметр</DataPath>
@@ -128,23 +175,20 @@
 									</Events>
 								</InputField>
 							</ChildItems>
-							<Events>
-								<Event name="AfterDeleteRow">ОбластьДанныхПослеУдаления</Event>
-							</Events>
 						</Table>
 						<InputField name="Расшифровка" id="51">
 							<DataPath>Расшифровка</DataPath>
+							<ReadOnly>true</ReadOnly>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Итоговое поведение</v8:content>
 								</v8:item>
 							</Title>
-							<ReadOnly>true</ReadOnly>
 							<TitleLocation>Top</TitleLocation>
-							<MultiLine>true</MultiLine>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<Height>4</Height>
+							<MultiLine>true</MultiLine>
 							<ContextMenu name="РасшифровкаКонтекстноеМеню" id="52"/>
 							<ExtendedTooltip name="РасшифровкаРасширеннаяПодсказка" id="53"/>
 						</InputField>

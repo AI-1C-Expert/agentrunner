@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
@@ -598,6 +598,7 @@
 					<ExtendedTooltip name="ГруппаСозданныеОбъектыРасширеннаяПодсказка" id="115"/>
 					<ChildItems>
 						<Table name="СозданныеОбъекты" id="116">
+							<CommandBarLocation>None</CommandBarLocation>
 							<DataPath>СозданныеОбъекты</DataPath>
 							<Title>
 								<v8:item>
@@ -609,12 +610,37 @@
 									<v8:content>Created objects</v8:content>
 								</v8:item>
 							</Title>
-							<CommandBarLocation>None</CommandBarLocation>
+							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="СозданныеОбъектыКонтекстноеМеню" id="117"/>
 							<AutoCommandBar name="СозданныеОбъектыКоманднаяПанель" id="118"/>
-							<SearchStringAddition name="СозданныеОбъектыСтрокаПоиска" id="119"/>
-							<ViewStatusAddition name="СозданныеОбъектыСостояниеПросмотра" id="120"/>
-							<SearchControlAddition name="СозданныеОбъектыУправлениеПоиском" id="121"/>
+							<ExtendedTooltip name="СозданныеОбъектыРасширеннаяПодсказка" id="178"/>
+							<SearchStringAddition name="СозданныеОбъектыСтрокаПоиска" id="119">
+								<AdditionSource>
+									<Item>СозданныеОбъекты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СозданныеОбъектыСтрокаПоискаКонтекстноеМеню" id="179"/>
+								<ExtendedTooltip name="СозданныеОбъектыСтрокаПоискаРасширеннаяПодсказка" id="180"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СозданныеОбъектыСостояниеПросмотра" id="120">
+								<AdditionSource>
+									<Item>СозданныеОбъекты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СозданныеОбъектыСостояниеПросмотраКонтекстноеМеню" id="181"/>
+								<ExtendedTooltip name="СозданныеОбъектыСостояниеПросмотраРасширеннаяПодсказка" id="182"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СозданныеОбъектыУправлениеПоиском" id="121">
+								<AdditionSource>
+									<Item>СозданныеОбъекты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СозданныеОбъектыУправлениеПоискомКонтекстноеМеню" id="183"/>
+								<ExtendedTooltip name="СозданныеОбъектыУправлениеПоискомРасширеннаяПодсказка" id="184"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СозданныеОбъектыВыборСтроки</Event>
+							</Events>
 							<ChildItems>
 								<InputField name="СозданныеОбъектыПредставление" id="122">
 									<DataPath>СозданныеОбъекты.Представление</DataPath>
@@ -662,11 +688,9 @@
 									<ExtendedTooltip name="СозданныеОбъектыВремяРасширеннаяПодсказка" id="130"/>
 								</InputField>
 							</ChildItems>
-							<Events>
-								<Event name="Selection">СозданныеОбъектыВыборСтроки</Event>
-							</Events>
 						</Table>
 						<LabelDecoration name="ДекорацияНетСозданныхОбъектов" id="131">
+							<Visible>false</Visible>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -677,7 +701,6 @@
 									<v8:content>No objects were created</v8:content>
 								</v8:item>
 							</Title>
-							<Visible>false</Visible>
 							<ContextMenu name="ДекорацияНетСозданныхОбъектовКонтекстноеМеню" id="132"/>
 							<ExtendedTooltip name="ДекорацияНетСозданныхОбъектовРасширеннаяПодсказка" id="133"/>
 						</LabelDecoration>
@@ -697,6 +720,7 @@
 					<ExtendedTooltip name="ГруппаОжидаетПодтвержденияРасширеннаяПодсказка" id="135"/>
 					<ChildItems>
 						<Table name="ОжидаетПодтверждения" id="136">
+							<CommandBarLocation>None</CommandBarLocation>
 							<DataPath>ОжидаетПодтверждения</DataPath>
 							<Title>
 								<v8:item>
@@ -708,12 +732,37 @@
 									<v8:content>Run's approval queue</v8:content>
 								</v8:item>
 							</Title>
-							<CommandBarLocation>None</CommandBarLocation>
+							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ОжидаетПодтвержденияКонтекстноеМеню" id="137"/>
 							<AutoCommandBar name="ОжидаетПодтвержденияКоманднаяПанель" id="138"/>
-							<SearchStringAddition name="ОжидаетПодтвержденияСтрокаПоиска" id="139"/>
-							<ViewStatusAddition name="ОжидаетПодтвержденияСостояниеПросмотра" id="140"/>
-							<SearchControlAddition name="ОжидаетПодтвержденияУправлениеПоиском" id="141"/>
+							<ExtendedTooltip name="ОжидаетПодтвержденияРасширеннаяПодсказка" id="185"/>
+							<SearchStringAddition name="ОжидаетПодтвержденияСтрокаПоиска" id="139">
+								<AdditionSource>
+									<Item>ОжидаетПодтверждения</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОжидаетПодтвержденияСтрокаПоискаКонтекстноеМеню" id="186"/>
+								<ExtendedTooltip name="ОжидаетПодтвержденияСтрокаПоискаРасширеннаяПодсказка" id="187"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОжидаетПодтвержденияСостояниеПросмотра" id="140">
+								<AdditionSource>
+									<Item>ОжидаетПодтверждения</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОжидаетПодтвержденияСостояниеПросмотраКонтекстноеМеню" id="188"/>
+								<ExtendedTooltip name="ОжидаетПодтвержденияСостояниеПросмотраРасширеннаяПодсказка" id="189"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОжидаетПодтвержденияУправлениеПоиском" id="141">
+								<AdditionSource>
+									<Item>ОжидаетПодтверждения</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОжидаетПодтвержденияУправлениеПоискомКонтекстноеМеню" id="190"/>
+								<ExtendedTooltip name="ОжидаетПодтвержденияУправлениеПоискомРасширеннаяПодсказка" id="191"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ОжидаетПодтвержденияПриАктивизацииСтроки</Event>
+							</Events>
 							<ChildItems>
 								<InputField name="ОжидаетПодтвержденияПредставление" id="142">
 									<DataPath>ОжидаетПодтверждения.Представление</DataPath>
@@ -836,15 +885,13 @@
 									<ExtendedTooltip name="ОжидаетПодтвержденияРешеноВРасширеннаяПодсказка" id="165"/>
 								</InputField>
 							</ChildItems>
-							<Events>
-								<Event name="OnActivateRow">ОжидаетПодтвержденияПриАктивизацииСтроки</Event>
-							</Events>
 						</Table>
 						<UsualGroup name="ГруппаДействийApproval" id="166">
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаДействийApprovalРасширеннаяПодсказка" id="167"/>
 							<ChildItems>
 								<Button name="КнопкаПодтвердитьApproval" id="168">
+									<Type>UsualButton</Type>
 									<CommandName>Form.Command.ar_ПодтвердитьApproval</CommandName>
 									<Title>
 										<v8:item>
@@ -859,6 +906,7 @@
 									<ExtendedTooltip name="КнопкаПодтвердитьApprovalРасширеннаяПодсказка" id="169"/>
 								</Button>
 								<Button name="КнопкаОтклонитьApproval" id="170">
+									<Type>UsualButton</Type>
 									<CommandName>Form.Command.ar_ОтклонитьApproval</CommandName>
 									<Title>
 										<v8:item>
@@ -890,6 +938,7 @@
 							</ChildItems>
 						</UsualGroup>
 						<LabelDecoration name="ДекорацияНетApproval" id="175">
+							<Visible>false</Visible>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -900,7 +949,6 @@
 									<v8:content>No approval queue records for this run</v8:content>
 								</v8:item>
 							</Title>
-							<Visible>false</Visible>
 							<ContextMenu name="ДекорацияНетApprovalКонтекстноеМеню" id="176"/>
 							<ExtendedTooltip name="ДекорацияНетApprovalРасширеннаяПодсказка" id="177"/>
 						</LabelDecoration>
@@ -1478,6 +1526,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ТекущийПользовательМожетУправлятьApproval" id="138">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -1585,11 +1638,6 @@
 				</dcsset:appearance>
 			</dcsset:item>
 		</ConditionalAppearance>
-		<Attribute name="ТекущийПользовательМожетУправлятьApproval" id="138">
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ar_ПоказатьPrompt" id="134">

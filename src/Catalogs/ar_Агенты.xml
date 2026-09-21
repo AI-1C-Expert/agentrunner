@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Catalog uuid="0a6dc926-fa7e-47c6-88af-4c0c1eb27ead">
 		<InternalInfo>
@@ -343,7 +343,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+						<v8:TypeId>bb356e79-e8e6-4912-8561-ad29cca2604f</v8:TypeId>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -1507,6 +1507,7 @@
 							<xr:MultiLine>false</xr:MultiLine>
 							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
 							<xr:CreateOnInput>Auto</xr:CreateOnInput>
+							<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
 							<xr:MaxValue xsi:nil="true"/>
 							<xr:ToolTip/>
 							<xr:ExtendedEdit>false</xr:ExtendedEdit>
@@ -1529,6 +1530,7 @@
 						</xr:StandardAttribute>
 					</StandardAttributes>
 					<Use>ForItem</Use>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="e7f46501-2141-492e-bb41-ef908e88e4c0">
@@ -1705,7 +1707,7 @@
 						</Properties>
 					</Attribute>
 				</ChildObjects>
-			</TabularSection>&#13;
+			</TabularSection>
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
 		</ChildObjects>

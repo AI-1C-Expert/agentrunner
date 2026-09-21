@@ -559,7 +559,7 @@
 							<v8:content>Code tools disabled</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Отключение tools в режиме «Код» при удалении механизма (SEC-TOOL-02). Payload: {disabled_tools: [{name, was_enabled}], actor: &quot;system_update&quot;}.</Comment>
+					<Comment>Отключение tools в режиме «Код» при удалении механизма (SEC-TOOL-02). Payload: {disabled_tools: [{name, was_enabled}], actor: "system_update"}.</Comment>
 				</Properties>
 			</EnumValue>
 			<EnumValue uuid="ff58dea3-780d-48ee-933e-b5a6cfd8c72b">

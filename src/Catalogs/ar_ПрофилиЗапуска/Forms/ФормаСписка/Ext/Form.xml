@@ -10,16 +10,52 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<Table name="Список" id="1">
-			<DataPath>Список</DataPath>
 			<CommandBarLocation>None</CommandBarLocation>
+			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<SearchStringAddition name="СписокСтрокаПоиска" id="4"/>
-			<ViewStatusAddition name="СписокСостояниеПросмотра" id="5"/>
-			<SearchControlAddition name="СписокУправлениеПоиском" id="6"/>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="4">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="24"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="5">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="6">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="Наименование" id="7">
 					<DataPath>Список.Description</DataPath>
@@ -59,9 +95,10 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
-				<MainTable>Catalog.ar_ПрофилиЗапуска</MainTable>
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.ar_ПрофилиЗапуска</MainTable>
+				<ListSettings/>
 			</Settings>
 		</Attribute>
 	</Attributes>
