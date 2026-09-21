@@ -426,6 +426,22 @@
 					<ContextMenu name="СписокЗапусковШаговВсегоКонтекстноеМеню" id="89"/>
 					<ExtendedTooltip name="СписокЗапусковШаговВсегоРасширеннаяПодсказка" id="90"/>
 				</InputField>
+				<InputField name="СписокЗапусковТекстЭтапа" id="266">
+					<DataPath>СписокЗапусков.ТекстЭтапа</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Этап</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Stage</v8:content>
+						</v8:item>
+					</Title>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СписокЗапусковТекстЭтапаКонтекстноеМеню" id="267"/>
+					<ExtendedTooltip name="СписокЗапусковТекстЭтапаРасширеннаяПодсказка" id="268"/>
+				</InputField>
 				<InputField name="СписокЗапусковТриггер" id="91">
 					<DataPath>СписокЗапусков.Триггер</DataPath>
 					<Title>
@@ -784,6 +800,44 @@
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
 							<v8:Length>60</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекущийЭтап" id="264">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтаповВсего" id="265">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтаповЗакрыто" id="266">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекстЭтапа" id="267">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>160</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
