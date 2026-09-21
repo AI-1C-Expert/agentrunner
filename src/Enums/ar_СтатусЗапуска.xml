@@ -274,6 +274,22 @@
 					<Comment>Финальный статус: StateSnapshot несовместим с текущей версией ядра</Comment>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="c3f63e65-5996-49da-af56-de5d505847ad">
+				<Properties>
+					<Name>PausedForEvent</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидание события</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Paused for event</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>PLAN-10: Loop приостановлен, ждёт наступления внешнего события (tool wait_for_event, PLAN-11) или истечения дедлайна ar_ОжиданиеДо (PLAN-13). Снимается ar_ОбработчикПодписок (push, PLAN-12) или регламентным заданием проверки дедлайна (PLAN-13).</Comment>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

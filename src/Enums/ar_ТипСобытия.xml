@@ -674,6 +674,22 @@
 					<Comment>PLAN-01: фиксируется после успешного вызова tool update_plan (PLAN-03/04) - LLM объявила или изменила план работы. Payload: {steps_total, steps_done, steps: [{title, status}]}. Финальный состав Payload уточняется в PLAN-04.</Comment>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="254409da-1b59-4eb7-b7d4-a16602660890">
+				<Properties>
+					<Name>WaitEvent</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидание события</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Wait event</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>PLAN-10: Фиксируется на трёх моментах жизненного цикла ожидания события (PLAN-11/12/13), различаемых полем code в Payload: wait_started - запуск ушёл в PausedForEvent; wait_resumed - наступление события разбудило запуск (PLAN-12); wait_expired - истёк дедлайн ar_ОжиданиеДо без наступления события (PLAN-13). Payload: {code, object_type, filter}.</Comment>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

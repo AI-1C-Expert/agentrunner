@@ -1159,6 +1159,99 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
+			<Resource uuid="18907226-af7b-42f3-a4a7-b659cc3c96fd">
+				<Properties>
+					<Name>ar_ОжидаетСобытия</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидает события</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Awaiting event</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>PLAN-10: JSON-строка вида {\"object_type\": \"Справочник.Контрагенты\", \"filter\": {\"Наименование\": \"ООО Ромашка\"}} - тип объекта + плоский фильтр без операторов, по аналогии с ar_ОбработчикПодписок.ГорячиеТипы/ПроверитьФильтр. Заполняется ar_RuntimeЦикл/ar_ToolПлан при вызове tool wait_for_event(object_type, filter, deadline_hours) (PLAN-11, пока не реализован). Пусто, если запуск не в PausedForEvent. Миграция существующих записей не требуется.</Comment>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:string"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Resource>
+			<Resource uuid="b57946fe-7d14-40c5-8f58-9814468ef990">
+				<Properties>
+					<Name>ar_ОжиданиеДо</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидание до</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Wait until</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>PLAN-10: дедлайн ожидания события, DateTime (точность до секунды - deadline_hours в часах, PLAN-11). Заполняется ar_RuntimeЦикл при вызове tool wait_for_event как ТекущаяДата() + deadline_hours часов (PLAN-11, пока не реализован). Сравнивается с ТекущаяДата() в регламентном задании проверки дедлайна (PLAN-13). Пусто, если запуск не в PausedForEvent. Миграция существующих записей не требуется.</Comment>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Resource>
 			<Dimension uuid="7871ee85-9e8a-4628-89f1-8f1f821935c1">
 				<Properties>
 					<Name>ar_RunId</Name>
