@@ -584,6 +584,111 @@
 						</Pages>
 					</ChildItems>
 				</UsualGroup>
+				<UsualGroup name="ГруппаПлан" id="192">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>План</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Plan</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПланРасширеннаяПодсказка" id="193"/>
+					<ChildItems>
+						<Table name="План" id="194">
+							<CommandBarLocation>None</CommandBarLocation>
+							<DataPath>План</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пункты плана</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Plan steps</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПланКонтекстноеМеню" id="195"/>
+							<AutoCommandBar name="ПланКоманднаяПанель" id="196"/>
+							<ExtendedTooltip name="ПланРасширеннаяПодсказка" id="197"/>
+							<SearchStringAddition name="ПланСтрокаПоиска" id="198">
+								<AdditionSource>
+									<Item>План</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПланСтрокаПоискаКонтекстноеМеню" id="199"/>
+								<ExtendedTooltip name="ПланСтрокаПоискаРасширеннаяПодсказка" id="200"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПланСостояниеПросмотра" id="201">
+								<AdditionSource>
+									<Item>План</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПланСостояниеПросмотраКонтекстноеМеню" id="202"/>
+								<ExtendedTooltip name="ПланСостояниеПросмотраРасширеннаяПодсказка" id="203"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПланУправлениеПоиском" id="204">
+								<AdditionSource>
+									<Item>План</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПланУправлениеПоискомКонтекстноеМеню" id="205"/>
+								<ExtendedTooltip name="ПланУправлениеПоискомРасширеннаяПодсказка" id="206"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПланПредставление" id="207">
+									<DataPath>План.Представление</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пункт плана</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Step</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПланПредставлениеКонтекстноеМеню" id="208"/>
+									<ExtendedTooltip name="ПланПредставлениеРасширеннаяПодсказка" id="209"/>
+								</InputField>
+								<InputField name="ПланСтатус" id="210">
+									<DataPath>План.СтатусТекст</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Status</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПланСтатусКонтекстноеМеню" id="211"/>
+									<ExtendedTooltip name="ПланСтатусРасширеннаяПодсказка" id="212"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<LabelDecoration name="ДекорацияПланПуст" id="213">
+							<Visible>false</Visible>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список пунктов пуст</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Step list is empty</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияПланПустКонтекстноеМеню" id="214"/>
+							<ExtendedTooltip name="ДекорацияПланПустРасширеннаяПодсказка" id="215"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
 				<UsualGroup name="ГруппаСозданныеОбъекты" id="114">
 					<Title>
 						<v8:item>
@@ -1381,6 +1486,40 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="План" id="139">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Представление" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусТекст" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусСырой" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
 		<Attribute name="СозданныеОбъекты" id="135">
 			<Type>
 				<v8:Type>v8:ValueTable</v8:Type>
@@ -1634,6 +1773,52 @@
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветТекста</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПланПредставление</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПланСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">План.СтатусСырой</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">removed</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПланПредставление</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПланСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">План.СтатусСырой</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">in_progress</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:RoyalBlue</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
