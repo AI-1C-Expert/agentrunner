@@ -1513,6 +1513,11 @@
 				</dcsset:appearance>
 			</dcsset:item>
 		</ConditionalAppearance>
+		<Attribute name="СтатусPausedForEventКэш" id="268">
+			<Type>
+				<v8:Type>cfg:EnumRef.ar_СтатусЗапуска</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Обновить" id="143">
