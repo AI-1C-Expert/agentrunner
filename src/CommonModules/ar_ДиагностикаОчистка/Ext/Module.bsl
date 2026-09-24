@@ -214,7 +214,7 @@
 		"ВЫБРАТЬ
 		|	Д.ar_RunId        КАК RunId,
 		|	Д.ar_Sequence     КАК Sequence,
-		|	Д.ar_ИмяTool      КАК ИмяTool,
+		|	Д.ar_ИмяИнструмента КАК ИмяИнструмента,
 		|	Д.ar_АргументыJSON КАК АргументыJSON,
 		|	Д.ar_RiskLevel    КАК RiskLevel,
 		|	Д.ar_ResultRef    КАК ResultRef,

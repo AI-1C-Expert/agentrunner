@@ -506,11 +506,11 @@
 			</Attribute>
 			<Attribute uuid="4cb78022-29e5-4115-9efe-32975af5c20d">
 				<Properties>
-					<Name>ar_ПоддерживаетToolCalls</Name>
+					<Name>ar_ПоддерживаетВызовыИнструментов</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Поддерживает tool calls</v8:content>
+							<v8:content>Поддерживает вызовы инструментов</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

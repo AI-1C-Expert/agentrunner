@@ -13,7 +13,7 @@
 					<v8:content>ToolAccessRules / Tool access rules</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>SCALE-07: единая точка вычисления эффективного набора tools агента (ar_ДоступныеTools + ar_ПравилаДоступаTools). Используется и L1-гейтом ar_ПравилаДвижок, и сборкой контекста ar_RuntimeКонтекст.</Comment>
+			<Comment>SCALE-07: единая точка вычисления эффективного набора tools агента (ar_ДоступныеИнструменты + ar_ПравилаДоступаИнструментов). Используется и L1-гейтом ar_ПравилаДвижок, и сборкой контекста ar_RuntimeКонтекст.</Comment>
 			<Global>false</Global>
 			<ClientManagedApplication>false</ClientManagedApplication>
 			<Server>true</Server>

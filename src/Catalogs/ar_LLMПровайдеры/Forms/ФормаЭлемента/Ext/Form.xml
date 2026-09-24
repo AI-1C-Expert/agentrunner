@@ -98,12 +98,12 @@
 			<ContextMenu name="DefaultModelКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="DefaultModelРасширеннаяПодсказка" id="12"/>
 		</InputField>
-		<CheckBoxField name="ПоддерживаетToolCalls" id="13">
-			<DataPath>Объект.ar_ПоддерживаетToolCalls</DataPath>
+		<CheckBoxField name="ПоддерживаетВызовыИнструментов" id="13">
+			<DataPath>Объект.ar_ПоддерживаетВызовыИнструментов</DataPath>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Поддерживает tool calls</v8:content>
+					<v8:content>Поддерживает вызовы инструментов</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -112,8 +112,8 @@
 			</Title>
 			<TitleLocation>Right</TitleLocation>
 			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ПоддерживаетToolCallsКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="ПоддерживаетToolCallsРасширеннаяПодсказка" id="15"/>
+			<ContextMenu name="ПоддерживаетВызовыИнструментовКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПоддерживаетВызовыИнструментовРасширеннаяПодсказка" id="15"/>
 		</CheckBoxField>
 		<InputField name="Таймаут" id="16">
 			<DataPath>Объект.ar_Таймаут</DataPath>

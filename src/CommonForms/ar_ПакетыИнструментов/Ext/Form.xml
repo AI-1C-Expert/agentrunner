@@ -39,10 +39,10 @@
 				<CommandName>Form.Command.ar_ПроверитьИзменения</CommandName>
 				<ExtendedTooltip name="КнопкаПроверитьИзмененияРасширеннаяПодсказка" id="10"/>
 			</Button>
-			<Button name="КнопкаПоказатьTools" id="11">
+			<Button name="КнопкаПоказатьИнструменты" id="11">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ar_ПоказатьTools</CommandName>
-				<ExtendedTooltip name="КнопкаПоказатьToolsРасширеннаяПодсказка" id="12"/>
+				<CommandName>Form.Command.ar_ПоказатьИнструменты</CommandName>
+				<ExtendedTooltip name="КнопкаПоказатьИнструментыРасширеннаяПодсказка" id="12"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -129,10 +129,10 @@
 					<ContextMenu name="ar_БезопасныйРежимКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="ar_БезопасныйРежимРасширеннаяПодсказка" id="36"/>
 				</CheckBoxField>
-				<InputField name="ar_КоличествоTools" id="37">
-					<DataPath>Список.ar_КоличествоTools</DataPath>
-					<ContextMenu name="ar_КоличествоToolsКонтекстноеМеню" id="38"/>
-					<ExtendedTooltip name="ar_КоличествоToolsРасширеннаяПодсказка" id="39"/>
+				<InputField name="ar_КоличествоИнструментов" id="37">
+					<DataPath>Список.ar_КоличествоИнструментов</DataPath>
+					<ContextMenu name="ar_КоличествоИнструментовКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ar_КоличествоИнструментовРасширеннаяПодсказка" id="39"/>
 				</InputField>
 				<InputField name="ar_ПричинаОтказа" id="40">
 					<DataPath>Список.ar_ПричинаОтказа</DataPath>
@@ -263,7 +263,7 @@
 			</Title>
 			<Action>ar_ПроверитьИзменения</Action>
 		</Command>
-		<Command name="ar_ПоказатьTools" id="57">
+		<Command name="ar_ПоказатьИнструменты" id="57">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -274,7 +274,7 @@
 					<v8:content>Show tools</v8:content>
 				</v8:item>
 			</Title>
-			<Action>ar_ПоказатьTools</Action>
+			<Action>ar_ПоказатьИнструменты</Action>
 		</Command>
 	</Commands>
 </Form>

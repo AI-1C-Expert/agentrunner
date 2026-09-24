@@ -176,11 +176,11 @@
 		<ChildObjects>
 			<Resource uuid="cfa6c3fe-5b05-43e7-b41c-a936133e1389">
 				<Properties>
-					<Name>ar_ИмяTool</Name>
+					<Name>ar_ИмяИнструмента</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_имяtool</v8:content>
+							<v8:content>Имя инструмента</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

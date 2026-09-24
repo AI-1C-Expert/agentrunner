@@ -1013,21 +1013,21 @@
 			</Attribute>
 			<TabularSection uuid="5433c47b-d6d5-4f5c-8e15-97160a7a8281">
 				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.ar_Агенты.ar_ДоступныеTools" category="TabularSection">
+					<xr:GeneratedType name="CatalogTabularSection.ar_Агенты.ar_ДоступныеИнструменты" category="TabularSection">
 						<xr:TypeId>6faa84e0-7854-4ea0-8a59-0efc4086f7da</xr:TypeId>
 						<xr:ValueId>8ef3d781-2b46-4bd5-9273-ca97fc0f5569</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.ar_Агенты.ar_ДоступныеTools" category="TabularSectionRow">
+					<xr:GeneratedType name="CatalogTabularSectionRow.ar_Агенты.ar_ДоступныеИнструменты" category="TabularSectionRow">
 						<xr:TypeId>d55cb482-f260-45c3-80f6-1ccce8c62100</xr:TypeId>
 						<xr:ValueId>36046865-df27-4d0f-b8ab-217250802a87</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>ar_ДоступныеTools</Name>
+					<Name>ar_ДоступныеИнструменты</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_доступныеtools</v8:content>
+							<v8:content>Доступные инструменты</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1068,11 +1068,11 @@
 				<ChildObjects>
 					<Attribute uuid="ead4158e-93ba-48d9-ae3a-4cef440e21a2">
 						<Properties>
-							<Name>ar_Tool</Name>
+							<Name>ar_Инструмент</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Tool</v8:content>
+									<v8:content>Инструмент</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -1476,28 +1476,28 @@
 			</TabularSection>
 			<TabularSection uuid="c845e09f-7bca-4902-a094-11c83d39f22e">
 				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.ar_Агенты.ar_ПравилаДоступаTools" category="TabularSection">
+					<xr:GeneratedType name="CatalogTabularSection.ar_Агенты.ar_ПравилаДоступаИнструментов" category="TabularSection">
 						<xr:TypeId>2f82a028-c5fd-40b3-8144-107b829e66ac</xr:TypeId>
 						<xr:ValueId>1f96482c-4a78-463b-8042-9c061b0a540b</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.ar_Агенты.ar_ПравилаДоступаTools" category="TabularSectionRow">
+					<xr:GeneratedType name="CatalogTabularSectionRow.ar_Агенты.ar_ПравилаДоступаИнструментов" category="TabularSectionRow">
 						<xr:TypeId>0010398e-9c47-4bec-9af7-58d26b53a162</xr:TypeId>
 						<xr:ValueId>e1dd1d4c-ca35-4bfb-92c2-079edf6ebd16</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>ar_ПравилаДоступаTools</Name>
+					<Name>ar_ПравилаДоступаИнструментов</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Правила доступа к tools</v8:content>
+							<v8:content>Правила доступа к инструментам</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Tool access rules</v8:content>
+							<v8:content>Tools access rules</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Вычисляемые правила доступа к реестру ar_Инструменты (SCALE-07): разрешающие и запрещающие правила по категории, пакету, namespace, конкретному tool или уровню риска. Запрещающие правила всегда побеждают разрешающие.</Comment>
+					<Comment>Вычисляемые правила доступа к реестру ar_Инструменты (SCALE-07): разрешающие и запрещающие правила по категории, пакету, namespace, конкретному инструменту или уровню риска. Запрещающие правила всегда побеждают разрешающие.</Comment>
 					<ToolTip/>
 					<FillChecking>DontCheck</FillChecking>
 					<StandardAttributes>
@@ -1546,7 +1546,7 @@
 									<v8:content>Rule type</v8:content>
 								</v8:item>
 							</Synonym>
-							<Comment>Измерение, по которому фильтруется реестр ar_Инструменты: Категория, Пакет, Namespace, Tool или RiskLevel.</Comment>
+							<Comment>Измерение, по которому фильтруется реестр ar_Инструменты: Категория, Пакет, Namespace, Инструмент или RiskLevel.</Comment>
 							<Type>
 								<v8:Type>cfg:EnumRef.ar_ТипПравилаДоступа</v8:Type>
 							</Type>

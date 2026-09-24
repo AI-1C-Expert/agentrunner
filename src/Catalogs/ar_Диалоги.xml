@@ -672,21 +672,21 @@
 			</Attribute>
 			<TabularSection uuid="bd8416ab-cce7-49f9-b3ac-6105bbf790db">
 				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.ar_Диалоги.ar_ВыбранныеTools" category="TabularSection">
+					<xr:GeneratedType name="CatalogTabularSection.ar_Диалоги.ar_ВыбранныеИнструменты" category="TabularSection">
 						<xr:TypeId>3870df0d-1e1a-4158-baa1-c154f8dd43c2</xr:TypeId>
 						<xr:ValueId>c8392d38-af7a-4948-ad73-82903e8aaa67</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.ar_Диалоги.ar_ВыбранныеTools" category="TabularSectionRow">
+					<xr:GeneratedType name="CatalogTabularSectionRow.ar_Диалоги.ar_ВыбранныеИнструменты" category="TabularSectionRow">
 						<xr:TypeId>af4d4615-a4b1-4513-adf8-fb1534839d25</xr:TypeId>
 						<xr:ValueId>62f7261b-8d39-4e5e-b757-e1dd85344fdd</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>ar_ВыбранныеTools</Name>
+					<Name>ar_ВыбранныеИнструменты</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_выбранныеtools</v8:content>
+							<v8:content>Выбранные инструменты</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
