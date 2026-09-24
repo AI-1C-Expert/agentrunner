@@ -19,13 +19,13 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<HTMLDocumentField name="ПолеHTMLTool" id="1">
-			<DataPath>СтрокаHTMLTool</DataPath>
+		<HTMLDocumentField name="ПолеHTMLИнструмент" id="1">
+			<DataPath>СтрокаHTMLИнструмент</DataPath>
 			<TitleLocation>None</TitleLocation>
-			<ContextMenu name="ПолеHTMLToolКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ПолеHTMLToolРасширеннаяПодсказка" id="3"/>
+			<ContextMenu name="ПолеHTMLИнструментКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПолеHTMLИнструментРасширеннаяПодсказка" id="3"/>
 			<Events>
-				<Event name="OnClick">ПолеHTMLToolПриНажатии</Event>
+				<Event name="OnClick">ПолеHTMLИнструментПриНажатии</Event>
 			</Events>
 		</HTMLDocumentField>
 	</ChildItems>
@@ -37,7 +37,7 @@
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="СтрокаHTMLTool" id="5">
+		<Attribute name="СтрокаHTMLИнструмент" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

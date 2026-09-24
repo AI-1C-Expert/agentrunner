@@ -15,7 +15,7 @@
 		<ChildItems>
 			<Button name="КнопкаИмпорт" id="26">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ar_ИмпортSkill</CommandName>
+				<CommandName>Form.Command.ar_ИмпортНавыка</CommandName>
 				<ExtendedTooltip name="КнопкаИмпортРасширеннаяПодсказка" id="27"/>
 			</Button>
 		</ChildItems>
@@ -117,7 +117,7 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="ar_ИмпортSkill" id="28">
+		<Command name="ar_ИмпортНавыка" id="28">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -138,7 +138,7 @@
 					<v8:content>Import skill from .md file</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ar_ИмпортSkill</Action>
+			<Action>ar_ИмпортНавыка</Action>
 			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 	</Commands>

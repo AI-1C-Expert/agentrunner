@@ -159,7 +159,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="DryRun" id="8">
+		<Attribute name="ПробныйЗапуск" id="8">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -170,7 +170,7 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ПоследнийRunId" id="9">
+		<Attribute name="ПоследнийИдентификаторЗапуска" id="9">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -200,7 +200,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ФильтрRiskLevel" id="11">
+		<Attribute name="ФильтрУровеньРиска" id="11">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

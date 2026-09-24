@@ -19,13 +19,13 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<HTMLDocumentField name="ПолеHTMLSkill" id="1">
-			<DataPath>СтрокаHTMLSkill</DataPath>
+		<HTMLDocumentField name="ПолеHTMLНавык" id="1">
+			<DataPath>СтрокаHTMLНавык</DataPath>
 			<TitleLocation>None</TitleLocation>
-			<ContextMenu name="ПолеHTMLSkillКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ПолеHTMLSkillРасширеннаяПодсказка" id="3"/>
+			<ContextMenu name="ПолеHTMLНавыкКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПолеHTMLНавыкРасширеннаяПодсказка" id="3"/>
 			<Events>
-				<Event name="OnClick">ПолеHTMLSkillПриНажатии</Event>
+				<Event name="OnClick">ПолеHTMLНавыкПриНажатии</Event>
 			</Events>
 		</HTMLDocumentField>
 	</ChildItems>
@@ -37,7 +37,7 @@
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="СтрокаHTMLSkill" id="5">
+		<Attribute name="СтрокаHTMLНавык" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

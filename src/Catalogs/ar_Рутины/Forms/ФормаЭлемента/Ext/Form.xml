@@ -57,7 +57,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="РасписаниеCron" id="6">
+		<Attribute name="Расписание" id="6">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -76,7 +76,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="MentionКлючевыеСлова" id="7">
+		<Attribute name="УпоминаниеКлючевыеСлова" id="7">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -114,7 +114,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ОшибкаCron" id="9">
+		<Attribute name="ОшибкаРасписания" id="9">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

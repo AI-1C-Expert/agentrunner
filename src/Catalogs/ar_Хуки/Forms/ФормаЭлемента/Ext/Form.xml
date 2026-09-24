@@ -19,13 +19,13 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<HTMLDocumentField name="ПолеHTMLHook" id="1">
-			<DataPath>СтрокаHTMLHook</DataPath>
+		<HTMLDocumentField name="ПолеHTMLХук" id="1">
+			<DataPath>СтрокаHTMLХук</DataPath>
 			<TitleLocation>None</TitleLocation>
-			<ContextMenu name="ПолеHTMLHookКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ПолеHTMLHookРасширеннаяПодсказка" id="3"/>
+			<ContextMenu name="ПолеHTMLХукКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПолеHTMLХукРасширеннаяПодсказка" id="3"/>
 			<Events>
-				<Event name="OnClick">ПолеHTMLHookПриНажатии</Event>
+				<Event name="OnClick">ПолеHTMLХукПриНажатии</Event>
 			</Events>
 		</HTMLDocumentField>
 	</ChildItems>
@@ -37,7 +37,7 @@
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="СтрокаHTMLHook" id="5">
+		<Attribute name="СтрокаHTMLХук" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

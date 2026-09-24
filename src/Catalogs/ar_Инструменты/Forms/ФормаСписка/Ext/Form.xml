@@ -101,20 +101,20 @@
 				<Event name="OnGetDataAtServer">СписокПриПолученииДанныхНаСервере</Event>
 			</Events>
 			<ChildItems>
-				<InputField name="Description" id="9">
+				<InputField name="Наименование" id="9">
 					<DataPath>Список.Description</DataPath>
-					<ContextMenu name="DescriptionКонтекстноеМеню" id="10"/>
-					<ExtendedTooltip name="DescriptionРасширеннаяПодсказка" id="11"/>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="11"/>
 				</InputField>
 				<InputField name="ar_Описание" id="12">
 					<DataPath>Список.ar_Описание</DataPath>
 					<ContextMenu name="ar_ОписаниеКонтекстноеМеню" id="13"/>
 					<ExtendedTooltip name="ar_ОписаниеРасширеннаяПодсказка" id="14"/>
 				</InputField>
-				<InputField name="ar_RiskLevel" id="15">
+				<InputField name="ar_УровеньРиска" id="15">
 					<DataPath>Список.ar_RiskLevel</DataPath>
-					<ContextMenu name="ar_RiskLevelКонтекстноеМеню" id="16"/>
-					<ExtendedTooltip name="ar_RiskLevelРасширеннаяПодсказка" id="17"/>
+					<ContextMenu name="ar_УровеньРискаКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ar_УровеньРискаРасширеннаяПодсказка" id="17"/>
 				</InputField>
 				<CheckBoxField name="ar_Включён" id="18">
 					<DataPath>Список.ar_Включён</DataPath>
@@ -123,12 +123,12 @@
 					<ContextMenu name="ar_ВключёнКонтекстноеМеню" id="19"/>
 					<ExtendedTooltip name="ar_ВключёнРасширеннаяПодсказка" id="20"/>
 				</CheckBoxField>
-				<CheckBoxField name="ar_ТребуетApproval" id="21">
+				<CheckBoxField name="ar_ТребуетПодтверждения" id="21">
 					<DataPath>Список.ar_ТребуетApproval</DataPath>
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ar_ТребуетApprovalКонтекстноеМеню" id="22"/>
-					<ExtendedTooltip name="ar_ТребуетApprovalРасширеннаяПодсказка" id="23"/>
+					<ContextMenu name="ar_ТребуетПодтвержденияКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ar_ТребуетПодтвержденияРасширеннаяПодсказка" id="23"/>
 				</CheckBoxField>
 				<InputField name="ar_Версия" id="24">
 					<DataPath>Список.ar_Версия</DataPath>

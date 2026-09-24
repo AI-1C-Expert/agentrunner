@@ -53,7 +53,7 @@
 				<Event name="OnChange">ТипПриИзменении</Event>
 			</Events>
 		</InputField>
-		<InputField name="BaseURL" id="7">
+		<InputField name="БазовыйURL" id="7">
 			<DataPath>Объект.ar_BaseURL</DataPath>
 			<Title>
 				<v8:item>
@@ -66,10 +66,10 @@
 				</v8:item>
 			</Title>
 			<AutoMarkIncomplete>true</AutoMarkIncomplete>
-			<ContextMenu name="BaseURLКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="BaseURLРасширеннаяПодсказка" id="9"/>
+			<ContextMenu name="БазовыйURLКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="БазовыйURLРасширеннаяПодсказка" id="9"/>
 		</InputField>
-		<LabelDecoration name="ПодсказкаBaseURL" id="900">
+		<LabelDecoration name="ПодсказкаБазовыйURL" id="900">
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -80,10 +80,10 @@
 					<v8:content>Host and port are enough if the server uses the standard path.</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="ПодсказкаBaseURLКонтекстноеМеню" id="901"/>
-			<ExtendedTooltip name="ПодсказкаBaseURLРасширеннаяПодсказка" id="902"/>
+			<ContextMenu name="ПодсказкаБазовыйURLКонтекстноеМеню" id="901"/>
+			<ExtendedTooltip name="ПодсказкаБазовыйURLРасширеннаяПодсказка" id="902"/>
 		</LabelDecoration>
-		<InputField name="DefaultModel" id="10">
+		<InputField name="МодельПоУмолчанию" id="10">
 			<DataPath>Объект.ar_DefaultModel</DataPath>
 			<Title>
 				<v8:item>
@@ -95,8 +95,8 @@
 					<v8:content>Default model</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="DefaultModelКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="DefaultModelРасширеннаяПодсказка" id="12"/>
+			<ContextMenu name="МодельПоУмолчаниюКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="МодельПоУмолчаниюРасширеннаяПодсказка" id="12"/>
 		</InputField>
 		<CheckBoxField name="ПоддерживаетВызовыИнструментов" id="13">
 			<DataPath>Объект.ar_ПоддерживаетВызовыИнструментов</DataPath>
@@ -130,7 +130,7 @@
 			<ContextMenu name="ТаймаутКонтекстноеМеню" id="17"/>
 			<ExtendedTooltip name="ТаймаутРасширеннаяПодсказка" id="18"/>
 		</InputField>
-		<InputField name="MaxContext" id="19">
+		<InputField name="МаксКонтекст" id="19">
 			<DataPath>Объект.ar_MaxContext</DataPath>
 			<Title>
 				<v8:item>
@@ -142,8 +142,8 @@
 					<v8:content>Max context (tokens)</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="MaxContextКонтекстноеМеню" id="20"/>
-			<ExtendedTooltip name="MaxContextРасширеннаяПодсказка" id="21"/>
+			<ContextMenu name="МаксКонтекстКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="МаксКонтекстРасширеннаяПодсказка" id="21"/>
 		</InputField>
 		<CheckBoxField name="ИспользоватьПрокси" id="22">
 			<DataPath>Объект.ar_ИспользоватьПрокси</DataPath>
@@ -246,7 +246,7 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="APIKeyИдентификатор" id="39">
+		<InputField name="ИдентификаторКлючаAPI" id="39">
 			<DataPath>Объект.ar_APIKeyИдентификатор</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<Title>
@@ -255,8 +255,8 @@
 					<v8:content>Идентификатор ключа</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="APIKeyИдентификаторКонтекстноеМеню" id="40"/>
-			<ExtendedTooltip name="APIKeyИдентификаторРасширеннаяПодсказка" id="41"/>
+			<ContextMenu name="ИдентификаторКлючаAPIКонтекстноеМеню" id="40"/>
+			<ExtendedTooltip name="ИдентификаторКлючаAPIРасширеннаяПодсказка" id="41"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>

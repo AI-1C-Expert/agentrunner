@@ -100,10 +100,10 @@
 				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
 			</Events>
 			<ChildItems>
-				<InputField name="СписокDescription" id="14">
+				<InputField name="СписокНаименование" id="14">
 					<DataPath>Список.Description</DataPath>
-					<ContextMenu name="СписокDescriptionКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="СписокDescriptionРасширеннаяПодсказка" id="16"/>
+					<ContextMenu name="СписокНаименованиеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокНаименованиеРасширеннаяПодсказка" id="16"/>
 				</InputField>
 				<InputField name="СписокСобытие" id="17">
 					<DataPath>Список.ar_Событие</DataPath>

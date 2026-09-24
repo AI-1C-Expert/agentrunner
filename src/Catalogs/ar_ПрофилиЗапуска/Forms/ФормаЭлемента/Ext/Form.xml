@@ -90,10 +90,10 @@
 									<ContextMenu name="ОтветственныеРольКонтекстноеМеню" id="26"/>
 									<ExtendedTooltip name="ОтветственныеРольРасширеннаяПодсказка" id="27"/>
 								</InputField>
-								<InputField name="ОтветственныеEmail" id="28">
+								<InputField name="ОтветственныеПочта" id="28">
 									<DataPath>Объект.ar_Ответственные.ar_Email</DataPath>
-									<ContextMenu name="ОтветственныеEmailКонтекстноеМеню" id="29"/>
-									<ExtendedTooltip name="ОтветственныеEmailРасширеннаяПодсказка" id="30"/>
+									<ContextMenu name="ОтветственныеПочтаКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ОтветственныеПочтаРасширеннаяПодсказка" id="30"/>
 								</InputField>
 							</ChildItems>
 						</Table>
