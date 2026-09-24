@@ -102,10 +102,10 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="58"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<InputField name="ar_Namespace" id="22">
+				<InputField name="ar_Пространство" id="22">
 					<DataPath>Список.ar_Namespace</DataPath>
-					<ContextMenu name="ar_NamespaceКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ar_NamespaceРасширеннаяПодсказка" id="24"/>
+					<ContextMenu name="ar_ПространствоКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ar_ПространствоРасширеннаяПодсказка" id="24"/>
 				</InputField>
 				<InputField name="ar_ИмяОбъектаОбработки" id="25">
 					<DataPath>Список.ar_ИмяОбъектаОбработки</DataPath>

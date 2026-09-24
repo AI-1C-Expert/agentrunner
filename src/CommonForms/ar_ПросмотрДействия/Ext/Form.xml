@@ -21,7 +21,7 @@
 			</Button>
 			<Button name="КнопкаСкопировать" id="3">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ar_СкопироватьPayload</CommandName>
+				<CommandName>Form.Command.ar_СкопироватьДанные</CommandName>
 				<ExtendedTooltip name="КнопкаСкопироватьРасширеннаяПодсказка" id="4"/>
 			</Button>
 		</ChildItems>
@@ -41,7 +41,7 @@
 			<ContextMenu name="ДекорацияЗаголовокКонтекстноеМеню" id="6"/>
 			<ExtendedTooltip name="ДекорацияЗаголовокРасширеннаяПодсказка" id="7"/>
 		</LabelDecoration>
-		<LabelDecoration name="ДекорацияRunId" id="8">
+		<LabelDecoration name="ДекорацияИдентификаторЗапуска" id="8">
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<Title formatted="false">
 				<v8:item>
@@ -49,8 +49,8 @@
 					<v8:content>RunId: </v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="ДекорацияRunIdКонтекстноеМеню" id="9"/>
-			<ExtendedTooltip name="ДекорацияRunIdРасширеннаяПодсказка" id="10"/>
+			<ContextMenu name="ДекорацияИдентификаторЗапускаКонтекстноеМеню" id="9"/>
+			<ExtendedTooltip name="ДекорацияИдентификаторЗапускаРасширеннаяПодсказка" id="10"/>
 		</LabelDecoration>
 		<UsualGroup name="ГруппаОбоснование" id="11">
 			<Title>
@@ -66,20 +66,20 @@
 			<Group>Vertical</Group>
 			<ExtendedTooltip name="ГруппаОбоснованиеРасширеннаяПодсказка" id="12"/>
 			<ChildItems>
-				<InputField name="ПолеRationale" id="13">
-					<DataPath>Rationale</DataPath>
+				<InputField name="ПолеОбоснование" id="13">
+					<DataPath>Обоснование</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<TitleLocation>None</TitleLocation>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<Height>6</Height>
 					<HorizontalStretch>true</HorizontalStretch>
 					<MultiLine>true</MultiLine>
-					<ContextMenu name="ПолеRationaleКонтекстноеМеню" id="14"/>
-					<ExtendedTooltip name="ПолеRationaleРасширеннаяПодсказка" id="15"/>
+					<ContextMenu name="ПолеОбоснованиеКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ПолеОбоснованиеРасширеннаяПодсказка" id="15"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаPayload" id="16">
+		<UsualGroup name="ГруппаДанные" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -91,24 +91,24 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
-			<ExtendedTooltip name="ГруппаPayloadРасширеннаяПодсказка" id="17"/>
+			<ExtendedTooltip name="ГруппаДанныеРасширеннаяПодсказка" id="17"/>
 			<ChildItems>
-				<InputField name="ПолеPayloadJSON" id="18">
-					<DataPath>PayloadJSON</DataPath>
+				<InputField name="ПолеДанныеJSON" id="18">
+					<DataPath>ДанныеJSON</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<TitleLocation>None</TitleLocation>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<Height>22</Height>
 					<HorizontalStretch>true</HorizontalStretch>
 					<MultiLine>true</MultiLine>
-					<ContextMenu name="ПолеPayloadJSONКонтекстноеМеню" id="19"/>
-					<ExtendedTooltip name="ПолеPayloadJSONРасширеннаяПодсказка" id="20"/>
+					<ContextMenu name="ПолеДанныеJSONКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ПолеДанныеJSONРасширеннаяПодсказка" id="20"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="ApprovalId" id="21">
+		<Attribute name="ИдентификаторПодтверждения" id="21">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -127,7 +127,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="RunId" id="22">
+		<Attribute name="ИдентификаторЗапуска" id="22">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -146,7 +146,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ToolName" id="23">
+		<Attribute name="ИмяИнструмента" id="23">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -165,7 +165,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="AgentName" id="24">
+		<Attribute name="ИмяАгента" id="24">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -184,7 +184,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="RiskLevel" id="25">
+		<Attribute name="УровеньРиска" id="25">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -221,7 +221,7 @@
 				</v8:DateQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="Rationale" id="27">
+		<Attribute name="Обоснование" id="27">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -240,7 +240,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="PayloadJSON" id="28">
+		<Attribute name="ДанныеJSON" id="28">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -261,7 +261,7 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="ar_СкопироватьPayload" id="29">
+		<Command name="ar_СкопироватьДанные" id="29">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -272,11 +272,11 @@
 					<v8:content>Copy to clipboard</v8:content>
 				</v8:item>
 			</Title>
-			<Action>ar_СкопироватьPayload</Action>
+			<Action>ar_СкопироватьДанные</Action>
 		</Command>
 	</Commands>
 	<Parameters>
-		<Parameter name="ApprovalId">
+		<Parameter name="ИдентификаторПодтверждения">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -285,7 +285,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Parameter>
-		<Parameter name="RunId">
+		<Parameter name="ИдентификаторЗапуска">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -294,7 +294,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Parameter>
-		<Parameter name="ToolName">
+		<Parameter name="ИмяИнструмента">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -303,7 +303,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Parameter>
-		<Parameter name="AgentName">
+		<Parameter name="ИмяАгента">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -312,7 +312,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Parameter>
-		<Parameter name="RiskLevel">
+		<Parameter name="УровеньРиска">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -329,7 +329,7 @@
 				</v8:DateQualifiers>
 			</Type>
 		</Parameter>
-		<Parameter name="Rationale">
+		<Parameter name="Обоснование">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -338,7 +338,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Parameter>
-		<Parameter name="PayloadJSON">
+		<Parameter name="ДанныеJSON">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>

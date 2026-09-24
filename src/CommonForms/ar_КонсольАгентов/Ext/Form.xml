@@ -1227,7 +1227,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="HeartbeatПорогСекКэш" id="141">
+		<Attribute name="ПульсПорогСекКэш" id="141">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1254,27 +1254,27 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="СтатусRunningКэш" id="143">
+		<Attribute name="СтатусВыполняетсяКэш" id="143">
 			<Type>
 				<v8:Type>cfg:EnumRef.ar_СтатусЗапуска</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="СтатусCreatedКэш" id="145">
+		<Attribute name="СтатусСозданКэш" id="145">
 			<Type>
 				<v8:Type>cfg:EnumRef.ar_СтатусЗапуска</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="СтатусInterruptedКэш" id="146">
+		<Attribute name="СтатусПрерванКэш" id="146">
 			<Type>
 				<v8:Type>cfg:EnumRef.ar_СтатусЗапуска</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="СтатусPausedForApprovalКэш" id="147">
+		<Attribute name="СтатусПриостановленДляПодтвержденияКэш" id="147">
 			<Type>
 				<v8:Type>cfg:EnumRef.ar_СтатусЗапуска</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="СтатусPausedForInputКэш" id="148">
+		<Attribute name="СтатусПриостановленДляВводаКэш" id="148">
 			<Type>
 				<v8:Type>cfg:EnumRef.ar_СтатусЗапуска</v8:Type>
 			</Type>
@@ -1513,7 +1513,7 @@
 				</dcsset:appearance>
 			</dcsset:item>
 		</ConditionalAppearance>
-		<Attribute name="СтатусPausedForEventКэш" id="268">
+		<Attribute name="СтатусПриостановленДляСобытияКэш" id="268">
 			<Type>
 				<v8:Type>cfg:EnumRef.ar_СтатусЗапуска</v8:Type>
 			</Type>

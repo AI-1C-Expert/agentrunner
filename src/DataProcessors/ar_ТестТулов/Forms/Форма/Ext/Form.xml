@@ -14,7 +14,7 @@
 			<Button name="КнЗаполнить" id="1">
 				<Type>CommandBarButton</Type>
 				<Representation>Text</Representation>
-				<CommandName>Form.Command.ЗаполнитьTools</CommandName>
+				<CommandName>Form.Command.ЗаполнитьИнструменты</CommandName>
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -123,49 +123,49 @@
 			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="21"/>
 			<ChildItems>
-				<Page name="СтраницаTools" id="22">
+				<Page name="СтраницаИнструменты" id="22">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Tools</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="СтраницаToolsРасширеннаяПодсказка" id="23"/>
+					<ExtendedTooltip name="СтраницаИнструментыРасширеннаяПодсказка" id="23"/>
 					<ChildItems>
-						<Table name="ТаблицаTools" id="24">
+						<Table name="ТаблицаИнструменты" id="24">
 							<HeightInTableRows>12</HeightInTableRows>
-							<DataPath>ТаблицаTools</DataPath>
+							<DataPath>ТаблицаИнструменты</DataPath>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ТаблицаToolsКонтекстноеМеню" id="25"/>
-							<AutoCommandBar name="ТаблицаToolsКоманднаяПанель" id="26"/>
-							<ExtendedTooltip name="ТаблицаToolsРасширеннаяПодсказка" id="82"/>
-							<SearchStringAddition name="ТаблицаToolsСтрокаПоиска" id="27">
+							<ContextMenu name="ТаблицаИнструментыКонтекстноеМеню" id="25"/>
+							<AutoCommandBar name="ТаблицаИнструментыКоманднаяПанель" id="26"/>
+							<ExtendedTooltip name="ТаблицаИнструментыРасширеннаяПодсказка" id="82"/>
+							<SearchStringAddition name="ТаблицаИнструментыСтрокаПоиска" id="27">
 								<AdditionSource>
-									<Item>ТаблицаTools</Item>
+									<Item>ТаблицаИнструменты</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ТаблицаToolsСтрокаПоискаКонтекстноеМеню" id="83"/>
-								<ExtendedTooltip name="ТаблицаToolsСтрокаПоискаРасширеннаяПодсказка" id="84"/>
+								<ContextMenu name="ТаблицаИнструментыСтрокаПоискаКонтекстноеМеню" id="83"/>
+								<ExtendedTooltip name="ТаблицаИнструментыСтрокаПоискаРасширеннаяПодсказка" id="84"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ТаблицаToolsСостояниеПросмотра" id="28">
+							<ViewStatusAddition name="ТаблицаИнструментыСостояниеПросмотра" id="28">
 								<AdditionSource>
-									<Item>ТаблицаTools</Item>
+									<Item>ТаблицаИнструменты</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ТаблицаToolsСостояниеПросмотраКонтекстноеМеню" id="85"/>
-								<ExtendedTooltip name="ТаблицаToolsСостояниеПросмотраРасширеннаяПодсказка" id="86"/>
+								<ContextMenu name="ТаблицаИнструментыСостояниеПросмотраКонтекстноеМеню" id="85"/>
+								<ExtendedTooltip name="ТаблицаИнструментыСостояниеПросмотраРасширеннаяПодсказка" id="86"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ТаблицаToolsУправлениеПоиском" id="29">
+							<SearchControlAddition name="ТаблицаИнструментыУправлениеПоиском" id="29">
 								<AdditionSource>
-									<Item>ТаблицаTools</Item>
+									<Item>ТаблицаИнструменты</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="ТаблицаToolsУправлениеПоискомКонтекстноеМеню" id="87"/>
-								<ExtendedTooltip name="ТаблицаToolsУправлениеПоискомРасширеннаяПодсказка" id="88"/>
+								<ContextMenu name="ТаблицаИнструментыУправлениеПоискомКонтекстноеМеню" id="87"/>
+								<ExtendedTooltip name="ТаблицаИнструментыУправлениеПоискомРасширеннаяПодсказка" id="88"/>
 							</SearchControlAddition>
 							<ChildItems>
 								<CheckBoxField name="КолВыполнять" id="30">
-									<DataPath>ТаблицаTools.Выполнять</DataPath>
+									<DataPath>ТаблицаИнструменты.Выполнять</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -178,7 +178,7 @@
 									<ExtendedTooltip name="КолВыполнятьРасширеннаяПодсказка" id="32"/>
 								</CheckBoxField>
 								<CheckBoxField name="КолДоступен" id="76">
-									<DataPath>ТаблицаTools.Доступен</DataPath>
+									<DataPath>ТаблицаИнструменты.Доступен</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Title>
 										<v8:item>
@@ -191,7 +191,7 @@
 									<ExtendedTooltip name="КолДоступенРасширеннаяПодсказка" id="78"/>
 								</CheckBoxField>
 								<InputField name="КолПричина" id="79">
-									<DataPath>ТаблицаTools.ПричинаНедоступности</DataPath>
+									<DataPath>ТаблицаИнструменты.ПричинаНедоступности</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Title>
 										<v8:item>
@@ -203,7 +203,7 @@
 									<ExtendedTooltip name="КолПричинаРасширеннаяПодсказка" id="81"/>
 								</InputField>
 								<InputField name="КолИмя" id="33">
-									<DataPath>ТаблицаTools.Имя</DataPath>
+									<DataPath>ТаблицаИнструменты.Имя</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Title>
 										<v8:item>
@@ -215,7 +215,7 @@
 									<ExtendedTooltip name="КолИмяРасширеннаяПодсказка" id="35"/>
 								</InputField>
 								<InputField name="КолМодуль" id="36">
-									<DataPath>ТаблицаTools.Модуль</DataPath>
+									<DataPath>ТаблицаИнструменты.Модуль</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Title>
 										<v8:item>
@@ -226,8 +226,8 @@
 									<ContextMenu name="КолМодульКонтекстноеМеню" id="37"/>
 									<ExtendedTooltip name="КолМодульРасширеннаяПодсказка" id="38"/>
 								</InputField>
-								<InputField name="КолRiskLevel" id="39">
-									<DataPath>ТаблицаTools.RiskLevel</DataPath>
+								<InputField name="КолУровеньРиска" id="39">
+									<DataPath>ТаблицаИнструменты.УровеньРиска</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Title>
 										<v8:item>
@@ -235,11 +235,11 @@
 											<v8:content>Риск</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="КолRiskLevelКонтекстноеМеню" id="40"/>
-									<ExtendedTooltip name="КолRiskLevelРасширеннаяПодсказка" id="41"/>
+									<ContextMenu name="КолУровеньРискаКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="КолУровеньРискаРасширеннаяПодсказка" id="41"/>
 								</InputField>
-								<CheckBoxField name="КолApproval" id="42">
-									<DataPath>ТаблицаTools.ТребуетApproval</DataPath>
+								<CheckBoxField name="КолПодтверждение" id="42">
+									<DataPath>ТаблицаИнструменты.ТребуетПодтверждения</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Title>
 										<v8:item>
@@ -249,11 +249,11 @@
 									</Title>
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="КолApprovalКонтекстноеМеню" id="43"/>
-									<ExtendedTooltip name="КолApprovalРасширеннаяПодсказка" id="44"/>
+									<ContextMenu name="КолПодтверждениеКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="КолПодтверждениеРасширеннаяПодсказка" id="44"/>
 								</CheckBoxField>
 								<InputField name="КолАргументы" id="45">
-									<DataPath>ТаблицаTools.JSONАргументы</DataPath>
+									<DataPath>ТаблицаИнструменты.JSONАргументы</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -335,8 +335,8 @@
 									<ContextMenu name="РезСтатусКонтекстноеМеню" id="60"/>
 									<ExtendedTooltip name="РезСтатусРасширеннаяПодсказка" id="61"/>
 								</InputField>
-								<InputField name="РезRiskLevel" id="62">
-									<DataPath>ТаблицаРезультатов.RiskLevel</DataPath>
+								<InputField name="РезУровеньРиска" id="62">
+									<DataPath>ТаблицаРезультатов.УровеньРиска</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Title>
 										<v8:item>
@@ -344,8 +344,8 @@
 											<v8:content>Риск</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="РезRiskLevelКонтекстноеМеню" id="63"/>
-									<ExtendedTooltip name="РезRiskLevelРасширеннаяПодсказка" id="64"/>
+									<ContextMenu name="РезУровеньРискаКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="РезУровеньРискаРасширеннаяПодсказка" id="64"/>
 								</InputField>
 								<InputField name="РезОшибка" id="65">
 									<DataPath>ТаблицаРезультатов.ТекстОшибки</DataPath>
@@ -361,8 +361,8 @@
 								</InputField>
 							</ChildItems>
 						</Table>
-						<InputField name="ПолеObservation" id="68">
-							<DataPath>ТекущийObservation</DataPath>
+						<InputField name="ПолеНаблюдение" id="68">
+							<DataPath>ТекущееНаблюдение</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<Title>
 								<v8:item>
@@ -374,8 +374,8 @@
 							<Height>6</Height>
 							<HorizontalStretch>true</HorizontalStretch>
 							<MultiLine>true</MultiLine>
-							<ContextMenu name="ПолеObservationКонтекстноеМеню" id="69"/>
-							<ExtendedTooltip name="ПолеObservationРасширеннаяПодсказка" id="70"/>
+							<ContextMenu name="ПолеНаблюдениеКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="ПолеНаблюдениеРасширеннаяПодсказка" id="70"/>
 						</InputField>
 					</ChildItems>
 				</Page>
@@ -411,7 +411,7 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
-		<Attribute name="ТаблицаTools" id="77">
+		<Attribute name="ТаблицаИнструменты" id="77">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -454,7 +454,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="RiskLevel" id="82">
+				<Column name="УровеньРиска" id="82">
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -463,7 +463,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="ТребуетApproval" id="83">
+				<Column name="ТребуетПодтверждения" id="83">
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
@@ -477,7 +477,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="JSONManifest" id="85">
+				<Column name="JSONМанифест" id="85">
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -536,7 +536,7 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
-				<Column name="RiskLevel" id="90">
+				<Column name="УровеньРиска" id="90">
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -554,7 +554,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="Observation" id="92">
+				<Column name="Наблюдение" id="92">
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -574,7 +574,7 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="ТекущийObservation" id="94">
+		<Attribute name="ТекущееНаблюдение" id="94">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -606,14 +606,14 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="ЗаполнитьTools" id="96">
+		<Command name="ЗаполнитьИнструменты" id="96">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Заполнить tools</v8:content>
 				</v8:item>
 			</Title>
-			<Action>ЗаполнитьTools</Action>
+			<Action>ЗаполнитьИнструменты</Action>
 		</Command>
 		<Command name="ЗаполнитьАргументыАвто" id="97">
 			<Title>

@@ -21,7 +21,7 @@
 			</Button>
 			<Button name="КнопкаСкопировать" id="3">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ar_СкопироватьPrompt</CommandName>
+				<CommandName>Form.Command.ar_СкопироватьПромпт</CommandName>
 				<ExtendedTooltip name="КнопкаСкопироватьРасширеннаяПодсказка" id="4"/>
 			</Button>
 		</ChildItems>
@@ -61,16 +61,16 @@
 					</Title>
 					<ExtendedTooltip name="СтраницаСистемныйРасширеннаяПодсказка" id="11"/>
 					<ChildItems>
-						<InputField name="ПолеСистемныйPrompt" id="12">
-							<DataPath>СистемныйPrompt</DataPath>
+						<InputField name="ПолеСистемныйПромпт" id="12">
+							<DataPath>СистемныйПромпт</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<TitleLocation>None</TitleLocation>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<Height>10</Height>
 							<HorizontalStretch>true</HorizontalStretch>
 							<MultiLine>true</MultiLine>
-							<ContextMenu name="ПолеСистемныйPromptКонтекстноеМеню" id="13"/>
-							<ExtendedTooltip name="ПолеСистемныйPromptРасширеннаяПодсказка" id="14"/>
+							<ContextMenu name="ПолеСистемныйПромптКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ПолеСистемныйПромптРасширеннаяПодсказка" id="14"/>
 						</InputField>
 					</ChildItems>
 				</Page>
@@ -87,16 +87,16 @@
 					</Title>
 					<ExtendedTooltip name="СтраницаИнструкцияРасширеннаяПодсказка" id="16"/>
 					<ChildItems>
-						<InputField name="ПолеИнструкцияPrompt" id="17">
-							<DataPath>ИнструкцияPrompt</DataPath>
+						<InputField name="ПолеИнструкцияПромпт" id="17">
+							<DataPath>ИнструкцияПромпт</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<TitleLocation>None</TitleLocation>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<Height>10</Height>
 							<HorizontalStretch>true</HorizontalStretch>
 							<MultiLine>true</MultiLine>
-							<ContextMenu name="ПолеИнструкцияPromptКонтекстноеМеню" id="18"/>
-							<ExtendedTooltip name="ПолеИнструкцияPromptРасширеннаяПодсказка" id="19"/>
+							<ContextMenu name="ПолеИнструкцияПромптКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="ПолеИнструкцияПромптРасширеннаяПодсказка" id="19"/>
 						</InputField>
 					</ChildItems>
 				</Page>
@@ -113,16 +113,16 @@
 					</Title>
 					<ExtendedTooltip name="СтраницаИтогРасширеннаяПодсказка" id="21"/>
 					<ChildItems>
-						<InputField name="ПолеТекстPrompt" id="22">
-							<DataPath>ТекстPrompt</DataPath>
+						<InputField name="ПолеТекстПромпт" id="22">
+							<DataPath>ТекстПромпт</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<TitleLocation>None</TitleLocation>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<Height>25</Height>
 							<HorizontalStretch>true</HorizontalStretch>
 							<MultiLine>true</MultiLine>
-							<ContextMenu name="ПолеТекстPromptКонтекстноеМеню" id="23"/>
-							<ExtendedTooltip name="ПолеТекстPromptРасширеннаяПодсказка" id="24"/>
+							<ContextMenu name="ПолеТекстПромптКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ПолеТекстПромптРасширеннаяПодсказка" id="24"/>
 						</InputField>
 					</ChildItems>
 				</Page>
@@ -130,7 +130,7 @@
 		</Pages>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="ТекстPrompt" id="25">
+		<Attribute name="ТекстПромпт" id="25">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -149,7 +149,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="СистемныйPrompt" id="26">
+		<Attribute name="СистемныйПромпт" id="26">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -168,7 +168,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ИнструкцияPrompt" id="27">
+		<Attribute name="ИнструкцияПромпт" id="27">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -209,7 +209,7 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="ar_СкопироватьPrompt" id="29">
+		<Command name="ar_СкопироватьПромпт" id="29">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -220,11 +220,11 @@
 					<v8:content>Copy to clipboard</v8:content>
 				</v8:item>
 			</Title>
-			<Action>ar_СкопироватьPrompt</Action>
+			<Action>ar_СкопироватьПромпт</Action>
 		</Command>
 	</Commands>
 	<Parameters>
-		<Parameter name="ТекстPrompt">
+		<Parameter name="ТекстПромпт">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -233,7 +233,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Parameter>
-		<Parameter name="СистемныйPrompt">
+		<Parameter name="СистемныйПромпт">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -242,7 +242,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Parameter>
-		<Parameter name="ИнструкцияPrompt">
+		<Parameter name="ИнструкцияПромпт">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
