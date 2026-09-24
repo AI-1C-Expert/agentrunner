@@ -14,7 +14,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<MethodName>CommonModule.ar_Scheduler.ОбработатьКомпакциюAudit</MethodName>
+			<MethodName>CommonModule.ar_Планировщик.ОбработатьКомпакциюAudit</MethodName>
 			<Description>AgentRunner Audit Compaction</Description>
 			<Key>ar_КомпакцияAudit</Key>
 			<Use>true</Use>

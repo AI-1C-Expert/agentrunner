@@ -14,7 +14,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<MethodName>CommonModule.ar_Scheduler.ОбработатьВозобновление</MethodName>
+			<MethodName>CommonModule.ar_Планировщик.ОбработатьВозобновление</MethodName>
 			<Description>Возобновление агентов после подтверждения</Description>
 			<Key>ar_ВозобновлениеПослеApproval</Key>
 			<Use>true</Use>

@@ -14,7 +14,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<MethodName>CommonModule.ar_Scheduler.ОбработатьРотациюСессий</MethodName>
+			<MethodName>CommonModule.ar_Планировщик.ОбработатьРотациюСессий</MethodName>
 			<Description>AgentRunner Session Rotation</Description>
 			<Key>ar_РотацияСессий</Key>
 			<Use>true</Use>

@@ -43,7 +43,7 @@
 					<v8:content>PII Masking Rules</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Пользовательские правила полного сокрытия полей для LLM-контекста. Проверяется геттером aosPersonalData.ЕстьПравилоПолногоСокрытия, применяется в ar_Утилиты.ОчиститьЗначениеПоля (PII-04).</Comment>
+			<Comment>Пользовательские правила полного сокрытия полей для LLM-контекста. Проверяется геттером ar_ПерсональныеДанные.ЕстьПравилоПолногоСокрытия, применяется в ar_Утилиты.ОчиститьЗначениеПоля (PII-04).</Comment>
 			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InDialog</EditType>
 			<DefaultRecordForm/>

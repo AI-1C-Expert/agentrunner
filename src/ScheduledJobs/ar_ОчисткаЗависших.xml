@@ -14,7 +14,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<MethodName>CommonModule.ar_Scheduler.ОбработатьОчисткуЗависших</MethodName>
+			<MethodName>CommonModule.ar_Планировщик.ОбработатьОчисткуЗависших</MethodName>
 			<Description>Очистка зависших запусков AgentRunner</Description>
 			<Key>ar_ОчисткаЗависших</Key>
 			<Use>true</Use>

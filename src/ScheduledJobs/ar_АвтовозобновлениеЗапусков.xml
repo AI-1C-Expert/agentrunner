@@ -14,7 +14,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<MethodName>CommonModule.ar_Scheduler.ОбработатьАвтовозобновление</MethodName>
+			<MethodName>CommonModule.ar_Планировщик.ОбработатьАвтовозобновление</MethodName>
 			<Description>Автовозобновление запусков AgentRunner</Description>
 			<Key>ar_АвтовозобновлениеЗапусков</Key>
 			<Use>true</Use>

@@ -98,12 +98,12 @@
 			<CommonTemplate>ar_Профиль_УТ11</CommonTemplate>
 			<CommonTemplate>ar_Профиль_ERP2</CommonTemplate>
 			<CommonTemplate>ar_Инструкция_РазработкаTool</CommonTemplate>
-			<CommonModule>ar_Approval</CommonModule>
+			<CommonModule>ar_Подтверждение</CommonModule>
 			<CommonModule>ar_AuditДействия</CommonModule>
 			<CommonModule>ar_AuditЗапуски</CommonModule>
 			<CommonModule>ar_AuditЗащищённыйРежим</CommonModule>
 			<CommonModule>ar_AuditСобытия</CommonModule>
-			<CommonModule>ar_Cron</CommonModule>
+			<CommonModule>ar_Расписание</CommonModule>
 			<CommonModule>ar_HTTP</CommonModule>
 			<CommonModule>ar_JSON</CommonModule>
 			<CommonModule>ar_LLMGigaChat</CommonModule>
@@ -115,17 +115,17 @@
 			<CommonModule>ar_LLMКомпакция</CommonModule>
 			<CommonModule>ar_LLMКонтракт</CommonModule>
 			<CommonModule>ar_LLMТест</CommonModule>
-			<CommonModule>ar_PermissionEngine</CommonModule>
-			<CommonModule>ar_PermissionRoles</CommonModule>
+			<CommonModule>ar_ПравилаДвижок</CommonModule>
+			<CommonModule>ar_ПравилаРоли</CommonModule>
 			<CommonModule>ar_PermissionЛимиты</CommonModule>
 			<CommonModule>ar_RuntimeЗапуск</CommonModule>
 			<CommonModule>ar_RuntimeКонтекст</CommonModule>
 			<CommonModule>ar_RuntimeПарсер</CommonModule>
 			<CommonModule>ar_RuntimeЦикл</CommonModule>
 			<CommonModule>ar_RuntimeЦиклПрото</CommonModule>
-			<CommonModule>ar_Scheduler</CommonModule>
-			<CommonModule>ar_Secrets</CommonModule>
-			<CommonModule>ar_SnapshotМигратор</CommonModule>
+			<CommonModule>ar_Планировщик</CommonModule>
+			<CommonModule>ar_Секреты</CommonModule>
+			<CommonModule>ar_СнимокМигратор</CommonModule>
 			<CommonModule>ar_ИнструментыДиспетчер</CommonModule>
 			<CommonModule>ar_ИнструментыУниверсальный</CommonModule>
 			<CommonModule>ar_ИнструментыКоммуникации</CommonModule>
@@ -141,7 +141,7 @@
 			<CommonModule>ar_Память</CommonModule>
 			<CommonModule>ar_ПресетыИмпорт</CommonModule>
 			<CommonModule>ar_ОбработчикПодписок</CommonModule>
-			<CommonModule>ar_PermissionCritic</CommonModule>
+			<CommonModule>ar_ПравилаКритик</CommonModule>
 			<CommonModule>ar_HTTPСервисПомощник</CommonModule>
 			<CommonModule>ar_ТестыHTTPСервисов</CommonModule>
 			<CommonModule>ar_ТестыФинансыНаДанных</CommonModule>
@@ -149,8 +149,8 @@
 			<CommonModule>ar_ИнструментыОтчёты</CommonModule>
 			<CommonModule>ar_ИнструментыАварийный</CommonModule>
 			<CommonModule>ar_ПроверкаОбновлений</CommonModule>
-			<CommonModule>aosPersonalData</CommonModule>
-			<CommonModule>aosPersonalDataПовтИсп</CommonModule>
+			<CommonModule>ar_ПерсональныеДанные</CommonModule>
+			<CommonModule>ar_ПерсональныеДанныеПовтИсп</CommonModule>
 			<CommonModule>ar_LLMAgentRunnerCloud</CommonModule>
 			<CommonModule>ar_ТестыLLMAgentRunnerCloud</CommonModule>
 			<CommonModule>ar_ДиагностикаОчистка</CommonModule>
@@ -165,7 +165,7 @@
 			<CommonModule>ar_ПрофилиИмпорт</CommonModule>
 			<CommonModule>ar_ИнструментыПереопределяемый</CommonModule>
 			<CommonModule>ar_Настройки</CommonModule>
-			<CommonModule>ar_ApprovalПредставление</CommonModule>
+			<CommonModule>ar_ПодтверждениеПредставление</CommonModule>
 			<CommonModule>ar_ИнструментыПакеты</CommonModule>
 			<CommonModule>ar_ИнструментыПлагинВызов</CommonModule>
 			<CommonModule>ar_ИнструментыДиспетчерПовтИсп</CommonModule>

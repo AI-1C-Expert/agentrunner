@@ -14,7 +14,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<MethodName>CommonModule.ar_Scheduler.ОбработатьОбновлениеПамятиAuto</MethodName>
+			<MethodName>CommonModule.ar_Планировщик.ОбработатьОбновлениеПамятиAuto</MethodName>
 			<Description>AgentRunner Auto Memory Update</Description>
 			<Key>ar_ОбновлениеПамятиAuto</Key>
 			<Use>true</Use>

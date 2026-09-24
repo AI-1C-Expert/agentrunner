@@ -14,7 +14,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<MethodName>CommonModule.ar_Scheduler.ОбработатьОпросПодписок</MethodName>
+			<MethodName>CommonModule.ar_Планировщик.ОбработатьОпросПодписок</MethodName>
 			<Description>AgentRunner Agent Subscription Poll</Description>
 			<Key>ar_ОпросПодписокАгентов</Key>
 			<Use>true</Use>

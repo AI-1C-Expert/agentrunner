@@ -14,7 +14,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<MethodName>CommonModule.ar_Scheduler.ОбработатьПланировщик</MethodName>
+			<MethodName>CommonModule.ar_Планировщик.ОбработатьПланировщик</MethodName>
 			<Description>Планировщик агентов AgentRunner</Description>
 			<Key>ar_ПланировщикАгентов</Key>
 			<Use>true</Use>
