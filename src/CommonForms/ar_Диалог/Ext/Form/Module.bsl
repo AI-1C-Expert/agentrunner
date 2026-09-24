@@ -1526,7 +1526,12 @@
 &НаСервере
 Функция ВыполнитьСамопроверкуНаСервере()
 
-	Возврат ar_ТестыФинансыНаДанных.ВыполнитьВсе();
+	// PLAN-14: склейка двух отчётов - ar_ТестыФинансыНаДанных (финансовые tools
+	// на данных) и ar_ТестыPLAN (совместимость PausedForEvent с рантайм-
+	// обходчиками запусков) - тематически разные наборы, единая кнопка
+	// «Самопроверка» показывает оба текстом друг за другом.
+	Возврат ar_ТестыФинансыНаДанных.ВыполнитьВсе() + Символы.ПС + Символы.ПС
+		+ ar_ТестыPLAN.ВыполнитьВсе();
 
 КонецФункции
 
@@ -2835,6 +2840,8 @@
 		Возврат "PausedForApproval";
 	ИначеЕсли Статус = Перечисления.ar_СтатусЗапуска.PausedForInput Тогда
 		Возврат "PausedForInput";
+	ИначеЕсли Статус = Перечисления.ar_СтатусЗапуска.PausedForEvent Тогда
+		Возврат "PausedForEvent";
 	ИначеЕсли Статус = Перечисления.ar_СтатусЗапуска.Completed Тогда
 		Возврат "Completed";
 	ИначеЕсли Статус = Перечисления.ar_СтатусЗапуска.Failed Тогда
@@ -3562,6 +3569,8 @@
 		Возврат НСтр("ru='Ждёт подтверждения'; en='Awaiting approval'");
 	ИначеЕсли Статус = "PausedForInput" Тогда
 		Возврат НСтр("ru='Ждёт ответа'; en='Awaiting answer'");
+	ИначеЕсли Статус = "PausedForEvent" Тогда
+		Возврат НСтр("ru='Ожидание события'; en='Awaiting event'");
 	ИначеЕсли Статус = "Completed" Тогда
 		Возврат НСтр("ru='Завершено'; en='Completed'");
 	ИначеЕсли Статус = "Failed" ИЛИ Статус = "FailedIncompatibleState" Тогда
@@ -3624,7 +3633,7 @@
 		+ ".ar-head-svc:hover{background:#f0eee6;}"
 		+ ".ar-status{font-size:11px;font-weight:600;border-radius:10px;padding:3px 10px;}"
 		+ ".ar-status-running,.ar-status-created{background:#e3f0e3;color:#2f7d32;}"
-		+ ".ar-status-pausedforapproval,.ar-status-pausedforinput{background:#fdf3d7;color:#9c6f19;}"
+		+ ".ar-status-pausedforapproval,.ar-status-pausedforinput,.ar-status-pausedforevent{background:#fdf3d7;color:#9c6f19;}"
 		+ ".ar-status-completed{background:#e8f0fb;color:#2c5faa;}"
 		+ ".ar-status-failed,.ar-status-deniedglobally,.ar-status-failedincompatiblestate"
 		+ "{background:#fbe9e7;color:#c0392b;}"
