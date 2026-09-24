@@ -103,7 +103,7 @@
 							<v8:content>Email</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Единственный реализуемый канал (CONS-12) — через существующий ar_ToolКоммуникации.</Comment>
+					<Comment>Единственный реализуемый канал (CONS-12) — через существующий ar_ИнструментыКоммуникации.</Comment>
 				</Properties>
 			</EnumValue>
 			<EnumValue uuid="9b102984-629b-436d-8c37-a2433bfbe4e3">

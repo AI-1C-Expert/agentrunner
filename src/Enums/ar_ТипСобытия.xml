@@ -495,7 +495,7 @@
 							<v8:content>Tool code changed</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Историческое: изменение ar_КодРеализации у tool в режиме «Код» (создание/редактирование), зафиксированное в Catalogs.ar_Tools.ObjectModule.ПередЗаписью (SEC-TOOL-01). Payload: {tool, actor, code_hash, has_code} — код НЕ пишется в payload, только SHA-256 хеш. Механизм режима «Код» удалён в SEC-TOOL-02 — новые события этого типа не создаются, значение сохранено для читаемости старых записей аудита.</Comment>
+					<Comment>Историческое: изменение ar_КодРеализации у tool в режиме «Код» (создание/редактирование), зафиксированное в Catalogs.ar_Инструменты.ObjectModule.ПередЗаписью (SEC-TOOL-01). Payload: {tool, actor, code_hash, has_code} — код НЕ пишется в payload, только SHA-256 хеш. Механизм режима «Код» удалён в SEC-TOOL-02 — новые события этого типа не создаются, значение сохранено для читаемости старых записей аудита.</Comment>
 				</Properties>
 			</EnumValue>
 			<EnumValue uuid="17bef70e-eac4-4a5a-bcc2-77db0b99c080">

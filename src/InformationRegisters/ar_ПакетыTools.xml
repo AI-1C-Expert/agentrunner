@@ -474,7 +474,7 @@
 							<v8:content>Tools count</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Число tools, фактически зарегистрированных из этого пакета в ar_Tools.</Comment>
+					<Comment>Число tools, фактически зарегистрированных из этого пакета в ar_Инструменты.</Comment>
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>

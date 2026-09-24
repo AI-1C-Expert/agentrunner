@@ -622,7 +622,7 @@
 			<Columns>
 				<Column name="Tool" id="95">
 					<Type>
-						<v8:Type>cfg:CatalogRef.ar_Tools</v8:Type>
+						<v8:Type>cfg:CatalogRef.ar_Инструменты</v8:Type>
 					</Type>
 				</Column>
 				<Column name="Имя" id="96">

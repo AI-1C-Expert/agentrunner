@@ -1308,7 +1308,7 @@
 							<v8:content>Connected skills</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>M:N-связь агента с реестром ar_Skills (META-23). Содержимое подключённых и включённых skills инжектируется в STABLE-слой контекста (SKILL-02).</Comment>
+					<Comment>M:N-связь агента с реестром ar_Навыки (META-23). Содержимое подключённых и включённых skills инжектируется в STABLE-слой контекста (SKILL-02).</Comment>
 					<ToolTip/>
 					<FillChecking>DontCheck</FillChecking>
 					<StandardAttributes>
@@ -1357,9 +1357,9 @@
 									<v8:content>Skill</v8:content>
 								</v8:item>
 							</Synonym>
-							<Comment>Ссылка на элемент реестра ar_Skills (META-23).</Comment>
+							<Comment>Ссылка на элемент реестра ar_Навыки (META-23).</Comment>
 							<Type>
-								<v8:Type>cfg:CatalogRef.ar_Skills</v8:Type>
+								<v8:Type>cfg:CatalogRef.ar_Навыки</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -1497,7 +1497,7 @@
 							<v8:content>Tool access rules</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Вычисляемые правила доступа к реестру ar_Tools (SCALE-07): разрешающие и запрещающие правила по категории, пакету, namespace, конкретному tool или уровню риска. Запрещающие правила всегда побеждают разрешающие.</Comment>
+					<Comment>Вычисляемые правила доступа к реестру ar_Инструменты (SCALE-07): разрешающие и запрещающие правила по категории, пакету, namespace, конкретному tool или уровню риска. Запрещающие правила всегда побеждают разрешающие.</Comment>
 					<ToolTip/>
 					<FillChecking>DontCheck</FillChecking>
 					<StandardAttributes>
@@ -1546,7 +1546,7 @@
 									<v8:content>Rule type</v8:content>
 								</v8:item>
 							</Synonym>
-							<Comment>Измерение, по которому фильтруется реестр ar_Tools: Категория, Пакет, Namespace, Tool или RiskLevel.</Comment>
+							<Comment>Измерение, по которому фильтруется реестр ar_Инструменты: Категория, Пакет, Namespace, Tool или RiskLevel.</Comment>
 							<Type>
 								<v8:Type>cfg:EnumRef.ar_ТипПравилаДоступа</v8:Type>
 							</Type>

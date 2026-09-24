@@ -119,7 +119,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ar_КатегорииTools</name>
+		<name>Catalog.ar_КатегорииИнструментов</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -163,7 +163,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ar_Tools</name>
+		<name>Catalog.ar_Инструменты</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

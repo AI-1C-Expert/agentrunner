@@ -9,7 +9,7 @@
 					<v8:content>ПравилаAllowDeny / Allow-deny rules core</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>CONS-01: предметно-нейтральное ядро семантики allow/deny, переиспользуемое ar_ToolAccessRules (SCALE-07, tools) и ar_ПрофилиЗапуска (CONS-01, область данных). Пусто = всё; только allow = строго перечисленное; только deny = всё кроме перечисленного; deny применяется последним и всегда сильнее allow, независимо от порядка. Без Выполнить()/Вычислить().</Comment>
+			<Comment>CONS-01: предметно-нейтральное ядро семантики allow/deny, переиспользуемое ar_ИнструментыПравилаДоступа (SCALE-07, tools) и ar_ПрофилиЗапуска (CONS-01, область данных). Пусто = всё; только allow = строго перечисленное; только deny = всё кроме перечисленного; deny применяется последним и всегда сильнее allow, независимо от порядка. Без Выполнить()/Вычислить().</Comment>
 			<Global>false</Global>
 			<ClientManagedApplication>false</ClientManagedApplication>
 			<Server>true</Server>

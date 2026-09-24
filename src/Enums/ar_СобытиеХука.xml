@@ -27,7 +27,7 @@
 					<v8:content>Hook Event</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Точки расширения (hooks) в agent loop. 10 событий жизненного цикла run, на которые могут подписываться обработчики из ar_Hooks (см. архитектура §11, Plan §3.4).</Comment>
+			<Comment>Точки расширения (hooks) в agent loop. 10 событий жизненного цикла run, на которые могут подписываться обработчики из ar_Хуки (см. архитектура §11, Plan §3.4).</Comment>
 			<UseStandardCommands>false</UseStandardCommands>
 			<StandardAttributes>
 				<xr:StandardAttribute name="Order">

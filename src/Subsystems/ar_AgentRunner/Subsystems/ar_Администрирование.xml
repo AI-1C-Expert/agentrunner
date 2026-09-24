@@ -21,7 +21,7 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ar_Настройки</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_Hooks</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ar_Хуки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ar_ЗапрещённыеОбъекты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ar_МастерНастройки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ar_ПравилаМаскированияПДн</xr:Item>

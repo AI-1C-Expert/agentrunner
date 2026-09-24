@@ -1172,7 +1172,7 @@
 							<v8:content>Awaiting event</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>PLAN-10: JSON-строка вида {\"object_type\": \"Справочник.Контрагенты\", \"filter\": {\"Наименование\": \"ООО Ромашка\"}} - тип объекта + плоский фильтр без операторов, по аналогии с ar_ОбработчикПодписок.ГорячиеТипы/ПроверитьФильтр. Заполняется ar_RuntimeЦикл/ar_ToolПлан при вызове tool wait_for_event(object_type, filter, deadline_hours) (PLAN-11, пока не реализован). Пусто, если запуск не в PausedForEvent. Миграция существующих записей не требуется.</Comment>
+					<Comment>PLAN-10: JSON-строка вида {\"object_type\": \"Справочник.Контрагенты\", \"filter\": {\"Наименование\": \"ООО Ромашка\"}} - тип объекта + плоский фильтр без операторов, по аналогии с ar_ОбработчикПодписок.ГорячиеТипы/ПроверитьФильтр. Заполняется ar_RuntimeЦикл/ar_ИнструментыПлан при вызове tool wait_for_event(object_type, filter, deadline_hours) (PLAN-11, пока не реализован). Пусто, если запуск не в PausedForEvent. Миграция существующих записей не требуется.</Comment>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>

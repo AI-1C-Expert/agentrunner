@@ -603,7 +603,7 @@
 							<v8:content>Область данных</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Правила allow/deny по значениям параметров (Организация, Склад...), над которыми работает агент в этом профиле. Пусто - без ограничений; только allow - строго перечисленное; только deny - всё кроме перечисленного; deny всегда побеждает allow на одном значении. Алгоритм общий с ar_ToolAccessRules (SCALE-07) - см. CommonModules/ar_ПравилаAllowDeny.</Comment>
+					<Comment>Правила allow/deny по значениям параметров (Организация, Склад...), над которыми работает агент в этом профиле. Пусто - без ограничений; только allow - строго перечисленное; только deny - всё кроме перечисленного; deny всегда побеждает allow на одном значении. Алгоритм общий с ar_ИнструментыПравилаДоступа (SCALE-07) - см. CommonModules/ar_ПравилаAllowDeny.</Comment>
 					<ToolTip/>
 					<FillChecking>DontCheck</FillChecking>
 					<StandardAttributes>
@@ -689,7 +689,7 @@
 									<v8:content>Значение</v8:content>
 								</v8:item>
 							</Synonym>
-							<Comment>Значение параметра (представление). Точное совпадение строки, без wildcard - пустая строка не совпадает ни с чем (алгоритм allow/deny общий с ar_ToolAccessRules, SCALE-07).</Comment>
+							<Comment>Значение параметра (представление). Точное совпадение строки, без wildcard - пустая строка не совпадает ни с чем (алгоритм allow/deny общий с ar_ИнструментыПравилаДоступа, SCALE-07).</Comment>
 							<Type>
 								<v8:Type>xs:string</v8:Type>
 								<v8:StringQualifiers>
