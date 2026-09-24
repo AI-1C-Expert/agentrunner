@@ -98,7 +98,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ar_ПорогМедленногоTool</name>
+		<name>Constant.ar_ПорогМедленногоИнструмента</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -160,7 +160,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ar_ПакетыTools</name>
+		<name>InformationRegister.ar_ПакетыИнструментов</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

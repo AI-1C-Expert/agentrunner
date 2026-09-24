@@ -218,8 +218,8 @@
 			<Constant>ar_ВерсияРасширенияБД</Constant>
 			<Constant>ar_МастерНастройкиШаг</Constant>
 			<Constant>ar_РазрешитьТулыВРежимеКод</Constant>
-			<Constant>ar_ЗамерятьВсеTools</Constant>
-			<Constant>ar_ПорогМедленногоTool</Constant>
+			<Constant>ar_ЗамерятьВсеИнструменты</Constant>
+			<Constant>ar_ПорогМедленногоИнструмента</Constant>
 			<Constant>ar_ПорогПрогрессивнойВыдачи</Constant>
 			<Constant>ar_КомпакцияСжатиеДней</Constant>
 			<Constant>ar_КомпакцияУдалениеДней</Constant>
@@ -228,7 +228,7 @@
 			<CommonForm>ar_МастерНастройки</CommonForm>
 			<CommonForm>ar_Настройки</CommonForm>
 			<CommonForm>ar_ОчередьПодтверждений</CommonForm>
-			<CommonForm>ar_ПакетыTools</CommonForm>
+			<CommonForm>ar_ПакетыИнструментов</CommonForm>
 			<CommonForm>ar_ПроизводительностьИнструментов</CommonForm>
 			<CommonForm>ar_ПросмотрДействия</CommonForm>
 			<CommonForm>ar_ПросмотрЗапуска</CommonForm>
@@ -278,7 +278,7 @@
 			<InformationRegister>ar_СообщенияДиалога</InformationRegister>
 			<InformationRegister>ar_ПрофильКонфигурации</InformationRegister>
 			<InformationRegister>ar_Адаптеры</InformationRegister>
-			<InformationRegister>ar_ПакетыTools</InformationRegister>
+			<InformationRegister>ar_ПакетыИнструментов</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

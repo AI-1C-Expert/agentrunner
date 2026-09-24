@@ -2,37 +2,37 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<InformationRegister uuid="8e48d8f5-6416-4c6e-8918-21d6c733d6c5">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.ar_ПакетыTools" category="Record">
+			<xr:GeneratedType name="InformationRegisterRecord.ar_ПакетыИнструментов" category="Record">
 				<xr:TypeId>1735e73a-23cc-41cc-b582-98a997a8a589</xr:TypeId>
 				<xr:ValueId>7b9f0c65-c88c-47e6-a037-261a5ddadeb0</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.ar_ПакетыTools" category="Manager">
+			<xr:GeneratedType name="InformationRegisterManager.ar_ПакетыИнструментов" category="Manager">
 				<xr:TypeId>a1f0ee96-6418-4646-a23d-5421ee6eb0b5</xr:TypeId>
 				<xr:ValueId>ac98a9bb-9bec-4627-8cc1-92fbad1b2aa4</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.ar_ПакетыTools" category="Selection">
+			<xr:GeneratedType name="InformationRegisterSelection.ar_ПакетыИнструментов" category="Selection">
 				<xr:TypeId>9dc10b87-b209-40bc-9a2e-2ef373200777</xr:TypeId>
 				<xr:ValueId>5744e7d6-cc89-450b-b080-507bf514af96</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.ar_ПакетыTools" category="List">
+			<xr:GeneratedType name="InformationRegisterList.ar_ПакетыИнструментов" category="List">
 				<xr:TypeId>cae82354-f1f2-4f5e-88a3-f243ea09b0b6</xr:TypeId>
 				<xr:ValueId>7b17e8ef-4030-46c5-8912-1584ff8bc280</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.ar_ПакетыTools" category="RecordSet">
+			<xr:GeneratedType name="InformationRegisterRecordSet.ar_ПакетыИнструментов" category="RecordSet">
 				<xr:TypeId>121452ab-fc4b-463c-9ed2-cac7e5a5a04b</xr:TypeId>
 				<xr:ValueId>7809eb7c-3828-4785-b65f-82684d357480</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.ar_ПакетыTools" category="RecordKey">
+			<xr:GeneratedType name="InformationRegisterRecordKey.ar_ПакетыИнструментов" category="RecordKey">
 				<xr:TypeId>370a2efd-206a-45e3-9f9f-24e1c54b9b72</xr:TypeId>
 				<xr:ValueId>9ffceea5-1213-476e-8d96-ec8b4340c8b9</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.ar_ПакетыTools" category="RecordManager">
+			<xr:GeneratedType name="InformationRegisterRecordManager.ar_ПакетыИнструментов" category="RecordManager">
 				<xr:TypeId>d5fbbd1d-c667-412c-92de-e985e00b6da3</xr:TypeId>
 				<xr:ValueId>878e9fc6-eb35-4722-9e9a-d379ade3570b</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ar_ПакетыTools</Name>
+			<Name>ar_ПакетыИнструментов</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

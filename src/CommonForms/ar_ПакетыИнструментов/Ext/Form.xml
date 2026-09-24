@@ -166,7 +166,7 @@
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
-				<MainTable>InformationRegister.ar_ПакетыTools</MainTable>
+				<MainTable>InformationRegister.ar_ПакетыИнструментов</MainTable>
 				<ListSettings/>
 			</Settings>
 		</Attribute>
