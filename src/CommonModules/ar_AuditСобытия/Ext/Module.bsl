@@ -201,21 +201,21 @@
 Функция ИмяПоАлиасу(Знач ИмяСобытия)
 
 	Алиасы = Новый Соответствие;
-	Алиасы.Вставить("run_interrupted_by_sweeper", "RunInterruptedBySweeper");
+	Алиасы.Вставить("run_interrupted_by_sweeper", "ЗапускПрерванСвипером");
 	// UI-13: ручное возобновление Interrupted-запуска оператором из Run Viewer
 	// (CommonForm.ar_ПросмотрЗапуска, ar_RuntimeЗапуск.Возобновить).
-	Алиасы.Вставить("run_resumed_manually", "Resumed");
+	Алиасы.Вставить("run_resumed_manually", "Возобновлён");
 	// HTTPS-01: агент запущен по webhook-триггеру через HTTP POST /v1/agents/{id}/trigger.
-	Алиасы.Вставить("webhook_trigger_accepted", "WebhookTriggerAccepted");
+	Алиасы.Вставить("webhook_trigger_accepted", "ВебхукПринят");
 	// Итог ИСПОЛНЕНИЯ approved-действия (отдельно от Approved - решения
 	// оператора). Без этих событий в ar_СобытияЗапуска было видно только
 	// «Подтверждено», и понять, записан ли объект, по логу запуска было нельзя.
-	Алиасы.Вставить("action_executed", "ActionExecuted");
-	Алиасы.Вставить("action_execution_failed", "ActionExecutionFailed");
+	Алиасы.Вставить("action_executed", "ДействиеВыполнено");
+	Алиасы.Вставить("action_execution_failed", "ОшибкаВыполненияДействия");
 	// PKG-05: аудит небезопасного режима пакета и подозрения на нарушение
 	// approval-контракта пакетным tool.
-	Алиасы.Вставить("package_registered_unsafe", "PackageRegisteredUnsafe");
-	Алиасы.Вставить("package_approval_contract_suspect", "PackageApprovalContractSuspect");
+	Алиасы.Вставить("package_registered_unsafe", "ПакетЗарегистрированНебезопасно");
+	Алиасы.Вставить("package_approval_contract_suspect", "ПакетКонтрактПодозрителен");
 
 	Каноническое = Алиасы.Получить(НРег(ИмяСобытия));
 	Если Каноническое <> Неопределено Тогда

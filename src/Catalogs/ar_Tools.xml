@@ -542,7 +542,7 @@
 					</Synonym>
 					<Comment>Уровень риска вызова tool (Low/Medium/High/Critical). META-06.</Comment>
 					<Type>
-						<v8:Type>cfg:EnumRef.ar_RiskLevel</v8:Type>
+						<v8:Type>cfg:EnumRef.ar_УровеньРиска</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

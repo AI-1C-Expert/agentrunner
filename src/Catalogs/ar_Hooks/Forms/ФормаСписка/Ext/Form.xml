@@ -155,7 +155,7 @@
 		</Attribute>
 		<Attribute name="СписокСобытиеФильтр" id="36">
 			<Type>
-				<v8:Type>cfg:EnumRef.ar_СобытиеHook</v8:Type>
+				<v8:Type>cfg:EnumRef.ar_СобытиеХука</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

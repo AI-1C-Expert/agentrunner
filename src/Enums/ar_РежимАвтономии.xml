@@ -100,7 +100,7 @@
 		<ChildObjects>
 			<EnumValue uuid="47876fea-ad28-4d39-993b-1d7ae2c47b8f">
 				<Properties>
-					<Name>Manual</Name>
+					<Name>Ручной</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -116,7 +116,7 @@
 			</EnumValue>
 			<EnumValue uuid="19cdcb05-6377-447c-a1bc-bddd6259f5dd">
 				<Properties>
-					<Name>AutoThreshold</Name>
+					<Name>АвтоПорог</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -132,7 +132,7 @@
 			</EnumValue>
 			<EnumValue uuid="41a1185d-a01b-48d0-a966-dad4e9028559">
 				<Properties>
-					<Name>Autonomous</Name>
+					<Name>Автономный</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -148,7 +148,7 @@
 			</EnumValue>
 			<EnumValue uuid="dfb5db17-5e25-486a-accf-5fadc0b47e00">
 				<Properties>
-					<Name>ReadOnly</Name>
+					<Name>ТолькоЧтение</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

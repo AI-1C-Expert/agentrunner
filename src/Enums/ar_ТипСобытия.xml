@@ -100,7 +100,7 @@
 		<ChildObjects>
 			<EnumValue uuid="8528f221-f5de-4ed8-9397-071f8721e4d5">
 				<Properties>
-					<Name>Started</Name>
+					<Name>Стартован</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -116,7 +116,7 @@
 			</EnumValue>
 			<EnumValue uuid="01a7ebca-0258-471c-809f-2d767cb81fc2">
 				<Properties>
-					<Name>ContextBuilt</Name>
+					<Name>КонтекстСобран</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -132,7 +132,7 @@
 			</EnumValue>
 			<EnumValue uuid="2951080b-fae5-4ef8-be92-1ff5739fb3d9">
 				<Properties>
-					<Name>LLMCalled</Name>
+					<Name>ВызванLLM</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -148,7 +148,7 @@
 			</EnumValue>
 			<EnumValue uuid="21cf3e81-8b51-4834-a4fe-aa6a83cc6237">
 				<Properties>
-					<Name>ToolCalled</Name>
+					<Name>ВызванИнструмент</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -164,7 +164,7 @@
 			</EnumValue>
 			<EnumValue uuid="478ca30d-1753-48dc-b5e7-05903321e4f8">
 				<Properties>
-					<Name>PermissionCheck</Name>
+					<Name>ПроверкаПравил</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -180,7 +180,7 @@
 			</EnumValue>
 			<EnumValue uuid="238a230b-f299-412c-92c7-4c77d1fb5e0b">
 				<Properties>
-					<Name>ApprovalRequested</Name>
+					<Name>ЗапрошеноПодтверждение</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -196,7 +196,7 @@
 			</EnumValue>
 			<EnumValue uuid="d6a302e4-9a47-4a63-86d5-95e95e2b7ffa">
 				<Properties>
-					<Name>Approved</Name>
+					<Name>Подтверждён</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -212,7 +212,7 @@
 			</EnumValue>
 			<EnumValue uuid="b3f4c9d2-7a18-4e6c-9b25-1c8e3f0a5d47">
 				<Properties>
-					<Name>Rejected</Name>
+					<Name>Отклонён</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -228,7 +228,7 @@
 			</EnumValue>
 			<EnumValue uuid="2ba7d0bf-8124-486a-8edd-9fb90cf83be1">
 				<Properties>
-					<Name>Denied</Name>
+					<Name>Запрещён</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -244,7 +244,7 @@
 			</EnumValue>
 			<EnumValue uuid="15e67dc3-517a-4898-8cf4-9c4266f393e5">
 				<Properties>
-					<Name>Paused</Name>
+					<Name>Приостановлен</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -260,7 +260,7 @@
 			</EnumValue>
 			<EnumValue uuid="5163c7f4-231c-4628-bbef-5a0450b5e3df">
 				<Properties>
-					<Name>Resumed</Name>
+					<Name>Возобновлён</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -276,7 +276,7 @@
 			</EnumValue>
 			<EnumValue uuid="e4df034f-2443-4c1a-b25c-15fbf152b966">
 				<Properties>
-					<Name>Completed</Name>
+					<Name>Завершён</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -292,7 +292,7 @@
 			</EnumValue>
 			<EnumValue uuid="af690baf-9fc0-4399-86a2-f172fe77a820">
 				<Properties>
-					<Name>Failed</Name>
+					<Name>Ошибка</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -308,7 +308,7 @@
 			</EnumValue>
 			<EnumValue uuid="cd958f14-aa8a-461f-93e9-fe91321b3ec0">
 				<Properties>
-					<Name>MaxStepsReached</Name>
+					<Name>ДостигнутМаксимумШагов</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -324,7 +324,7 @@
 			</EnumValue>
 			<EnumValue uuid="d262a1b0-c095-4536-ae68-c5bc8cf21797">
 				<Properties>
-					<Name>HookFailed</Name>
+					<Name>ОшибкаХука</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -340,7 +340,7 @@
 			</EnumValue>
 			<EnumValue uuid="4a5b87ec-7ed4-427d-adc8-ab237f15eba3">
 				<Properties>
-					<Name>SecretRotated</Name>
+					<Name>СекретОбновлён</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -356,7 +356,7 @@
 			</EnumValue>
 			<EnumValue uuid="c4f1db75-5bca-4fc0-94bb-d8717a5f5396">
 				<Properties>
-					<Name>AuditPurged</Name>
+					<Name>АудитОчищен</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -372,7 +372,7 @@
 			</EnumValue>
 			<EnumValue uuid="239afd97-63d0-4616-b5d7-2cec7ec1613d">
 				<Properties>
-					<Name>Expired</Name>
+					<Name>Истёк</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -388,7 +388,7 @@
 			</EnumValue>
 			<EnumValue uuid="61e79d64-bfbc-4e8a-b2ab-edce4632e0c8">
 				<Properties>
-					<Name>RunInterruptedBySweeper</Name>
+					<Name>ЗапускПрерванСвипером</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -404,7 +404,7 @@
 			</EnumValue>
 			<EnumValue uuid="9627fa8b-48d3-4e87-9469-88f5317c4abe">
 				<Properties>
-					<Name>MemoryProposed</Name>
+					<Name>ПамятьПредложена</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -420,7 +420,7 @@
 			</EnumValue>
 			<EnumValue uuid="3f2e1a0b-c4d5-4e6f-a7b8-c9d0e1f2a3b4">
 				<Properties>
-					<Name>WebhookTriggerAccepted</Name>
+					<Name>ВебхукПринят</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -436,7 +436,7 @@
 			</EnumValue>
 			<EnumValue uuid="b7c1d2e3-4f5a-4b6c-8d9e-0a1b2c3d4e5f">
 				<Properties>
-					<Name>ActionExecuted</Name>
+					<Name>ДействиеВыполнено</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -452,7 +452,7 @@
 			</EnumValue>
 			<EnumValue uuid="c8d2e3f4-5a6b-4c7d-9e0f-1a2b3c4d5e6f">
 				<Properties>
-					<Name>ActionExecutionFailed</Name>
+					<Name>ОшибкаВыполненияДействия</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -468,7 +468,7 @@
 			</EnumValue>
 			<EnumValue uuid="41f61f7e-6068-4238-b540-b98148fb2fdc">
 				<Properties>
-					<Name>PiiRuleChanged</Name>
+					<Name>ПравилоПДнИзменено</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -484,7 +484,7 @@
 			</EnumValue>
 			<EnumValue uuid="fff1ed84-4806-4739-ac39-cecac257ef3d">
 				<Properties>
-					<Name>ToolCodeChanged</Name>
+					<Name>КодИнструментаИзменён</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -500,7 +500,7 @@
 			</EnumValue>
 			<EnumValue uuid="17bef70e-eac4-4a5a-bcc2-77db0b99c080">
 				<Properties>
-					<Name>ToolCodePolicyChanged</Name>
+					<Name>ПолитикаКодаИзменена</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -516,7 +516,7 @@
 			</EnumValue>
 			<EnumValue uuid="5f5be95e-319b-41e9-848c-5f0400dee617">
 				<Properties>
-					<Name>PackageRegisteredUnsafe</Name>
+					<Name>ПакетЗарегистрированНебезопасно</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -532,7 +532,7 @@
 			</EnumValue>
 			<EnumValue uuid="a9eba554-7696-4afa-8867-c29ce6be3bdd">
 				<Properties>
-					<Name>PackageApprovalContractSuspect</Name>
+					<Name>ПакетКонтрактПодозрителен</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -548,7 +548,7 @@
 			</EnumValue>
 			<EnumValue uuid="f011c3b8-cf31-4d64-8b08-bf1fd59a97fe">
 				<Properties>
-					<Name>CodeToolsDisabled</Name>
+					<Name>ИнструментыКодаОтключены</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -564,7 +564,7 @@
 			</EnumValue>
 			<EnumValue uuid="ff58dea3-780d-48ee-933e-b5a6cfd8c72b">
 				<Properties>
-					<Name>SupervisorInvoked</Name>
+					<Name>НадзорВызван</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -580,7 +580,7 @@
 			</EnumValue>
 			<EnumValue uuid="278095f8-fbf8-406b-91b3-7aae18aa4daa">
 				<Properties>
-					<Name>SupervisorDecision</Name>
+					<Name>НадзорРешение</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -596,7 +596,7 @@
 			</EnumValue>
 			<EnumValue uuid="e855fdb5-371d-473b-9a22-94dc7e45b659">
 				<Properties>
-					<Name>ContinuationStarted</Name>
+					<Name>ПродолжениеСтартовало</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -612,7 +612,7 @@
 			</EnumValue>
 			<EnumValue uuid="43a70be0-c7e7-4338-8158-26989bc3c236">
 				<Properties>
-					<Name>AutoResumed</Name>
+					<Name>АвтоВозобновлён</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -628,7 +628,7 @@
 			</EnumValue>
 			<EnumValue uuid="58fe08e8-99ad-4e82-ba44-acfb6e71b0a7">
 				<Properties>
-					<Name>RetryScheduled</Name>
+					<Name>ПовторЗапланирован</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -644,7 +644,7 @@
 			</EnumValue>
 			<EnumValue uuid="63dabef6-3194-45ea-bdfb-adc4ed6d3fcf">
 				<Properties>
-					<Name>NotificationSent</Name>
+					<Name>УведомлениеОтправлено</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -660,7 +660,7 @@
 			</EnumValue>
 			<EnumValue uuid="2874b73f-5aae-49e8-9664-22c71cf45e57">
 				<Properties>
-					<Name>PlanUpdated</Name>
+					<Name>ПланОбновлён</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -676,7 +676,7 @@
 			</EnumValue>
 			<EnumValue uuid="254409da-1b59-4eb7-b7d4-a16602660890">
 				<Properties>
-					<Name>WaitEvent</Name>
+					<Name>ОжиданиеСобытия</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

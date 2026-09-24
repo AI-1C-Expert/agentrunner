@@ -636,7 +636,7 @@
 				</Column>
 				<Column name="RiskLevel" id="97">
 					<Type>
-						<v8:Type>cfg:EnumRef.ar_RiskLevel</v8:Type>
+						<v8:Type>cfg:EnumRef.ar_УровеньРиска</v8:Type>
 					</Type>
 				</Column>
 			</Columns>

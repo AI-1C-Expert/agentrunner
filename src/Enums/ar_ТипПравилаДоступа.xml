@@ -120,7 +120,7 @@
 			</EnumValue>
 			<EnumValue uuid="61342600-bb53-4c89-8837-12d2925d7f4e">
 				<Properties>
-					<Name>Namespace</Name>
+					<Name>Пространство</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -132,7 +132,7 @@
 			</EnumValue>
 			<EnumValue uuid="ce418f96-df82-4534-a6ea-81607f3fbc59">
 				<Properties>
-					<Name>Tool</Name>
+					<Name>Инструмент</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -144,7 +144,7 @@
 			</EnumValue>
 			<EnumValue uuid="64c9967c-89d6-4f82-91ee-53bf47e32e4b">
 				<Properties>
-					<Name>RiskLevel</Name>
+					<Name>УровеньРиска</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

@@ -249,12 +249,12 @@
 			<Catalog>ar_ДополнительныеНастройки</Catalog>
 			<Catalog>ar_КатегорииTools</Catalog>
 			<Catalog>ar_ПрофилиЗапуска</Catalog>
-			<Enum>ar_RiskLevel</Enum>
+			<Enum>ar_УровеньРиска</Enum>
 			<Enum>ar_РежимАвтономии</Enum>
 			<Enum>ar_СтатусЗапуска</Enum>
 			<Enum>ar_ТипПровайдера</Enum>
 			<Enum>ar_ТипСобытия</Enum>
-			<Enum>ar_СобытиеHook</Enum>
+			<Enum>ar_СобытиеХука</Enum>
 			<Enum>ar_РежимЗапретаЗаписи</Enum>
 			<Enum>ar_СпособМаскированияПДн</Enum>
 			<Enum>ar_ТипПравилаДоступа</Enum>

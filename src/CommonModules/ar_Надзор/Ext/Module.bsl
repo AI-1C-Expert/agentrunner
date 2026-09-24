@@ -286,7 +286,7 @@
 	PayloadInvoked = Новый Структура;
 	PayloadInvoked.Вставить("code", "supervisor_invoked");
 	PayloadInvoked.Вставить("trigger", Триггер);
-	ar_AuditЗащищённыйРежим.ЗаписатьСобытиеПривилегированно(RunId, "SupervisorInvoked", PayloadInvoked);
+	ar_AuditЗащищённыйРежим.ЗаписатьСобытиеПривилегированно(RunId, "НадзорВызван", PayloadInvoked);
 
 	// Список фактически выполненных действий за RunId - тот же запрос-образец,
 	// что уже используется формой ar_ПросмотрЗапуска для секции «Созданные
@@ -683,7 +683,7 @@
 	Payload.Вставить("code", "supervisor_decision");
 	Payload.Вставить("verdict", Вердикт);
 	Payload.Вставить("cheap_check", ДешеваяПроверкаСработала);
-	ar_AuditЗащищённыйРежим.ЗаписатьСобытиеПривилегированно(RunId, "SupervisorDecision", Payload);
+	ar_AuditЗащищённыйРежим.ЗаписатьСобытиеПривилегированно(RunId, "НадзорРешение", Payload);
 
 КонецПроцедуры
 
@@ -1115,7 +1115,7 @@
 	Payload.Вставить("code", "supervisor_decision");
 	Payload.Вставить("verdict", "Эскалировать");
 	Payload.Вставить("escalation_reason", ПричинаЭскалации);
-	ar_AuditЗащищённыйРежим.ЗаписатьСобытиеПривилегированно(RunId, "SupervisorDecision", Payload);
+	ar_AuditЗащищённыйРежим.ЗаписатьСобытиеПривилегированно(RunId, "НадзорРешение", Payload);
 
 	// CONS-12: единая точка уведомлений - эскалация надзора доходит письмом
 	// ответственному. ar_Уведомления сама перехватывает любые свои ошибки

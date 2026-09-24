@@ -164,7 +164,7 @@
 			</EnumValue>
 			<EnumValue uuid="dbc4f923-eb60-4d6a-99a1-e5127eb50e0a">
 				<Properties>
-					<Name>LocalCompatible</Name>
+					<Name>Локальный</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -180,7 +180,7 @@
 			</EnumValue>
 			<EnumValue uuid="a1b2c3d4-0000-0000-0000-000000000003">
 				<Properties>
-					<Name>Mock</Name>
+					<Name>Заглушка</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

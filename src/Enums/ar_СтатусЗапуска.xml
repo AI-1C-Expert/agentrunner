@@ -100,7 +100,7 @@
 		<ChildObjects>
 			<EnumValue uuid="08ae2afd-1ca5-4b5f-9546-c565514d371d">
 				<Properties>
-					<Name>Created</Name>
+					<Name>Создан</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -116,7 +116,7 @@
 			</EnumValue>
 			<EnumValue uuid="cc658f82-1663-4197-a94b-c3fc97015c00">
 				<Properties>
-					<Name>Running</Name>
+					<Name>Выполняется</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -132,7 +132,7 @@
 			</EnumValue>
 			<EnumValue uuid="dbf24def-05da-4ee4-91cf-94f7762a069d">
 				<Properties>
-					<Name>PausedForApproval</Name>
+					<Name>ПриостановленДляПодтверждения</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -148,7 +148,7 @@
 			</EnumValue>
 			<EnumValue uuid="4d0640cd-3a17-4ceb-a03a-60fa112f5780">
 				<Properties>
-					<Name>PausedForInput</Name>
+					<Name>ПриостановленДляВвода</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -164,7 +164,7 @@
 			</EnumValue>
 			<EnumValue uuid="9b66c6d2-6895-4141-8ad9-73e7eec26afc">
 				<Properties>
-					<Name>Completed</Name>
+					<Name>Завершён</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -180,7 +180,7 @@
 			</EnumValue>
 			<EnumValue uuid="af6bfcf2-ad79-46fb-a2f0-6bfb75bc63f1">
 				<Properties>
-					<Name>Failed</Name>
+					<Name>ОшибкаВыполнения</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -196,7 +196,7 @@
 			</EnumValue>
 			<EnumValue uuid="966aa876-e378-4c47-b1f1-54602bc2fc4b">
 				<Properties>
-					<Name>Cancelled</Name>
+					<Name>Отменён</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -212,7 +212,7 @@
 			</EnumValue>
 			<EnumValue uuid="fe6c7f07-5130-4180-a836-ef1d6c4168f1">
 				<Properties>
-					<Name>MaxStepsReached</Name>
+					<Name>ДостигнутМаксимумШагов</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -228,7 +228,7 @@
 			</EnumValue>
 			<EnumValue uuid="7adc1828-60b7-435b-83f4-cd0527257efa">
 				<Properties>
-					<Name>DeniedGlobally</Name>
+					<Name>ОтклонёнГлобально</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -244,7 +244,7 @@
 			</EnumValue>
 			<EnumValue uuid="70d27783-3a88-472b-a62d-b40f6ca8ea38">
 				<Properties>
-					<Name>Interrupted</Name>
+					<Name>Прерван</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -260,7 +260,7 @@
 			</EnumValue>
 			<EnumValue uuid="1453b0c1-e705-4bc0-b447-9711c9617af8">
 				<Properties>
-					<Name>FailedIncompatibleState</Name>
+					<Name>ОшибкаНесовместимоеСостояние</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -276,7 +276,7 @@
 			</EnumValue>
 			<EnumValue uuid="c3f63e65-5996-49da-af56-de5d505847ad">
 				<Properties>
-					<Name>PausedForEvent</Name>
+					<Name>ПриостановленДляСобытия</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

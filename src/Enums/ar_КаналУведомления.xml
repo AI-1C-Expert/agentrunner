@@ -96,7 +96,7 @@
 		<ChildObjects>
 			<EnumValue uuid="8a20ad42-ed1d-4c46-9286-9084efe6ced2">
 				<Properties>
-					<Name>Email</Name>
+					<Name>Почта</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -132,7 +132,7 @@
 			</EnumValue>
 			<EnumValue uuid="dbb904e8-7f72-4ee0-9d5d-04bebf9865c0">
 				<Properties>
-					<Name>Telegram</Name>
+					<Name>Телеграм</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
