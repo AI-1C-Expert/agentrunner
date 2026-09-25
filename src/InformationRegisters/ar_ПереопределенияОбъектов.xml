@@ -180,7 +180,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_имя вметаданных</v8:content>
+							<v8:content>Имя в метаданных</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -223,7 +223,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_логическое имя</v8:content>
+							<v8:content>Логическое имя</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

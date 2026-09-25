@@ -180,7 +180,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_источник</v8:content>
+							<v8:content>Источник</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -223,7 +223,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_событие</v8:content>
+							<v8:content>Событие</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -266,7 +266,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_уровень</v8:content>
+							<v8:content>Уровень</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -309,7 +309,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_run id</v8:content>
+							<v8:content>Идентификатор запуска</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -352,7 +352,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_объект ссылка</v8:content>
+							<v8:content>Объект (ссылка)</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -395,7 +395,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_текст</v8:content>
+							<v8:content>Текст</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -438,7 +438,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_записьid</v8:content>
+							<v8:content>Идентификатор записи</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -485,7 +485,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_момент</v8:content>
+							<v8:content>Момент</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

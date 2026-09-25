@@ -338,7 +338,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_значение</v8:content>
+							<v8:content>Значение</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -389,7 +389,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_значение строка</v8:content>
+							<v8:content>Значение (строка)</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -433,7 +433,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_включено</v8:content>
+							<v8:content>Включено</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -473,7 +473,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_описание</v8:content>
+							<v8:content>Описание</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -527,7 +527,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_значения</v8:content>
+							<v8:content>Значения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -572,7 +572,7 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>ar_значение</v8:content>
+									<v8:content>Значение</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -620,7 +620,7 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>ar_значение строка</v8:content>
+									<v8:content>Значение (строка)</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -661,7 +661,7 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>ar_включено</v8:content>
+									<v8:content>Включено</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>

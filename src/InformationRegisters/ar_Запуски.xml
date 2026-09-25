@@ -180,7 +180,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_статус</v8:content>
+							<v8:content>Статус</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -219,7 +219,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_ответllm</v8:content>
+							<v8:content>Ответ LLM</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -262,7 +262,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_агент реф</v8:content>
+							<v8:content>Агент (ссылка)</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -301,7 +301,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_стартовал в</v8:content>
+							<v8:content>Стартовал в</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -343,7 +343,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_завершен в</v8:content>
+							<v8:content>Завершён в</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -385,7 +385,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_триггер</v8:content>
+							<v8:content>Триггер</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -428,7 +428,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_пользователь реф</v8:content>
+							<v8:content>Пользователь (ссылка)</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -467,7 +467,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_токенов вход</v8:content>
+							<v8:content>Токенов вход</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -511,7 +511,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_токенов выход</v8:content>
+							<v8:content>Токенов выход</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -555,7 +555,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_стоимость руб</v8:content>
+							<v8:content>Стоимость, руб.</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -599,7 +599,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_шагов всего</v8:content>
+							<v8:content>Шагов всего</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -643,7 +643,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_родительский идентификатор запуска</v8:content>
+							<v8:content>Родительский идентификатор запуска</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -686,7 +686,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_state snapshot</v8:content>
+							<v8:content>Снимок состояния</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -725,7 +725,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_последний пульс</v8:content>
+							<v8:content>Последний пульс</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1258,7 +1258,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_идентификатор запуска</v8:content>
+							<v8:content>Идентификатор запуска</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

@@ -338,7 +338,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_якорь</v8:content>
+							<v8:content>Якорь</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -382,7 +382,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_агент</v8:content>
+							<v8:content>Агент</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -422,7 +422,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_провайдер</v8:content>
+							<v8:content>Провайдер</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -462,7 +462,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_без агента</v8:content>
+							<v8:content>Без агента</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -502,7 +502,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_пользовательuuid</v8:content>
+							<v8:content>Пользователь UUID</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -546,7 +546,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_создан</v8:content>
+							<v8:content>Создан</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -589,7 +589,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_обновлён</v8:content>
+							<v8:content>Обновлён</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -632,7 +632,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_последнийrun id</v8:content>
+							<v8:content>Последний идентификатор запуска</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -731,7 +731,7 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>ar_имя</v8:content>
+									<v8:content>Имя</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>

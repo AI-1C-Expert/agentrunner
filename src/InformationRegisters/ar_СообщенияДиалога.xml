@@ -180,7 +180,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_роль</v8:content>
+							<v8:content>Роль</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -223,7 +223,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_текст</v8:content>
+							<v8:content>Текст</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -266,7 +266,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_run id</v8:content>
+							<v8:content>Идентификатор запуска</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -309,7 +309,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_approval id</v8:content>
+							<v8:content>Идентификатор подтверждения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -352,7 +352,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_момент</v8:content>
+							<v8:content>Момент</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -394,7 +394,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_якорь</v8:content>
+							<v8:content>Якорь</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -441,7 +441,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_номер</v8:content>
+							<v8:content>Номер</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
