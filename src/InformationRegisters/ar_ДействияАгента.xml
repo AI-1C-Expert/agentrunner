@@ -262,11 +262,11 @@
 			</Resource>
 			<Resource uuid="9b736966-a7ae-4a24-9127-3cb2a0eb622d">
 				<Properties>
-					<Name>ar_RiskLevel</Name>
+					<Name>ar_УровеньРиска</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_risk level</v8:content>
+							<v8:content>Уровень риска</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -301,11 +301,11 @@
 			</Resource>
 			<Resource uuid="62ea3a2c-a984-44ec-b1f1-1aa8db97d4de">
 				<Properties>
-					<Name>ar_ResultRef</Name>
+					<Name>ar_СсылкаНаРезультат</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_result ref</v8:content>
+							<v8:content>Ссылка на результат</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -344,16 +344,16 @@
 			</Resource>
 			<Resource uuid="036b2276-3835-469c-8345-796fd7efce10">
 				<Properties>
-					<Name>ar_ApprovedBy</Name>
+					<Name>ar_КемПодтверждено</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_approved by</v8:content>
+							<v8:content>Кем подтверждено</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:TypeId>bb356e79-e8e6-4912-8561-ad29cca2604f</v8:TypeId>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -383,11 +383,11 @@
 			</Resource>
 			<Resource uuid="ba24ad89-0724-4884-bccc-867bc665dee1">
 				<Properties>
-					<Name>ar_ApprovedAt</Name>
+					<Name>ar_ДатаПодтверждения</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_approved at</v8:content>
+							<v8:content>Дата подтверждения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -516,11 +516,11 @@
 			</Resource>
 			<Dimension uuid="e16cc837-a3b5-4265-871d-99b55412f382">
 				<Properties>
-					<Name>ar_RunId</Name>
+					<Name>ar_ИдентификаторЗапуска</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_run id</v8:content>
+							<v8:content>Идентификатор запуска</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -563,11 +563,11 @@
 			</Dimension>
 			<Dimension uuid="8a0b02d7-0537-4c7d-9756-a4caacd71631">
 				<Properties>
-					<Name>ar_Sequence</Name>
+					<Name>ar_Последовательность</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_sequence</v8:content>
+							<v8:content>Последовательность</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

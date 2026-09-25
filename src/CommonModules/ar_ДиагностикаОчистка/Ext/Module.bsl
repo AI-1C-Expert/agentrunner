@@ -212,18 +212,18 @@
 	Запрос = Новый Запрос;
 	Запрос.Текст =
 		"ВЫБРАТЬ
-		|	Д.ar_RunId        КАК RunId,
-		|	Д.ar_Sequence     КАК Sequence,
+		|	Д.ar_ИдентификаторЗапуска        КАК RunId,
+		|	Д.ar_Последовательность     КАК Sequence,
 		|	Д.ar_ИмяИнструмента КАК ИмяИнструмента,
 		|	Д.ar_АргументыJSON КАК АргументыJSON,
-		|	Д.ar_RiskLevel    КАК RiskLevel,
-		|	Д.ar_ResultRef    КАК ResultRef,
-		|	Д.ar_ApprovedBy   КАК ApprovedBy,
-		|	Д.ar_ApprovedAt   КАК ApprovedAt
+		|	Д.ar_УровеньРиска    КАК RiskLevel,
+		|	Д.ar_СсылкаНаРезультат    КАК ResultRef,
+		|	Д.ar_КемПодтверждено   КАК ApprovedBy,
+		|	Д.ar_ДатаПодтверждения   КАК ApprovedAt
 		|ИЗ
 		|	РегистрСведений.ar_ДействияАгента КАК Д
 		|УПОРЯДОЧИТЬ ПО
-		|	Д.ar_RunId, Д.ar_Sequence";
+		|	Д.ar_ИдентификаторЗапуска, Д.ar_Последовательность";
 	Возврат Запрос;
 КонецФункции
 

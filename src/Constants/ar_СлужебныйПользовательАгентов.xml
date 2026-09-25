@@ -29,7 +29,7 @@
 			</Synonym>
 			<Comment>Пользователь ИБ, от имени которого исполняются агенты регламентным заданием ar_ПланировщикАгентов</Comment>
 			<Type>
-				<v8:TypeId>bb356e79-e8e6-4912-8561-ad29cca2604f</v8:TypeId>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 			</Type>
 			<UseStandardCommands>true</UseStandardCommands>
 			<DefaultForm/>

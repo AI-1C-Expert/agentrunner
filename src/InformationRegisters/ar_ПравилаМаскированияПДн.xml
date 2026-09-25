@@ -310,7 +310,7 @@
 					</Synonym>
 					<Comment>Единственная сознательная ссылка на объект основной конфигурации (не своего справочника) в этом расширении - тип соответствует результату платформенного Пользователи.ТекущийПользователь(), записываемому в RecordSetModule.bsl.</Comment>
 					<Type>
-						<v8:TypeId>bb356e79-e8e6-4912-8561-ad29cca2604f</v8:TypeId>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
