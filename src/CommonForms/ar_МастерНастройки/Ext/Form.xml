@@ -203,7 +203,7 @@
 				<v8:Type>cfg:EnumRef.ar_ТипПровайдера</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="BaseURLНовогоПровайдера" id="12">
+		<Attribute name="БазовыйURLНовогоПровайдера" id="12">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

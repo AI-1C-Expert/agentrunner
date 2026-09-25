@@ -120,7 +120,7 @@
 				<Field>РежимБезАгента</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ВыбранныеToolsJSON" id="10">
+		<Attribute name="ВыбранныеИнструментыJSON" id="10">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -135,10 +135,10 @@
 				</v8:StringQualifiers>
 			</Type>
 			<Save>
-				<Field>ВыбранныеToolsJSON</Field>
+				<Field>ВыбранныеИнструментыJSON</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ТекущийRunId" id="11">
+		<Attribute name="ТекущийИдентификаторЗапуска" id="11">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -168,7 +168,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПоследнийSequence" id="13">
+		<Attribute name="ПоследняяПоследовательность" id="13">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -200,7 +200,7 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ТекущийApprovalId" id="15">
+		<Attribute name="ТекущийИдентификаторПодтверждения" id="15">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -215,7 +215,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="AskChoicesJSON" id="16">
+		<Attribute name="ВыборВариантовJSON" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -245,7 +245,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПопапToolsОткрыт" id="18">
+		<Attribute name="ПопапИнструментыОткрыт" id="18">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
