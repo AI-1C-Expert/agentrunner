@@ -1063,7 +1063,7 @@
 		</UsualGroup>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="RunId" id="104">
+		<Attribute name="ИдентификаторЗапуска" id="104">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1879,7 +1879,7 @@
 		</Command>
 	</Commands>
 	<Parameters>
-		<Parameter name="RunId">
+		<Parameter name="ИдентификаторЗапуска">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>

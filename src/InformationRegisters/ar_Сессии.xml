@@ -180,11 +180,11 @@
 		<ChildObjects>
 			<Resource uuid="6be7243a-83cb-4f50-b4cf-8d4054231f9a">
 				<Properties>
-					<Name>ar_LastRunId</Name>
+					<Name>ar_ПоследнийИдентификаторЗапуска</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Последний RunId</v8:content>
+							<v8:content>Последний идентификатор запуска</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>

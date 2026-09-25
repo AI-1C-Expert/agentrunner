@@ -639,11 +639,11 @@
 			</Resource>
 			<Resource uuid="256f232b-b495-4508-a68e-94a29bf565ef">
 				<Properties>
-					<Name>ar_РодительскийRunId</Name>
+					<Name>ar_РодительскийИдентификаторЗапуска</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_родительскийrun id</v8:content>
+							<v8:content>ar_родительский идентификатор запуска</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -721,11 +721,11 @@
 			</Resource>
 			<Resource uuid="6207f3db-9718-4c2e-ae87-f35cb521f9b9">
 				<Properties>
-					<Name>ar_LastHeartbeat</Name>
+					<Name>ar_ПоследнийПульс</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_last heartbeat</v8:content>
+							<v8:content>ar_последний пульс</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1254,11 +1254,11 @@
 			</Resource>
 			<Dimension uuid="7871ee85-9e8a-4628-89f1-8f1f821935c1">
 				<Properties>
-					<Name>ar_RunId</Name>
+					<Name>ar_ИдентификаторЗапуска</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ar_run id</v8:content>
+							<v8:content>ar_идентификатор запуска</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

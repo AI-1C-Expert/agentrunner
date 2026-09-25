@@ -622,11 +622,11 @@
 			</Attribute>
 			<Attribute uuid="68ecfc5b-99cf-4b6d-ab09-8394ccb5e509">
 				<Properties>
-					<Name>ar_ИсточникRunId</Name>
+					<Name>ar_ИсточникИдентификаторЗапуска</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>RunId источника</v8:content>
+							<v8:content>Идентификатор запуска источника</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>

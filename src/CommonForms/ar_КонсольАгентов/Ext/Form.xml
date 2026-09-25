@@ -705,8 +705,8 @@
 									<ContextMenu name="СписокАгентовСуммарнаяСтоимостьКонтекстноеМеню" id="245"/>
 									<ExtendedTooltip name="СписокАгентовСуммарнаяСтоимостьРасширеннаяПодсказка" id="246"/>
 								</InputField>
-								<InputField name="СписокАгентовОжидаютApproval" id="247">
-									<DataPath>СписокАгентов.ОжидаютApproval</DataPath>
+								<InputField name="СписокАгентовОжидаютПодтверждения" id="247">
+									<DataPath>СписокАгентов.ОжидаютПодтверждения</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Title>
 										<v8:item>
@@ -720,8 +720,8 @@
 											<v8:content>ЧЦ=10; ЧДЦ=0; ЧН=0</v8:content>
 										</v8:item>
 									</Format>
-									<ContextMenu name="СписокАгентовОжидаютApprovalКонтекстноеМеню" id="248"/>
-									<ExtendedTooltip name="СписокАгентовОжидаютApprovalРасширеннаяПодсказка" id="249"/>
+									<ContextMenu name="СписокАгентовОжидаютПодтвержденияКонтекстноеМеню" id="248"/>
+									<ExtendedTooltip name="СписокАгентовОжидаютПодтвержденияРасширеннаяПодсказка" id="249"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -742,7 +742,7 @@
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<Columns>
-				<Column name="RunId" id="101">
+				<Column name="ИдентификаторЗапуска" id="101">
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -819,7 +819,7 @@
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>
-				<Column name="LastHeartbeat" id="111">
+				<Column name="ПоследнийПульс" id="111">
 					<Type>
 						<v8:Type>xs:dateTime</v8:Type>
 						<v8:DateQualifiers>
@@ -827,7 +827,7 @@
 						</v8:DateQualifiers>
 					</Type>
 				</Column>
-				<Column name="РодительскийRunId" id="112">
+				<Column name="РодительскийИдентификаторЗапуска" id="112">
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -841,7 +841,7 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
-				<Column name="ОжидаютApproval" id="114">
+				<Column name="ОжидаютПодтверждения" id="114">
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
@@ -1351,7 +1351,7 @@
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>
-				<Column name="ОжидаютApproval" id="259">
+				<Column name="ОжидаютПодтверждения" id="259">
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
