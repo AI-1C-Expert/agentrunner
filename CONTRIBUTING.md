@@ -155,4 +155,6 @@ Conventional Commits: `feat:`, `fix:`, `docs:`, `refactor:`, `chore:`.
 | `.docs/архитектура agent OS для 1С.md` | Архитектурный справочник |
 | `SECURITY.md` | Модель угроз и как сообщить об уязвимости |
 
-Вопросы — в GitHub Issues.
+Вопросы — в [GitHub Issues](https://github.com/SMLTTECH/agentrunner/issues).
+
+> Проект развивается в https://github.com/SMLTTECH/agentrunner — форкайте, открывайте issue и pull request там.

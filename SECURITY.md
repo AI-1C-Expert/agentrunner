@@ -11,7 +11,7 @@ AgentRunner даёт языковой модели доступ к данным 
 **Не открывайте публичный issue для уязвимостей.**
 
 - GitHub Security Advisory: вкладка **Security → Report a vulnerability**
-  в репозитории `AI-1C-Expert/agentrunner` — предпочтительный канал.
+  в репозитории `SMLTTECH/agentrunner` — предпочтительный канал.
 - Если недоступно — issue с меткой `security` **без технических деталей**,
   только с просьбой связаться.
 
